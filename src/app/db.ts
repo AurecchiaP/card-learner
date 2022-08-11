@@ -21,17 +21,17 @@ export class AppDB extends Dexie {
   async populate() {
     await db.scores.bulkAdd([
       {
-        sheet: 'Japanese/JLPT-N5.txt',
+        sheet: 'japanese/jlpt-n5-score.txt',
         wordId: 0,
         score: 0,
       },
       {
-        sheet: 'Japanese/JLPT-N4.txt',
+        sheet: 'japanese/jlpt-n4-score.txt',
         wordId: 0,
         score: 0,
       },
       {
-        sheet: 'Japanese/JLPT-N3.txt',
+        sheet: 'japanese/jlpt-n3-score.txt',
         wordId: 0,
         score: 0,
       },

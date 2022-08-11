@@ -73,15 +73,12 @@ export class StudyComponent implements OnDestroy {
       ).subscribe(this.settings$)
     );
 
-    this.settings$.subscribe(test => console.log('mada',test))
-
     this.subscription.add(
       this.httpClient
         .get('assets/sheets/' + this.sheet, { responseType: 'blob' })
         .pipe(
           withLatestFrom(this.scores$),
           map(([data, scores]): any => {
-            console.log('he', scores);
             let fileReader = new FileReader();
             return new Promise((resolve, reject) => {
               fileReader.onerror = () => {
@@ -195,7 +192,6 @@ export class StudyComponent implements OnDestroy {
     let randomize = this.settings$.value.find(setting => setting.wordId === 0);
     if (randomize && randomize.score === 1) {
       this.wordCounter = Math.floor((Math.random() * this.mergedWords$.value.length));
-      console.log(this.wordCounter, this.mergedWords$.value.length);
     } else {
       this.wordCounter += 1;
     }
@@ -213,7 +209,6 @@ export class StudyComponent implements OnDestroy {
     let randomize = this.settings$.value.find(setting => setting.wordId === 0);
     if (randomize && randomize.score === 1) {
       this.wordCounter = Math.floor((Math.random() * this.mergedWords$.value.length));
-      console.log(this.wordCounter, this.mergedWords$.value.length);
     } else {
       this.wordCounter -= 1;
     }

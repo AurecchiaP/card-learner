@@ -17,11 +17,11 @@ export interface Sheet {
 export class SheetsComponent implements OnInit {
   languages: Section[] = [
     {
-      name: 'Japanese',
+      name: 'japanese',
       sheets: [
-        {name: 'JLPT-N5'},
-        {name: 'JLPT-N4'},
-        {name: 'JLPT-N3'},
+        {name: 'jlpt-n5-score'},
+        {name: 'jlpt-n4-score'},
+        {name: 'jlpt-n3-score'},
       ],
     },
     {
