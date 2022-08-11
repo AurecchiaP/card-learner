@@ -1,0 +1,20 @@
+.sheet-card {
+    margin: 1em;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .mat-card-content span {
+    margin-left: 1em;
+  }
+
+  .section-title {
+    width: 100%;
+  }

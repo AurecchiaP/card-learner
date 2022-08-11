@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
 import { StudyComponent } from './study/study.component';
+import { SheetsComponent } from './sheets/sheets.component';
 import { CheckCardsComponent } from './check-cards/check-cards.component';
 
 import { SettingsComponent } from './settings/settings.component';
@@ -17,9 +18,14 @@ const routes: Routes = [
         data: { breadcrumb: { alias: 'LearnComponent' } },
       },
       {
-        path: 'study-component',
+        path: 'study-component/:language/:sheet',
         component: StudyComponent,
         data: { breadcrumb: { alias: 'StudyComponent' } },
+      },
+      {
+        path: 'sheets-component',
+        component: SheetsComponent,
+        data: { breadcrumb: { alias: 'SheetsComponent' } },
       },
       {
         path: 'check-cards-component',

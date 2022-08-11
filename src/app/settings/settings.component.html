@@ -1,1 +1,22 @@
-blasettings
+<div *ngIf="settings$ | async as settings">
+  <div *ngFor="let setting of settings" [formGroup]="settingsForm">
+    <div class="settings">
+      <mat-slide-toggle
+        class="toggle"
+        (change)="update(setting.wordId)"
+        [formControlName]="setting.wordId"
+      >
+        Randomize order
+      </mat-slide-toggle>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    aria-label="Reset settings"
+    mat-raised-button
+    (click)="clearData()"
+  >
+    Clear data
+  </button>
+</div>

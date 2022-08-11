@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {
   BehaviorSubject,
@@ -15,6 +15,7 @@ import {
 } from 'rxjs';
 import { db, ScoreRecord } from '../../app/db';
 import { liveQuery } from 'dexie';
+import { ActivatedRoute } from '@angular/router';
 
 interface EntryRecord {
   word: string;
@@ -27,7 +28,9 @@ interface EntryRecord {
   templateUrl: './study.component.html',
   styleUrls: ['./study.component.scss'],
 })
-export class StudyComponent {
+export class StudyComponent implements OnDestroy {
+  sheet: string;
+
   words: EntryRecord[] = [];
   wordCounter = 0;
   currentWord: string | undefined;
@@ -36,9 +39,9 @@ export class StudyComponent {
   currentTranslation: string | undefined;
   flipped = false;
 
-  sheet = 'japanese/jlpt-n5-score.txt';
-
   scores$ = new BehaviorSubject<ScoreRecord[]>([]);
+
+  settings$ = new BehaviorSubject<ScoreRecord[]>([]);
 
   words$ = new BehaviorSubject<EntryRecord[]>([]);
 
@@ -48,7 +51,8 @@ export class StudyComponent {
 
   subscription = new Subscription();
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, private activatedroute:ActivatedRoute) {
+    this.sheet =  `${this.activatedroute.snapshot.paramMap.get("language")}/${this.activatedroute.snapshot.paramMap.get("sheet")}.txt`;
     this.subscription.add(
       liveQuery(() =>
         db.scores
@@ -58,6 +62,19 @@ export class StudyComponent {
           .toArray()
       ).subscribe(this.scores$)
     );
+
+    this.subscription.add(
+      liveQuery(() =>
+        db.scores
+          .where({
+            sheet: 'settings',
+          })
+          .toArray()
+      ).subscribe(this.settings$)
+    );
+
+    this.settings$.subscribe(test => console.log('mada',test))
+
     this.subscription.add(
       this.httpClient
         .get('assets/sheets/' + this.sheet, { responseType: 'blob' })
@@ -94,7 +111,7 @@ export class StudyComponent {
         )
         .subscribe(this.words$)
     );
-
+    this.subscription.add(
     combineLatest([this.scores$, this.words$])
       .pipe(
         filter(([scores, words]) => scores?.length > 0 && words?.length > 0),
@@ -107,17 +124,16 @@ export class StudyComponent {
             } as EntryRecord;
           });
         })
-        // .subscribe(([scores, words]) => {
-        //   words.map((word, index) => {return {...word, score: scores.find(score => score.wordId == index) || 0}})
-        //   console.log("data", scores, words)
-        //   this.loaded$.next(true);
-        // }
       )
-      .subscribe(this.mergedWords$);
+      .subscribe(this.mergedWords$));
 
     this.getScore(this.sheet, this.wordCounter).then((score) => {
       this.currentScore = score ? score.score : 0;
     });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   async getScore(sheet: string, wordId: number) {
@@ -176,7 +192,31 @@ export class StudyComponent {
 
   next() {
     this.flipped = false;
-    this.wordCounter += 1;
+    let randomize = this.settings$.value.find(setting => setting.wordId === 0);
+    if (randomize && randomize.score === 1) {
+      this.wordCounter = Math.floor((Math.random() * this.mergedWords$.value.length));
+      console.log(this.wordCounter, this.mergedWords$.value.length);
+    } else {
+      this.wordCounter += 1;
+    }
+    this.currentWord = this.words$.value[this.wordCounter].word;
+    setTimeout(() => {
+      this.currentTranslation = this.words$.value[this.wordCounter].definition;
+    }, 800);
+    this.getScore(this.sheet, this.wordCounter).then((score) => {
+      this.currentScore = score ? score.score : 0;
+    });
+  }
+
+  previous() {
+    this.flipped = false;
+    let randomize = this.settings$.value.find(setting => setting.wordId === 0);
+    if (randomize && randomize.score === 1) {
+      this.wordCounter = Math.floor((Math.random() * this.mergedWords$.value.length));
+      console.log(this.wordCounter, this.mergedWords$.value.length);
+    } else {
+      this.wordCounter -= 1;
+    }
     this.currentWord = this.words$.value[this.wordCounter].word;
     setTimeout(() => {
       this.currentTranslation = this.words$.value[this.wordCounter].definition;

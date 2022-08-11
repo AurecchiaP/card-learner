@@ -7,24 +7,40 @@ export interface ScoreRecord {
   score: number;
 }
 
-
 export class AppDB extends Dexie {
   scores!: Table<ScoreRecord, number>;
 
   constructor() {
     super('ngdexieliveQuery');
     this.version(3).stores({
-        scores: '[sheet+wordId]',
+      scores: '[sheet+wordId]',
     });
     this.on('populate', () => this.populate());
   }
 
   async populate() {
-    await db.scores.add({
-      sheet: 'japanese/jlpt-n5-score.txt',
-      wordId: 0,
-      score: 0
-    });
+    await db.scores.bulkAdd([
+      {
+        sheet: 'Japanese/JLPT-N5.txt',
+        wordId: 0,
+        score: 0,
+      },
+      {
+        sheet: 'Japanese/JLPT-N4.txt',
+        wordId: 0,
+        score: 0,
+      },
+      {
+        sheet: 'Japanese/JLPT-N3.txt',
+        wordId: 0,
+        score: 0,
+      },
+      {
+        sheet: 'settings',
+        wordId: 0,
+        score: 0,
+      },
+    ]);
   }
 }
 

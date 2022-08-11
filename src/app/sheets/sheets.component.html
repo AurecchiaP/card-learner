@@ -1,0 +1,14 @@
+<div class="card-container" *ngFor="let language of languages">
+  <mat-label class="section-title">{{ language.name }} </mat-label>
+  <mat-card class="sheet-card" *ngFor="let sheet of language.sheets">
+    <mat-card-content [routerLink]="['/learn-component/study-component', language.name, sheet.name]">
+      <mat-label>{{ sheet.name }}</mat-label>
+      <button mat-icon-button>
+        <mat-icon aria-label="chevron_right">chevron_right</mat-icon>
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<mat-divider></mat-divider>
+

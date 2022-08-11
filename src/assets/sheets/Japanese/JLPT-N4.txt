@@ -1,0 +1,536 @@
+上がる (agaru):to rise, to ascend
+挨拶 (aisatsu):greeting, salutation
+味 (aji):flavor, taste
+赤ちゃん (akachan):baby, infant​
+赤ん坊 (akanbou):baby, infant​
+案内 (annai):guidance, leading (the way)
+安心 (anshin):relief, peace of mind​
+安全 (anzen):safety
+浅い (asai):shallow, superficial​
+足音 (ashioto):sound of footsteps
+遊び (asobi):playing
+集る (atsumaru):to gather, to collect, to assemble​
+集める (atsumeru):to collect, to assemble, to gather​
+合う (au):to fit, to match, to suit
+謝る (ayamaru):to apologize
+倍 (bai):twice, double​, times
+番組 (bangumi):program (e.g. TV)
+場所 (basho):place, location
+別 (betsu):different, another
+美術館 (bijutsukan):art gallery, art museum​
+びっくり (bikkuri):to be surprised
+僕 (boku):I, me
+貿易 (boueki):trade (foreign)​:0
+部長 (buchou):head of a section or department
+ぶどう (budou):grape
+文学 (bungaku):literature
+文化 (bunka):culture, civilization
+文法 (bunpou):grammar
+血 (chi):blood
+力 (chikara):force, strength, vigor
+地理 (chiri):geography
+中学校 (chuugakkou):junior high school
+注意 (chuui):caution, being careful
+注射 (chuusha):injection
+駐車場 (chuushajou):parking lot
+大分 (daibu):considerably, greatly
+大学生 (daigakusei):university student
+大事 (daiji):important, serious, crucial​
+大体 (daitai):general, substantially
+だから (dakara):so, therefore
+駄目 (dame):no good, useless
+暖房 (danbou):(indoor) heating​
+男性 (dansei):man, male
+電報 (denpou):telegram
+電灯 (dentou):electric light​
+どんどん (dondon):rapidly, continuously
+泥棒 (dorobou):thief, burglar, robber, theft​
+動物園 (doubutsuen):zoo
+-道具 (dougu):tool, implement
+-枝 (eda):branch, bough: 0
+-遠慮 (enryo):constraint, restraint, modesty: 0
+選ぶ (erabu):to choose, to select: 0
+-不便 (fuben):inconvenience: 0
+-増える (fueru):to increase, to multiply: 0
+深い (fukai):deep, profound: 0
+復習 (fukushuu):review, revision: 0
+複雑 (fukuzatsu):complex, complicated: 0
+踏む (fumu):to step on, to tread on​: 0
+船 (fune):ship, boat: 0
+布団 (futon):futon: 0
+太る (futoru):to grow fat: 0
+普通 (futsuu):general, ordinary, usual​: 0
+頑張る (ganbaru):to hang on, to do one’s best: 0
+原因 (gen’in):cause, origin, source​: 0
+-下宿 (geshuku):boarding, lodging: 0
+技術 (gijutsu):technology, engineering​: 0
+ご馳走 (gochisou):feast, treating (someone)​: 0
+塵 (gomi):rubbish, trash, garbage: 0
+ご覧になる (goran ni naru):to see, to look, to watch​: 0
+ご主人 (goshujin):your husband: 0
+ご存じ (gozonji):knowing: 0
+具合 (guai):condition, state, health: 0
+軍人 (gunjin):military personnel, soldier: 0
+葉 (ha): leaf: 0
+拝見 (haiken):seeing, look at: 0
+歯医者 (haisha):dentist: 0
+始める (hajimeru):to start, to begin: 0
+はっきり (hakkiri):clearly, plainly: 0
+運ぶ (hakobu):to carry, to transport: 0
+花見 (hanami):cherry blossom viewing: 0
+反対 (hantai):opposition, resistance: 0
+払う (harau):to pay: 0
+発音 (hatsuon):pronunciation: 0
+林 (hayashi):woods, forest: 0
+恥ずかしい (hazukashii):shy, embarrassed: 0
+変 (hen):strange, odd, peculiar: 0
+返事 (henji):reply, answer, response​: 0
+酷い (hidoi):cruel, heartless: 0
+冷える (hieru):to grow cold: 0
+ひげ (hige):mustache, beard: 0
+非常に (hijou ni):very, extremely: 0
+光 (hikari):light, beam: 0
+光る (hikaru):to shine, to glitter: 0
+引き出し (hikidashi):drawer: 0
+引き出す (hikidasu):to pull out, to take out: 0
+引っ越す (hikkosu):to move (house): 0
+飛行場 (hikoujou):airfield, airport: 0
+開く (hiraku):to open, to undo​: 0
+拾う (hirou):to pick up: 0
+昼間 (hiruma):daytime, during the day: 0
+昼休み (hiruyasumi):lunch break: 0
+久しぶり (hisashiburi):it’s been a while: 0
+褒める (homeru):to praise, to admire: 0
+翻訳 (honyaku):translation: 0
+星 (hoshi):star: 0
+ほとんど (hotondo):mostly, nearly: 0
+法律 (houritsu):law: 0
+一度 (ichido):once, one time: 0
+医学 (igaku):medical science, medicine: 0
+苛める (ijimeru):to bully, to torment: 0
+以上 (ijou):not less than, beyond: 0
+以下 (ika):not exceeding, below: 0
+意見 (iken):opinion, view, comment​: 0
+生きる (ikiru):to live, to exist​: 0
+以内 (inai):within, inside of: 0
+田舎 (inaka):rural area, countryside: 0
+祈る (inoru):to pray, to wish​: 0
+一杯 (ippai):full, a lot: 0
+石 (ishi):stone, gem, jewel: 0
+急ぐ (isogu):to hurry, to rush: 0
+一生懸命 (isshoukenmei):very hard, with utmost effort: 0
+糸 (ito):thread, yarn, string: 0
+邪魔 (jama):hindrance, obstacle: 0
+字 (ji): character (i.e. kanji)​: 0
+時代 (jidai):period, epoch, era, age​: 0
+事故 (jiko):accident, incident, trouble​: 0
+事務所 (jimusho):office: 0
+神社 (jinja):Shinto shrine​: 0
+人口 (jinkou):population: 0
+地震 (jishin):earthquake: 0
+辞典 (jiten):dictionary: 0
+自由 (jiyuu):freedom, liberty: 0
+女性 (josei):woman, female: 0
+準備 (junbi):preparation, set up: 0
+十分 (juubun):plenty, enough, sufficient: 0
+住所 (juusho):address: 0
+壁 (kabe):wall, partition​: 0
+課長 (kachou):section manager, section chief​: 0
+帰り (kaeri):return, coming back​: 0
+変える (kaeru):to change, to alter: 0
+科学 (kagaku):science: 0
+鏡 (kagami):mirror, looking-glass​: 0
+海岸 (kaigan):coast, beach​: 0
+会議 (kaigi):meeting, conference: 0
+会議室 (kaigishitsu):conference room: 0
+会場 (kaijou):assembly hall, meeting place
+会話 (kaiwa):conversation: 0
+火事 (kaji):fire, conflagration​: 0
+掛ける (kakeru):to hang, to hoist, to raise: 0
+格好 (kakkou):shape, form, figure: 0
+構う (kamau):to mind, to care about: 0
+髪 (kami):hair (on the head)​: 0
+噛む (kamu):to bite, to chew, to gnaw​: 0
+家内 (kanai):(my) wife: 0
+必ず (kanarazu):always, without exception: 0
+悲しい (kanashii):sad, sorrowful​: 0
+金持ち (kanemochi):rich person​: 0
+考える (kangaeru):to think about: 0
+関係 (kankei):relation, relationship, connection
+彼女 (kanojo):she, her: 0
+簡単 (kantan):simple, easy, uncomplicated​: 0
+顔 (kao):face, look: 0
+彼 (kare):he, him: 0
+彼ら (karera):they, them: 0
+形 (katachi):form, shape, figure: 0
+硬い (katai):hard, solid, tough​: 0
+片付ける (katazukeru):to tidy up, to put in order: 0
+勝つ (katsu):to win, to gain victory​: 0
+乾く (kawaku):to get dry
+代わり (kawari):substitute, replacement: 0
+変わる (kawaru):to change, to be transformed: 0
+通う (kayou):to go back and forth between: 0
+飾る (kazaru):to decorate, to ornament: 0
+毛 (ke):hair, fur, wool​: 0
+怪我 (kega):injury, hurt: 0
+計画 (keikaku):plan, project: 0
+経験 (keiken):experience: 0
+警察 (keisatsu):police: 0
+経済 (keizai):economics, economy: 0
+見物 (kenbutsu):sightseeing, watching: 0
+喧嘩 (kenka):quarrel, brawl, fight: 0
+研究 (kenkyuu):study, research, investigation​: 0
+研究室 (kenkyuushitsu):laboratory: 0
+消しゴム (keshigomu):eraser: 0
+景色 (keshiki):scenery, landscape​
+気 (ki):spirit, mind, heart​: 0
+厳しい (kibishii):severe, strict, rigid: 0
+気分 (kibun):feeling, mood: 0
+機会 (kikai):chance, opportunity​
+危険 (kiken):danger, peril, hazard​: 0
+聞こえる (kikoeru):to be heard, to be audible​: 0
+決る (kimaru):to be decided, to be settled​: 0
+決める (kimeru):to decide, to choose: 0
+君 (kimi):you, buddy, pal: 0
+気持ち (kimochi):feeling, sensation, mood​: 0
+近所 (kinjo):neighborhood: 0
+季節 (kisetsu):season: 0
+汽車 (kisha):train: 0
+規則 (kisoku):rule, regulation​
+きっと(kitto):surely, undoubtedly: 0
+心 (kokoro):mind, heart, spirit​: 0
+国内 (kokunai):internal, domestic​: 0
+国際 (kokusai):international: 0
+細かい (komakai):small, fine, minute: 0
+米 (kome):rice: 0
+込む (komu):to be crowded, to be packed​: 0
+今度 (kondo):this time, next time: 0
+この間 (kono aida):the other day, lately: 0
+この頃 (kono goro):recently, nowadays: 0
+今夜 (kon’ya):this evening, tonight​: 0
+これから (kore kara):after this: 0
+故障 (koshou):breakdown, out of order: 0
+答え (kotae):answer, reply, response: 0
+事 (koto):thing, matter: 0
+小鳥 (kotori):small bird, songbird​: 0
+校長 (kouchou):principal, headmaster​: 0
+講堂 (koudou):auditorium, lecture hall​
+郊外 (kougai):suburb, outskirts​
+講義 (kougi):lecture
+工業 (kougyou):(manufacturing) industry​
+工場 (koujou):factory, plant, mill: 0
+高校 (koukou):senior high school, high school​: 0
+高校生 (koukousei):senior high school student​: 0
+公務員 (koumuin):government worker, public servant: 0
+交通 (koutsuu):traffic, transportation: 0
+怖い (kowai):scary, frightening: 0
+壊れる (kowareru):to be broken: 0
+壊す (kowasu):to break, to destroy: 0
+首 (kubi):neck: 0
+雲 (kumo):cloud: 0
+比べる (kuraberu):to compare: 0
+暮れる (kureru):to get dark, to grow dark​: 0
+草 (kusa):grass, weed, herb: 0
+空気 (kuuki):air, atmosphere​: 0
+空港 (kuukou):airport: 0
+客 (kyaku):guest, visitor​: 0
+教育 (kyouiku):education, schooling
+教会 (kyoukai):church: 0
+興味 (kyoumi):interest, curiosity: 0
+競争 (kyousou):competition, contest
+急 (kyuu):sudden, abrupt, unexpected​: 0
+急行 (kyuukou):moving at high speed​: 0
+間違える (machigaeru):to make a mistake: 0
+参る (mairu):to go, to come (humble): 0
+真面目 (majime):seriousness, earnestness: 0
+負ける (makeru): to lose, to be defeated: 0
+漫画 (manga):cartoon, comic: 0
+間に合う (maniau): to be in time for: 0
+真中 (mannaka):middle, center: 0
+または (matawa):or, otherwise
+周り (mawari):surroundings, neighbourhood
+回る (mawaru):to turn, to revolve: 0
+まず (mazu):first of all: 0
+召し上がる (meshiagaru):to eat, to drink
+珍しい (mezurashii):unusual, rare, curious​: 0
+見える (mieru): to be seen, to be in sight: 0
+港 (minato): harbor, port: 0
+見つかる (mitsukaru):to be found
+見つける (mitsukeru):to discover, to find: 0
+湖 (mizuumi): lake: 0
+もちろん (mochiron):of course, certainly: 0
+戻る (modoru): to return, to go back: 0
+森 (mori):forest: 0
+もし (moshi):if, in case: 0
+申し上げる (moushiageru):to say, to tell (humble)
+申す (mousu):to say, to be called (humble)
+もうすぐ (mousugu): soon, shortly
+迎える (mukaeru):to go out to meet
+昔 (mukashi):olden days, former: 0
+向かう (mukau): to face, to go towards
+無理 (muri):unreasonable, impossible: 0
+虫 (mushi):insect, bug: 0
+息子 (musuko):son: 0
+娘 (musume):(my) daughter, girl: 0
+投げる (nageru):to throw, to cast away: 0
+中々 (nakanaka):very, considerably
+泣く (naku):to cry, to weep: 0
+無くなる (nakunaru):to be lost, to be missing
+亡くなる (nakunaru): to die
+治る (naoru):to be cured: 0
+直る (naoru):to get mended: 0
+直す (naosu):to fix, to repair: 0
+慣れる (nareru):to get used to:0
+なるほど (naru hodo):I see!, That’s right!: 0
+鳴る (naru):to sound, to ring
+寝坊 (nebou):sleeping in late
+値段 (nedan):price, cost
+眠い (nemui):sleepy, drowsy: 0
+眠る (nemuru):to sleep: 0
+熱心 (nesshin):zeal, enthusiasm
+熱 (netsu):heat: 0
+苦い (nigai):bitter: 0
+逃げる (nigeru): to escape, to run away: 0
+二階建て (nikaidate):two-storied building​: 0
+日記 (nikki):diary, journal: 0
+人形 (ningyou): doll: 0
+匂い (nioi):scent, smell: 0
+似る (niru):to resemble, to look like
+喉 (nodo): throat: 0
+残る (nokoru):to remain, to be left
+乗り換える (norikaeru):to transfer (trains), to change (bus, train)​
+乗り物 (norimono): vehicle, conveyance
+濡れる (nureru): to get wet
+塗る (nuru):to paint, to plaster
+盗む (nusumu):to steal​
+入学 (nyuugaku): entry to school or university
+入院 (nyuuin):hospitalization
+落ちる (ochiru): to fall down, to drop
+踊り (odori):dance: 0
+驚く (odoroku): to be surprised, to be astonished​
+踊る (odoru):to dance: 0
+お祝い (oiwai):congratulations, celebration
+お嬢さん (ojousan):(your) daughter, young lady
+可笑しい (okashii):funny, strange, odd
+行う (okonau):to perform, to do:0
+怒る (okoru):to get angry, to get mad​
+起こす (okosu):to raise, to wake, to cause
+億 (oku):hundred million
+屋上 (okujou):rooftop
+遅れる (okureru):to be late, to be delayed
+贈り物 (okurimono):present, gift
+送る (okuru):to send, to dispatch
+お祭り (omatsuri): festival, feast, carnival​: 0
+お見舞い (omimai): calling on someone who is ill
+お土産 (omiyage): present, souvenir​
+玩具 (omocha):toy, plaything
+思い出す (omoidasu):to recall, to remember
+表 (omote):surface, face, front, outside
+思う (omou):to think, to consider
+お礼 (orei):thanks, gratitude
+折れる (oreru):to break, to be broken:0
+折る (oru):to break, to fracture
+押し入れ (oshiire): closet
+仰る (ossharu):to say, to speak
+お宅 (otaku):your house, your home, your family
+音 (oto): sound, noise: 0
+落とす (otosu): to drop, to let fall
+お釣り (otsuri):change (for a purchase):0
+夫 (otto): husband
+終わり (owari): the end
+親 (oya): parent, parents
+歴史 (rekishi): history
+連絡 (renraku): to contact, to get in touch​
+利用 (riyou):use, utilization
+理由 (riyuu):reason, motive
+留守 (rusu):absence, being away from home​
+旅館 (ryokan):Japanese-style lodging
+両方 (ryouhou): both, both sides
+寂しい (sabishii): lonely, lonesome, solitary: 0
+下がる (sagaru):to come down, to get lower:0
+探す (sagasu):to search, to look for
+下げる (sageru): to hang, to lower:0
+最後 (saigo):last, final, latest: 0
+最近 (saikin):most recent, these days: 0
+最初 (saisho):beginning, first: 0
+坂 (saka): slope, hill:0
+盛ん (sakan):popular, prosperous:0
+さっき (sakki): some time ago, just now: 0
+昨夜 (sakuya):last night:0
+産業 (sangyou):industry:0
+さ来月 (saraigetsu):month after next​
+さ来週 (saraishuu):week after next​
+差し上げる (sashiageru):to give, to offer:0
+騒ぐ (sawagu):to make noise, to rustle:0
+触る (sawaru):to touch, to feel​:0
+政治 (seiji):politics, government​:0
+生活 (seikatsu): living, life:0
+生産 (seisan):production, manufacture:0
+西洋 (seiyou):the west, Western countries​:0
+世界 (sekai):the world, society:0
+席 (seki): seat:0
+線 (sen): line, stripe, stria​:0
+背中 (senaka):back (of body)​:0
+先輩 (senpai):senior (at work or school):0
+戦争 (sensou):war:0
+説明 (setsumei): explanation, exposition​:0
+世話 (sewa):looking after, help:0
+社長 (shachou): company president:0
+社会 (shakai):society, public, community:0
+市 (shi): city:0
+試合 (shiai):match, game:0
+しばらく(shibaraku):little while, short while:0
+叱る (shikaru):to scold:0
+仕方 (shikata): way, method, means:0
+試験 (shiken):examination, exam, test​:0
+しっかり (shikkari):tightly, firmly, securely
+島 (shima):island:0
+市民 (shimin):citizen, citizenry, public​:0
+品物 (shinamono): goods, article, thing​:0
+新聞社 (shinbunsha):newspaper company:0
+心配 (shinpai): worry, concern, anxiety:0
+親切 (shinsetsu): kindness, gentleness​:0
+失敗 (shippai):failure, mistake, blunder​:0
+調べる (shiraberu):to examine, to investigate:0
+知らせる (shiraseru):to notify, to advise, to inform​:0
+下着 (shitagi): underwear:0
+支度 (shitaku): preparation, arrangements​:0
+失礼 (shitsurei):discourtesy, impoliteness​:0
+食事 (shokuji): meal:0
+食料品 (shokuryouhin):foodstuff, groceries​:0
+小学校 (shougakkou):primary school:0
+紹介 (shoukai): introduction, presentation:0
+将来 (shourai):future, prospects:0
+小説 (shousetsu): novel, (short) story​:0
+招待 (shoutai): invitation:0
+趣味 (shumi):hobby, pastime:0
+出発 (shuppatsu): departure:0
+出席 (shusseki):attendance, presence:0
+習慣 (shuukan): habit, custom:0
+祖母 (sobo):grandmother:0
+育てる (sodateru):to raise, to rear, to bring up:0
+祖父 (sofu):grandfather:0
+そんな (sonna):such:0
+それで (sore de):and, thereupon:0
+それほど (sore hodo):to that degree:0
+それに (sore ni): besides, in addition:0
+そろそろ (sorosoro):soon, momentarily:0
+卒業 (sotsugyou): graduation:0
+相談 (soudan):consultation, discussion:0
+素晴らしい (subarashii): wonderful, splendid:0
+滑る (suberu):to glide, to slide:0
+過ぎる (sugiru): to pass through, to pass by:0
+凄い (sugoi):terrible, dreadful​, amazing:0
+水道 (suidou):water supply, water service:0
+水泳 (suiei):swimming:0
+すっかり (sukkari):all, completely, totally:0
+空く (suku):to become empty:0
+隅 (sumi): corner, nook, recess​:0
+済む (sumu):to finish, to end:0
+砂 (suna):sand, grit​:0
+進む (susumu):to advance, to go forward​:0
+捨てる (suteru): to throw away, to cast away:0
+数学 (suugaku): mathematics:0
+正しい (tadashii): right, correct:0
+退院 (taiin):discharge from hospital​:0
+大抵 (taitei):mostly, ordinarily:0
+たまに (tama ni): occasionally, once in a while​:0
+棚 (tana): shelf, shelves:0
+楽しみ (tanoshimi):enjoyment, pleasure:0
+楽む (tanoshimu): to enjoy (oneself)​:0
+倒れる (taoreru): to fall, to collapse:0
+足りる (tariru): to be sufficient, to be enough​:0
+確か (tashika): sure, certain, positive:0
+足す (tasu):to add, to top up:0
+多数 (tasuu):large number, many​:0
+畳 (tatami):tatami mat:0
+立てる (tateru): to stand up:0
+建てる (tateru): to build, to construct​:0
+訪ねる (tazuneru): to visit, to call on:0
+尋ねる (tazuneru): to ask, to enquire:0
+手袋 (tebukuro): glove, mitten, mitt​:0
+丁寧 (teinei):polite, courteous, careful​:0
+適当 (tekitou): suitable, proper, fit:0
+点 (ten):point, dot, spot:0
+天 (ten):sky:0
+天気予報 (tenkiyohou):weather forecast:0
+展覧会 (tenrankai):exhibition:0
+店員 (ten’in):shop assistant, clerk:0
+寺 (tera): temple (Buddhist)​:0
+手伝う (tetsudau): to help, to assist, to aid​:0
+届ける (todokeru): to deliver, to send:0
+特急 (tokkyuu): limited express:0
+床屋 (tokoya):barbershop, barber​:0
+特に (toku ni): particularly, especially​:0
+特別 (tokubetsu): special:0
+泊まる (tomaru): to stay at (e.g. hotel)​:0
+遠く (tooku):far away, distant:0
+通る (tooru):to go by, to go past:0
+取り替える (torikaeru):to exchange, to replace​:0
+とうとう (toutou): finally, at:0
+都合 (tsugou):circumstances, convenience​:0
+捕まえる (tsukamaeru):to catch, to arrest:0
+月 (tsuki):moon:0
+付く (tsuku):to be attached, to adhere:0
+妻 (tsuma):wife:0
+連れる (tsureru):to lead, to take (a person)​:0
+釣る (tsuru):to fish, to lure in:0
+伝える (tsutaeru):to convey, to report:0
+包む (tsutsumu): to wrap up, to tuck in:0
+続ける (tsuzukeru):to continue, to keep up:0
+続く (tsuzuku): to continue, to last, to go on​:0
+腕 (ude): arm:0
+植える (ueru):to plant, to grow, to raise​​:0
+動く (ugoku):to move, to stir, to shift:0
+受ける (ukeru): to receive, to get​:0
+受付 (uketsuke): reception (desk), information desk​:0
+旨い (umai):delicious, appetizing:0
+運動 (undou):exercise, motion:0
+運転 (unten):operation, operating:0
+運転手 (untenshu): driver, chauffeur​:0
+裏 (ura): reverse side, rear, back:0
+嬉しい (ureshii): happy, glad:0
+売り場 (uriba): sales floor, counter (in shop)​:0
+嘘 (uso): lie, falsehood:0
+打つ (utsu):to hit, to strike, to knock:0
+美しい (utsukushii):beautiful, lovely​:0
+移る (utsuru):to move (house), to transfer (department)​:0
+写す (utsusu):to transcribe, to duplicate:0
+別れる (wakareru): to part, to separate:0
+沸かす (wakasu): to boil, to heat​:0
+訳 (wake):reason, cause:0
+沸く (waku):to grow hot, to boil:0
+笑う (warau):to laugh:0
+割れる (wareru): to break, to be smashed:0
+割合 (wariai):rate, ratio:0
+忘れ物 (wasuremono):something forgotten:0
+やはり (yahari): as expected:0
+焼ける (yakeru): to be roasted:0
+役に立つ (yaku ni tatsu): to be helpful, to be useful​:0
+焼く (yaku):to burn, to roast, to bake:0
+約束 (yakusoku): promise, agreement:0
+止める (yameru): to stop:0
+止む (yamu):to cease, to stop:0
+優しい (yasashii): tender, kind, gentle:0
+痩せる (yaseru): to become thin, to slim:0
+やっと (yatto): at last:0
+柔らかい (yawarakai): soft, tender:0
+汚れる (yogoreru):to get dirty:0
+喜ぶ (yorokobu): to be delighted:0
+寄る (yoru):to approach, to drop by:0
+予習 (yoshuu):preparation for a lesson​:0
+予定 (yotei):plans, arrangement:0
+用 (you):business, task, errand:0
+用意 (youi):preparation, arrangements:0
+用事 (youji):tasks, things to do:0
+予約 (yoyaku):reservation, appointment:0
+湯 (yu): hot water:0
+指 (yubi): finger, toe:0
+指輪 (yubiwa):(finger) ring:0
+夢 (yume):dream:0
+輸入 (yunyuu):import, importation:0
+揺れる (yureru):to shake, to sway:0
+輸出 (yushutsu): export:0
+夕食 (yuushoku): evening meal, dinner​:0
+残念 (zannen):deplorable, regret, bad luck:0
+随分 (zuibun):very, extremely, surprisingly:0
