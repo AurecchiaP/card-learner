@@ -1,0 +1,14 @@
+.card {
+  margin: 1em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.card-container {
+  display: flex;
+}
+
+.mat-card-content span {
+  margin-left: 1em;
+}
