@@ -40,6 +40,11 @@ export class AppDB extends Dexie {
         wordId: 0,
         score: 0,
       },
+      {
+        sheet: 'settings',
+        wordId: 1,
+        score: 0,
+      },
     ]);
   }
 }

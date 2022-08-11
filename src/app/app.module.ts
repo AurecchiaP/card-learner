@@ -17,7 +17,6 @@ import { PortalModule } from '@angular/cdk/portal';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MenuComponent } from './menu/menu.component';
 import { StudyComponent } from './study/study.component';
 import { CheckCardsComponent } from './check-cards/check-cards.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -35,7 +34,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HomeComponent,
     LearnComponent,
     SettingsComponent,
-    MenuComponent,
     StudyComponent,
     CheckCardsComponent,
     SquareComponent,

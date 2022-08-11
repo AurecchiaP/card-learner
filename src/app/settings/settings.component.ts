@@ -10,6 +10,9 @@ import { liveQuery } from 'dexie';
   styleUrls: ['./settings.component.scss'],
 })
 export class SettingsComponent {
+
+  settingLabels = ['Randomize order', 'Dark theme']
+
   checked: boolean | undefined;
   subscription = new Subscription();
   settings$ = new BehaviorSubject<ScoreRecord[]>([]);
@@ -30,6 +33,7 @@ export class SettingsComponent {
     );
 
     this.settings$.subscribe((settings) => {
+      console.log(settings)
       settings.forEach((setting) => {
         this.settingsForm.addControl(
           setting.wordId.toString(),
@@ -42,14 +46,14 @@ export class SettingsComponent {
   ngOnInit(): void {}
 
   update(formControl: number) {
-    console.log(this.settingsForm.get(formControl.toString())?.value);
-    this.settingsForm.get(formControl.toString())?.value ? this.updateRecord(1) : this.updateRecord(0);
+    console.log(formControl)
+    this.settingsForm.get(formControl.toString())?.value ? this.updateRecord(formControl, 1) : this.updateRecord(formControl, 0);
   }
 
-  async updateRecord(score: number) {
+  async updateRecord(wordId: number, score: number) {
     await db.scores.put({
       sheet: 'settings',
-      wordId: 0,
+      wordId: wordId,
       score: score,
     });
   }

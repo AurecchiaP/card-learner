@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
 import { Component, VERSION } from '@angular/core';
@@ -13,7 +13,9 @@ import { db, ScoreRecord } from '../app/db';
 })
 export class AppComponent {
   title = 'Card Learner';
-  scores$ = liveQuery(() => db.scores.toArray());
+  subscription = new Subscription();
+  settings$ = new BehaviorSubject<ScoreRecord[]>([]);
+  darkMode = false;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -22,6 +24,19 @@ export class AppComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {
+    this.subscription.add(
+      liveQuery(() =>
+        db.scores
+          .where({
+            sheet: 'settings',
+          })
+          .toArray()
+      ).subscribe(settings => {
+        this.darkMode = settings.find(settings=> settings.wordId === 1)?.score === 1;
+        console.log("daie", settings)
+      })
+
+    );
   }
 }
 

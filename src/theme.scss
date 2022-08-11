@@ -23,10 +23,26 @@ $dark-theme: mat.define-dark-theme((
  )
 ));
 
-.dark-theme {
-  @include mat.core-theme($dark-theme);
-  @include mat.all-component-themes($dark-theme);
+// Apply the dark theme by default
+@include mat.core-theme($dark-theme);
+@include mat.button-theme($dark-theme);
+
+// Apply the light theme only when the `.my-light-theme` CSS class is applied
+// to an ancestor element of the components (such as `body`).
+.my-light-theme {
+ @include mat.core-color($light-theme);
+ @include mat.button-color($light-theme);
 }
+
+// Set custom background color
+$custom-background-color: map_get($mat-blue-grey, 50);
+
+// -or- Can set colour by hex value too
+$custom-background-color: #628cc9;
+
+$background: map-get($theme, background);
+$background: map_merge($background, (background: $custom-background-color));
+$theme: map_merge($theme, (background: $background));
 
 /* You can add global styles to this file, and also import other style files */
 
