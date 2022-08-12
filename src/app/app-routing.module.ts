@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
 import { StudyComponent } from './study/study.component';
 import { SheetsComponent } from './sheets/sheets.component';
@@ -10,7 +9,7 @@ import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   {
-    path: 'learn-component',
+    path: 'learn',
     children: [
       {
         path: '',
@@ -18,24 +17,24 @@ const routes: Routes = [
         data: { breadcrumb: { alias: 'LearnComponent' } },
       },
       {
-        path: 'study-component/:language/:sheet',
+        path: 'study/:language/:sheet',
         component: StudyComponent,
         data: { breadcrumb: { alias: 'StudyComponent' } },
       },
       {
-        path: 'sheets-component',
+        path: 'sheets',
         component: SheetsComponent,
         data: { breadcrumb: { alias: 'SheetsComponent' } },
       },
       {
-        path: 'check-cards-component',
+        path: 'check-cards',
         component: CheckCardsComponent,
         data: { breadcrumb: { alias: 'checkCardsComponent' } },
       },
     ],
   },
   { path: 'settings-component', component: SettingsComponent },
-  { path: '**', component: HomeComponent },
+  { path: '**', component: LearnComponent },
 ];
 
 @NgModule({

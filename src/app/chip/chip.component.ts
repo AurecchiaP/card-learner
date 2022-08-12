@@ -1,13 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-square',
-  templateUrl: './square.component.html',
-  styleUrls: ['./square.component.scss'],
+  selector: 'app-chip',
+  templateUrl: './chip.component.html',
+  styleUrls: ['./chip.component.scss'],
 })
-export class SquareComponent implements OnInit {
+export class ChipComponent implements OnInit {
   @Input() value?: number;
+  @Input() number?: number;
+  @Input() label?: string;
   @Input() active?: boolean;
+
+  @Output() clicked : EventEmitter<number> = new EventEmitter<number>();
 
   rgb = 'rgb(120,120,120)';
 
@@ -31,5 +35,9 @@ export class SquareComponent implements OnInit {
     if (this.value) {
       this.rgb = this.colorMap[this.value];
     }
+  }
+
+  onChipClicked() {
+    this.clicked.emit(this.number);
   }
 }

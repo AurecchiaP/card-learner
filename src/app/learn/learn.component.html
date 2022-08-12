@@ -1,47 +1,34 @@
-Cards
+Vocabulary
 <div class="card-container">
-  <mat-card class="card">
-    <mat-card-content routerLink="/learn-component/sheets-component">
-      <span>Study</span>
-      <button mat-icon-button>
-        <mat-icon aria-label="chevron_right">chevron_right</mat-icon>
-      </button>
-    </mat-card-content>
-  </mat-card>
+  <app-card-button
+    routerLink="/learn/sheets"
+    label="Study"
+  ></app-card-button>
 
-  <mat-card class="card disabled">
-    <mat-card-content routerLink="/check-cards-component">
-      <mat-label>Manage cards</mat-label>
-      <button mat-icon-button>
-        <mat-icon aria-label="chevron_right">chevron_right</mat-icon>
-      </button>
-    </mat-card-content>
-  </mat-card>
+  <app-card-button
+    routerLink="/check-cards"
+    label="Manage cards"
+    disabled="true"
+  ></app-card-button>
 </div>
 <mat-divider></mat-divider>
 
-Grammar
+Kanji
 <div class="card-container">
-  <mat-card class="card disabled">
-    <mat-card-content routerLink="/learn-component/study-component">
-      <span>Lectures</span>
-      <button mat-icon-button>
-        <mat-icon aria-label="chevron_right">chevron_right</mat-icon>
-      </button>
-    </mat-card-content>
-  </mat-card>
+  <app-card-button
+    routerLink="/study"
+    label="Study"
+    disabled="true"
+  ></app-card-button>
 </div>
 
 <mat-divider></mat-divider>
 
-Other
+Hiragana & Katakana
 <div class="card-container">
-  <mat-card class="card disabled">
-    <mat-card-content routerLink="/learn-component/study-component">
-      <span>Study</span>
-      <button mat-icon-button>
-        <mat-icon aria-label="chevron_right">chevron_right</mat-icon>
-      </button>
-    </mat-card-content>
-  </mat-card>
+  <app-card-button
+    routerLink="/study"
+    label="Study"
+    disabled="true"
+  ></app-card-button>
 </div>

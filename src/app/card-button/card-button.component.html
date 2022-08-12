@@ -1,0 +1,8 @@
+<mat-card class="card" [ngClass]="disabled ? 'disabled' : ''"  [routerLink]="routerLink">
+    <mat-card-content>
+      <span> {{label}} </span>
+      <button mat-icon-button>
+        <mat-icon aria-label="card button icon">chevron_right</mat-icon>
+      </button>
+    </mat-card-content>
+  </mat-card>

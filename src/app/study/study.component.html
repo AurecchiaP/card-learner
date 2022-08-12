@@ -1,26 +1,49 @@
 <div *ngIf="(loaded$ | async) === false" class="loading-container">
   <mat-spinner></mat-spinner>
 </div>
-<div *ngIf="mergedWords$ | async as mergedWords" class="squares">
-  <div *ngFor="let word of mergedWords; let i = index">
-    <app-square [value]="word.score" [active]="i == wordCounter"></app-square>
+
+<div *ngIf="chipListWords$ | async as chipListWords" class="chips">
+  <div *ngFor="let word of chipListWords; let i = index">
+    <app-chip
+      [value]="word.score"
+      [label]="word.word"
+      [number]="word.id"
+      [active]="i == wordCounter"
+      (clicked)="goToCard($event)"
+    ></app-chip>
   </div>
 </div>
+
+<mat-paginator
+  #paginator
+  [length]="100"
+  [pageSizeOptions]="[10, 25, 50]"
+  aria-label="Select page"
+>
+</mat-paginator>
 
 <div *ngIf="mergedWords$ | async as mergedWords" class="card-container">
   <div class="flip-card">
     <div class="flip-card-inner" [ngClass]="{ flipped: !flipped }">
       <mat-card class="flip-card-front">
         <div class="card-header">
-          <div class="vertical-center"> {{ currentScore }} / 9</div>
+          <h3 class="vertical-center">{{ currentScore }} / 9</h3>
           <div></div>
           <div></div>
           <div></div>
           <div>
-            <button mat-icon-button [disabled]="wordCounter === 0" (click)="previous()">
+            <button
+              mat-icon-button
+              [disabled]="wordCounter === 0"
+              (click)="previous()"
+            >
               <mat-icon aria-label="fully_known">arrow_back</mat-icon>
             </button>
-            <button mat-icon-button [disabled]="wordCounter === mergedWords.length" (click)="next()">
+            <button
+              mat-icon-button
+              [disabled]="wordCounter === mergedWords.length"
+              (click)="next()"
+            >
               <mat-icon aria-label="fully_known">arrow_forward</mat-icon>
             </button>
           </div>

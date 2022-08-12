@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
 import { FormControl, FormGroup } from '@angular/forms';
-import { db, ScoreRecord } from '../../app/db';
+import { db, SettingRecord } from '../../app/db';
 import { liveQuery } from 'dexie';
 
 @Component({
@@ -9,13 +9,10 @@ import { liveQuery } from 'dexie';
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.scss'],
 })
-export class SettingsComponent {
-
-  settingLabels = ['Randomize order', 'Dark theme']
-
+export class SettingsComponent implements OnDestroy {
   checked: boolean | undefined;
   subscription = new Subscription();
-  settings$ = new BehaviorSubject<ScoreRecord[]>([]);
+  settings$ = new BehaviorSubject<SettingRecord[]>([]);
 
   isLoaded$ = new BehaviorSubject<boolean>(false);
 
@@ -23,44 +20,41 @@ export class SettingsComponent {
 
   constructor() {
     this.subscription.add(
-      liveQuery(() =>
-        db.scores
-          .where({
-            sheet: 'settings',
-          })
-          .toArray()
-      ).subscribe(this.settings$)
+      liveQuery(() => db.settings.toArray()).subscribe(this.settings$)
     );
 
-    this.settings$.subscribe((settings) => {
-      console.log(settings)
-      settings.forEach((setting) => {
-        this.settingsForm.addControl(
-          setting.wordId.toString(),
-          new FormControl(setting.score === 1)
-        );
-      });
-    });
+    this.subscription.add(
+      this.settings$.subscribe((settings) => {
+        settings.forEach((setting) => {
+          this.settingsForm.addControl(
+            setting.setting,
+            new FormControl(setting.value)
+          );
+        });
+      })
+    );
   }
 
-  ngOnInit(): void {}
-
-  update(formControl: number) {
-    console.log(formControl)
-    this.settingsForm.get(formControl.toString())?.value ? this.updateRecord(formControl, 1) : this.updateRecord(formControl, 0);
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
-  async updateRecord(wordId: number, score: number) {
-    await db.scores.put({
-      sheet: 'settings',
-      wordId: wordId,
-      score: score,
+  update(formControl: string) {
+    this.settingsForm.get(formControl)?.value
+      ? this.updateSetting(formControl, 1)
+      : this.updateSetting(formControl, 0);
+  }
+
+  async updateSetting(setting: string, value: number | boolean) {
+    await db.settings.put({
+      setting,
+      value,
     });
   }
 
   async clearData() {
-    await db.delete().then(()=> {
+    await db.delete().then(() => {
       location.reload();
-    })
+    });
   }
 }

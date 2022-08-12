@@ -1,62 +1,64 @@
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgModule } from '@angular/core';
+import { PortalModule } from '@angular/cdk/portal';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-
+import { AppRoutingModule } from './app-routing.module';
+import { CardButtonComponent } from './card-button/card-button.component';
+import { CheckCardsComponent } from './check-cards/check-cards.component';
+import { ChipComponent } from './chip/chip.component';
 import { LearnComponent } from './learn/learn.component';
 import { SettingsComponent } from './settings/settings.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { PortalModule } from '@angular/cdk/portal';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { StudyComponent } from './study/study.component';
-import { CheckCardsComponent } from './check-cards/check-cards.component';
-import { HttpClientModule } from '@angular/common/http';
-import { SquareComponent } from './square/square.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { SheetsComponent } from './sheets/sheets.component';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { StudyComponent } from './study/study.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    CardButtonComponent,
+    CheckCardsComponent,
+    ChipComponent,
     LearnComponent,
     SettingsComponent,
-    StudyComponent,
-    CheckCardsComponent,
-    SquareComponent,
     SheetsComponent,
+    StudyComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatButtonModule,
-    PortalModule,
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
     LayoutModule,
+    MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatListModule,
+    MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
-    MatListModule,
-    HttpClientModule,
     MatSlideToggleModule,
-    FormsModule,
+    MatToolbarModule,
+    PortalModule,
     ReactiveFormsModule,
-    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent],

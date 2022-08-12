@@ -3,17 +3,25 @@ import Dexie, { Table } from 'dexie';
 
 export interface ScoreRecord {
   sheet: string;
-  wordId: number;
-  score: number;
+  id: number;
+  value: number;
 }
+
+export interface SettingRecord {
+  setting: string;
+  value: boolean | number;
+}
+
 
 export class AppDB extends Dexie {
   scores!: Table<ScoreRecord, number>;
+  settings!: Table<SettingRecord, number>;
 
   constructor() {
     super('ngdexieliveQuery');
     this.version(3).stores({
-      scores: '[sheet+wordId]',
+      scores: '[sheet+id]',
+      settings: '[setting]'
     });
     this.on('populate', () => this.populate());
   }
@@ -22,28 +30,28 @@ export class AppDB extends Dexie {
     await db.scores.bulkAdd([
       {
         sheet: 'japanese/jlpt-n5-score.txt',
-        wordId: 0,
-        score: 0,
+        id: 0,
+        value: 0,
       },
       {
         sheet: 'japanese/jlpt-n4-score.txt',
-        wordId: 0,
-        score: 0,
+        id: 0,
+        value: 0,
       },
       {
         sheet: 'japanese/jlpt-n3-score.txt',
-        wordId: 0,
-        score: 0,
+        id: 0,
+        value: 0,
+      },
+    ]);
+    await db.settings.bulkAdd([
+      {
+        setting: 'randomize',
+        value: false,
       },
       {
-        sheet: 'settings',
-        wordId: 0,
-        score: 0,
-      },
-      {
-        sheet: 'settings',
-        wordId: 1,
-        score: 0,
+        setting: 'darkTheme',
+        value: false,
       },
     ]);
   }
