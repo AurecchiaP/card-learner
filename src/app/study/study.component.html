@@ -52,13 +52,13 @@
           <div class="definition">{{ currentWord }}</div>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-icon-button [disabled]="flipped" (click)="correct()">
+          <button mat-icon-button [disabled]="flipped" [ngClass]="flipped ? 'disabled-button' : ''" (click)="correct()">
             <mat-icon aria-label="known">done</mat-icon>
           </button>
-          <button mat-icon-button [disabled]="flipped" (click)="learned()">
+          <button mat-icon-button [disabled]="flipped" [ngClass]="flipped ? 'disabled-button' : ''" (click)="learned()">
             <mat-icon aria-label="fully_known">done_all</mat-icon>
           </button>
-          <button mat-icon-button [disabled]="flipped" (click)="wrong()">
+          <button mat-icon-button [disabled]="flipped" [ngClass]="flipped ? 'disabled-button' : ''" (click)="wrong()">
             <mat-icon aria-label="close">close</mat-icon>
           </button>
         </mat-card-actions>
