@@ -101,7 +101,6 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
         withLatestFrom(this.scores$),
         take(1),
         map(([data, scores]): any => {
-          console.log('in files');
           let fileReader = new FileReader();
           return new Promise((resolve, reject) => {
             fileReader.onerror = () => {
@@ -150,9 +149,7 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
                 score: scores.find((score) => score.id == word.id)?.value || 0,
               } as EntryRecord;
             });
-            console.log('adad', this.currentWord === undefined)
             if (this.currentWord === undefined) {
-              console.log('hithiscurrentword')
             let sortByLeastKnown = this.settings$.value.find(
               (setting) => setting.setting === 'order by least known'
             )?.value;
@@ -170,7 +167,6 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
               this.currentWord = firstWord.word;
               this.currentTranslation = firstWord.definition;
               this.currentScore = firstWord.score;
-              console.log(firstWord);
             }
             return mergedWords;
           })
