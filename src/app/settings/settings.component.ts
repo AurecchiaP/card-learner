@@ -41,8 +41,8 @@ export class SettingsComponent implements OnDestroy {
 
   update(formControl: string) {
     this.settingsForm.get(formControl)?.value
-      ? this.updateSetting(formControl, 1)
-      : this.updateSetting(formControl, 0);
+      ? this.updateSetting(formControl, true)
+      : this.updateSetting(formControl, false);
   }
 
   async updateSetting(setting: string, value: number | boolean) {

@@ -31,8 +31,9 @@ export class AppComponent implements OnDestroy {
           db.settings
             .toArray()
       ).subscribe((settings) => {
+        console.log(settings)
         this.darkMode =
-          settings.find((setting) => setting.setting === 'randomize')?.value ===
+          settings.find((setting) => setting.setting === 'darkMode')?.value ===
           true;
       })
     );

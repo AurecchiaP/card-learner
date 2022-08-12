@@ -3,12 +3,12 @@
 </div>
 
 <div *ngIf="chipListWords$ | async as chipListWords" class="chips">
-  <div *ngFor="let word of chipListWords; let i = index">
+  <div *ngFor="let word of chipListWords">
     <app-chip
       [value]="word.score"
       [label]="word.word"
       [number]="word.id"
-      [active]="i == wordCounter"
+      [active]="word.id == wordId"
       (clicked)="goToCard($event)"
     ></app-chip>
   </div>
@@ -34,15 +34,15 @@
           <div>
             <button
               mat-icon-button
-              [disabled]="wordCounter === 0"
-              (click)="previous()"
+              [disabled]="wordId === 0"
+              (click)="previousCard()"
             >
               <mat-icon aria-label="fully_known">arrow_back</mat-icon>
             </button>
             <button
               mat-icon-button
-              [disabled]="wordCounter === mergedWords.length"
-              (click)="next()"
+              [disabled]="wordId === mergedWords.length"
+              (click)="nextCard()"
             >
               <mat-icon aria-label="fully_known">arrow_forward</mat-icon>
             </button>
@@ -69,7 +69,7 @@
           <div class="definition">{{ currentTranslation }}</div>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-icon-button [disabled]="!flipped" (click)="next()">
+          <button mat-icon-button [disabled]="!flipped" (click)="nextCard()">
             <mat-icon aria-label="next">arrow_forward</mat-icon>
           </button>
         </mat-card-actions>

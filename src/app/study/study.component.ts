@@ -12,6 +12,7 @@ import {
   BehaviorSubject,
   combineLatest,
   filter,
+  forkJoin,
   from,
   map,
   merge,
@@ -23,6 +24,7 @@ import {
   startWith,
   Subscription,
   switchMap,
+  take,
   withLatestFrom,
 } from 'rxjs';
 import { db, ScoreRecord, SettingRecord } from '../../app/db';
@@ -46,8 +48,10 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
   sheet: string;
 
   words: EntryRecord[] = [];
-  wordCounter = 0;
+  wordId = 0;
+
   currentWord: string | undefined;
+
   currentScore: number | undefined;
 
   currentTranslation: string | undefined;
@@ -57,7 +61,7 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
 
   settings$ = new BehaviorSubject<SettingRecord[]>([]);
 
-  words$ = new BehaviorSubject<EntryRecord[]>([]);
+  words$ = new Observable<EntryRecord[]>();
 
   mergedWords$ = new BehaviorSubject<EntryRecord[]>([]);
 
@@ -91,64 +95,90 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
       liveQuery(() => db.settings.toArray()).subscribe(this.settings$)
     );
 
-    this.subscription.add(
-      this.httpClient
-        .get('assets/sheets/' + this.sheet, { responseType: 'blob' })
-        .pipe(
-          withLatestFrom(this.scores$),
-          map(([data, scores]): any => {
-            let fileReader = new FileReader();
-            return new Promise((resolve, reject) => {
-              fileReader.onerror = () => {
-                fileReader.abort();
-                reject(new DOMException('Problem parsing input file.'));
-              };
+    this.words$ = this.httpClient
+      .get('assets/sheets/' + this.sheet, { responseType: 'blob' })
+      .pipe(
+        withLatestFrom(this.scores$),
+        take(1),
+        map(([data, scores]): any => {
+          console.log('in files');
+          let fileReader = new FileReader();
+          return new Promise((resolve, reject) => {
+            fileReader.onerror = () => {
+              fileReader.abort();
+              reject(new DOMException('Problem parsing input file.'));
+            };
 
-              fileReader.onload = () => {
-                let words: EntryRecord[] = String(fileReader.result)
-                  .split('\n')
-                  .map((row, id) => {
-                    let splitRow = row.split(':');
-                    return {
-                      id,
-                      word: splitRow[0],
-                      definition: splitRow[1],
-                      score: 0,
-                    };
-                  });
-                this.currentWord = words[this.wordCounter].word;
-                this.currentTranslation = words[this.wordCounter].definition;
-                resolve(words);
-              };
-              fileReader.readAsText(data);
-            });
-          }),
-          mergeMap((promise: Promise<EntryRecord[]>) => from(promise))
-        )
-        .subscribe(this.words$)
-    );
+            fileReader.onload = () => {
+              let words: EntryRecord[] = String(fileReader.result)
+                .split('\n')
+                .map((row, id) => {
+                  let splitRow = row.split(':');
+                  return {
+                    id,
+                    word: splitRow[0],
+                    definition: splitRow[1],
+                    score: 0,
+                  };
+                });
+              resolve(words);
+            };
+            fileReader.readAsText(data);
+          });
+        }),
+        mergeMap((promise: Promise<EntryRecord[]>) => from(promise))
+      );
+
     this.subscription.add(
       combineLatest([this.scores$, this.words$])
         .pipe(
           filter(([scores, words]) => scores?.length > 0 && words?.length > 0),
           map(([scores, words]) => {
+            if(this.loaded$.value === true) {
+              // ugly, we are merging the new scores with the already loaded data, should not be needed if we update mergedData ourselves
+              return this.mergedWords$.value.map((word) => {
+                return {
+                  ...word,
+                  score: scores.find((score) => score.id == word.id)?.value || 0,
+                } as EntryRecord;
+              });
+            }
             this.loaded$.next(true);
-            return words.map((word, index) => {
+            let mergedWords = words.map((word) => {
               return {
                 ...word,
-                score: scores.find((score) => score.id == index)?.value || 0,
+                score: scores.find((score) => score.id == word.id)?.value || 0,
               } as EntryRecord;
             });
+            console.log('adad', this.currentWord === undefined)
+            if (this.currentWord === undefined) {
+              console.log('hithiscurrentword')
+            let sortByLeastKnown = this.settings$.value.find(
+              (setting) => setting.setting === 'order by least known'
+            )?.value;
+            if (sortByLeastKnown) {
+              mergedWords.sort((a, b) => a.score - b.score);
+            }
+            let randomize = this.settings$.value.find(
+              (setting) => setting.setting === 'randomize'
+            )?.value;
+            if (randomize) {
+              this.shuffle(mergedWords);
+            }
+              let firstWord = mergedWords[0];
+              this.wordId = firstWord.id as number;
+              this.currentWord = firstWord.word;
+              this.currentTranslation = firstWord.definition;
+              this.currentScore = firstWord.score;
+              console.log(firstWord);
+            }
+            return mergedWords;
           })
         )
         .subscribe(this.mergedWords$)
     );
 
     this.mergedWords$.subscribe(this.chipListWords$);
-
-    this.getScore(this.sheet, this.wordCounter).then((score) => {
-      this.currentScore = score ? score.value : 0;
-    });
   }
 
   ngAfterContentInit() {
@@ -173,40 +203,23 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
         this.chipListWords$.next(res.slice(from, to));
         this.paginator.length = res.length;
       });
-  }
-
-  async getScore(sheet: string, id: number): Promise<ScoreRecord | undefined> {
-    return (await db.scores.get({
-      sheet,
-      id,
-    })) as ScoreRecord;
-  }
-
-  async getScores(sheet: string) {
-    return await db.scores
-      .where({
-        sheet,
-      })
-      .toArray();
-  }
+  } 
 
   async updateScore(value: number) {
     await db.scores.put({
       sheet: this.sheet,
-      id: this.wordCounter,
+      id: this.wordId,
       value,
     });
   }
 
   correct() {
-    this.getScore(this.sheet, this.wordCounter).then((score) => {
-      if (!score) {
-        this.updateScore(1);
-      } else if (score.value < 9) {
-        this.updateScore(score.value + 1);
-      }
-      this.flip();
-    });
+    if (!this.currentScore) {
+      this.updateScore(1);
+    } else if (this.currentScore < 9) {
+      this.updateScore(this.currentScore + 1);
+    }
+    this.flip();
   }
 
   learned() {
@@ -215,48 +228,54 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
   }
 
   wrong() {
-    this.getScore(this.sheet, this.wordCounter).then((score) => {
-      score = score as ScoreRecord;
-      if (!score) {
-        this.updateScore(1);
-      } else if (score.value > 1) {
-        this.updateScore(score.value - 1);
-      }
-      this.flip();
-    });
+    if (!this.currentScore) {
+      this.updateScore(1);
+    } else if (this.currentScore > 1) {
+      this.updateScore(this.currentScore - 1);
+    }
+    this.flip();
   }
 
   private flip() {
     this.flipped = !this.flipped;
   }
 
-  goToCard(cardNumber: number, randomizeAllowed?: boolean) {
-    console.log('goingtocard', cardNumber);
+  goToCard(cardNumber: number) {
     this.flipped = false;
-    let randomize = this.settings$.value.find(
-      (setting) => setting.setting === 'randomize'
+    this.updateCurrentWord(cardNumber);
+  }
+
+  private updateCurrentWord(cardNumber: number) {
+    this.wordId = cardNumber;
+
+    let nextWord = this.mergedWords$.value.find(
+      (word) => word.id === this.wordId
     );
-    if (randomizeAllowed && randomize?.value === true) {
-      this.wordCounter = Math.floor(
-        Math.random() * this.mergedWords$.value.length
-      );
-    } else {
-      this.wordCounter = cardNumber;
+    if (nextWord) {
+      this.currentWord = nextWord.word;
+
+      this.currentTranslation = nextWord.definition;
+      this.currentScore = nextWord.score;
+      setTimeout(() => {
+        this.currentTranslation = nextWord?.definition;
+      }, 800);
     }
-    this.currentWord = this.words$.value[this.wordCounter].word;
-    setTimeout(() => {
-      this.currentTranslation = this.words$.value[this.wordCounter].definition;
-    }, 800);
-    this.getScore(this.sheet, this.wordCounter).then((score) => {
-      this.currentScore = score ? score.value : 0;
-    });
   }
 
-  next() {
-    this.goToCard(this.wordCounter + 1, true);
+  // todo some confusion between wordId and wordCounter, it's sometimes used as the index in the mergedWords array, sometimes used to store the wordId
+  nextCard() {
+    this.goToCard(this.mergedWords$.value[this.mergedWords$.value.findIndex(word => word.id === this.wordId) + 1].id as number);
   }
 
-  previous() {
-    this.goToCard(this.wordCounter - 1, true);
+  previousCard() {
+    this.goToCard(this.mergedWords$.value[this.mergedWords$.value.findIndex(word => word.id === this.wordId) - 1].id as number);
+  }
+
+  private shuffle(a: any[]) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
   }
 }

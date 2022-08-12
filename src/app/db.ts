@@ -50,7 +50,11 @@ export class AppDB extends Dexie {
         value: false,
       },
       {
-        setting: 'darkTheme',
+        setting: 'order by least known',
+        value: false,
+      },
+      {
+        setting: 'darkMode',
         value: false,
       },
     ]);
