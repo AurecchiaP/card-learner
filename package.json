@@ -1,16 +1,17 @@
 {
   "name": "card-learner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build",
-    "build-android": "npm run build && npm run sync && npm run assemble",
+    "build-android": "npm run build && npm run sync && npm run assemble && npm run copy-apk",
     "sync": "npx cap sync",
     "assemble": "cd android && gradlew assembleDebug",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "resources": "cordova-res ios --skip-config --copy && cordova-res android --skip-config --copy"
+    "resources": "cordova-res ios --skip-config --copy && cordova-res android --skip-config --copy",
+    "copy-apk": "cross-var cp ./android/app/build/outputs/apk/debug/app-debug.apk \"./releases/apk/app-$npm_package_version.apk\""
   },
   "private": true,
   "dependencies": {
@@ -30,7 +31,6 @@
     "adb": "^0.2.0",
     "dexie": "^3.2.2",
     "fs": "^0.0.1-security",
-    "ionic": "^5.4.16",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -43,6 +43,7 @@
     "@types/jasmine": "~4.0.0",
     "@types/node": "^18.6.5",
     "cordova-res": "^0.15.4",
+    "cross-var": "^1.1.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
