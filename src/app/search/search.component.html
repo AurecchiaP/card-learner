@@ -1,0 +1,52 @@
+<div class="search-input-container">
+  <mat-form-field class="search-form-field" appearance="fill">
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="searchValue"
+      (keydown.escape)="hideResults()"
+      (keydown.enter)="triggerSearch()"
+      (focusin)="hideResults()"
+    />
+    <button
+      *ngIf="searchValue"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="emptySearch()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>manage_search</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="setSearchType()">
+      <span>Radical english meaning</span>
+    </button>
+    <button mat-menu-item disabled>
+      <span>Kanji english meaning</span>
+    </button>
+  </mat-menu>
+</div>
+<mat-card
+  class="search-result-container"
+  *ngIf="(dataLoaded$ | async) === true"
+>
+  <mat-card-header>Results</mat-card-header>
+  <mat-list role="list">
+    <mat-list-item *ngFor="let result of searchResults" role="listitem">
+      Kanji {{ result.kanji.character }}, Stroke {{ result.kanji.stroke }},
+      Radical {{ result.radical.character }}, Stroke
+      {{ result.radical.stroke }}, Order {{ result.radical.order }}
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</mat-card>

@@ -13,6 +13,7 @@ import { db, SettingRecord } from '../app/db';
 })
 export class AppComponent implements OnDestroy {
   title = 'Card Learner';
+
   subscription = new Subscription();
   settings$ = new BehaviorSubject<SettingRecord[]>([]);
   darkMode = false;
@@ -26,11 +27,7 @@ export class AppComponent implements OnDestroy {
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.subscription.add(
-      liveQuery(
-        () =>
-          db.settings
-            .toArray()
-      ).subscribe((settings) => {
+      liveQuery(() => db.settings.toArray()).subscribe((settings) => {
         this.darkMode =
           settings.find((setting) => setting.setting === 'darkMode')?.value ===
           true;

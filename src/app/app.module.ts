@@ -8,9 +8,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,6 +30,7 @@ import { LearnComponent } from './learn/learn.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SheetsComponent } from './sheets/sheets.component';
 import { StudyComponent } from './study/study.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +42,7 @@ import { StudyComponent } from './study/study.component';
     SettingsComponent,
     SheetsComponent,
     StudyComponent,
+    SearchComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -51,9 +56,12 @@ import { StudyComponent } from './study/study.component';
     MatChipsModule,
     MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
+    MatMenuModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
+    MatSelectModule,
     MatSidenavModule,
     MatSlideToggleModule,
     MatToolbarModule,

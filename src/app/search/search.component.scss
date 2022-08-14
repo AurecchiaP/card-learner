@@ -1,0 +1,21 @@
+:host {
+  font-size: 12px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-form-field {
+  padding-top: 16px;
+}
+
+.search-result-container {
+  position: fixed;
+  right: 30px;
+  left: 130px;
+  z-index: 100;
+  max-height: 80vh;
+  overflow-y: scroll;
+}

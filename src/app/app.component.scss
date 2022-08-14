@@ -1,3 +1,8 @@
+#menu-button {
+  display: block;
+  margin: auto;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -8,13 +13,22 @@ footer {
 }
 
 .mat-drawer-container {
-    height: 100%;
+  height: 100%;
 }
 
 .content-container {
-    margin: 2em;
+  margin: 2em;
 }
 
 .mat-sidenav-content {
   min-height: 100vh;
+}
+
+.search-container {
+  margin-top: 20px;
+  * {
+    font-size: medium !important;
+    line-height: normal !important;
+    font-weight: normal !important;
+  }
 }
