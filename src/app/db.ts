@@ -12,7 +12,6 @@ export interface SettingRecord {
   value: boolean | number;
 }
 
-
 export class AppDB extends Dexie {
   scores!: Table<ScoreRecord, number>;
   settings!: Table<SettingRecord, number>;
@@ -21,7 +20,7 @@ export class AppDB extends Dexie {
     super('ngdexieliveQuery');
     this.version(3).stores({
       scores: '[sheet+id]',
-      settings: '[setting]'
+      settings: '[setting]',
     });
     this.on('populate', () => this.populate());
   }
@@ -40,6 +39,16 @@ export class AppDB extends Dexie {
       },
       {
         sheet: 'japanese/jlpt-n3-score.txt',
+        id: 0,
+        value: 0,
+      },
+      {
+        sheet: 'japanese/katakana.txt',
+        id: 0,
+        value: 0,
+      },
+      {
+        sheet: 'japanese/hiragana.txt',
         id: 0,
         value: 0,
       },

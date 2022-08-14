@@ -9,6 +9,14 @@
   margin: 1em;
 }
 
+.quick-link-container {
+  width: 70vw;
+  margin: auto;
+  .mat-paginator {
+    background-color: transparent !important;
+  }
+}
+
 .vertical-center {
   display: flex;
   flex-direction: column;

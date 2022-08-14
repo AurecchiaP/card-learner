@@ -2,6 +2,15 @@
   font-size: 12px;
 }
 
+.bigger {
+  font-size: xxx-large;
+}
+.flex-space-between {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .search-input-container {
   display: flex;
   align-items: center;

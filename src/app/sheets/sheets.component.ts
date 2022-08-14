@@ -11,17 +11,18 @@ export interface Sheet {
 @Component({
   selector: 'app-sheets',
   templateUrl: './sheets.component.html',
-  styleUrls: ['./sheets.component.scss']
+  styleUrls: ['./sheets.component.scss'],
 })
-
 export class SheetsComponent implements OnInit {
   languages: Section[] = [
     {
       name: 'japanese',
       sheets: [
-        {name: 'jlpt-n5-score'},
-        {name: 'jlpt-n4-score'},
-        {name: 'jlpt-n3-score'},
+        { name: 'jlpt-n5-score' },
+        { name: 'jlpt-n4-score' },
+        { name: 'jlpt-n3-score' },
+        { name: 'hiragana' },
+        { name: 'katakana' },
       ],
     },
     {
@@ -29,10 +30,7 @@ export class SheetsComponent implements OnInit {
       sheets: [],
     },
   ];
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

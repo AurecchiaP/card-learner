@@ -28,11 +28,23 @@
     <mat-icon>manage_search</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="setSearchType()">
+    <button mat-menu-item (click)="setSearchType('basic')">
+      <span>basic</span>
+    </button>
+    <button mat-menu-item (click)="setSearchType('rem')">
       <span>Radical english meaning</span>
     </button>
-    <button mat-menu-item disabled>
+    <button mat-menu-item (click)="setSearchType('kem')">
       <span>Kanji english meaning</span>
+    </button>
+    <button mat-menu-item (click)="setSearchType('kun')">
+      <span>kunyomi reading</span>
+    </button>
+    <button mat-menu-item (click)="setSearchType('on')">
+      <span>on reading</span>
+    </button>
+    <button mat-menu-item (click)="setSearchType('kanji')">
+      <span>Kanji character</span>
     </button>
   </mat-menu>
 </div>
@@ -43,10 +55,24 @@
   <mat-card-header>Results</mat-card-header>
   <mat-list role="list">
     <mat-list-item *ngFor="let result of searchResults" role="listitem">
-      Kanji {{ result.kanji.character }}, Stroke {{ result.kanji.stroke }},
-      Radical {{ result.radical.character }}, Stroke
-      {{ result.radical.stroke }}, Order {{ result.radical.order }}
-      <mat-divider></mat-divider>
+      <div class="flex-space-between">
+        <div>
+          Kanji <span class="bigger">{{ result.kanji.character }}</span>
+          <button
+            type="button"
+            mat-icon-button
+            (click)="playTTS(result.kanji.character)"
+          >
+            <mat-icon aria-label="play icon">hearing</mat-icon></button
+          >, Strokes: {{ result.kanji.stroke }}
+        </div>
+        <div>
+          Radical <span class="bigger"> {{ result.radical.character }}</span
+          >, Strokes:
+          {{ result.radical.stroke }}
+          <mat-divider></mat-divider>
+        </div>
+      </div>
     </mat-list-item>
   </mat-list>
 </mat-card>
