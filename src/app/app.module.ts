@@ -31,6 +31,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { SheetsComponent } from './sheets/sheets.component';
 import { StudyComponent } from './study/study.component';
 import { SearchComponent } from './search/search.component';
+import { KeyValuePairComponent } from './key-value-pair/key-value-pair.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { SearchComponent } from './search/search.component';
     SheetsComponent,
     StudyComponent,
     SearchComponent,
+    KeyValuePairComponent,
   ],
   imports: [
     AppRoutingModule,

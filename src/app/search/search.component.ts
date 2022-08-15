@@ -1,10 +1,37 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import * as kanjiData from './kanji.json';
+import { SharedServiceService } from '../shared-service.service';
 
 interface Result {
-  kanji: { character: string; stroke: number };
-  radical: { character: string; stroke: number; order: number };
+  kanji: {
+    character: string;
+    strokes: { count: number; timings: number[]; images: string[] };
+    meaning: {
+      english: string;
+    };
+    onyomi: { romaji: string; katakana: string };
+    kunyomi: { romaji: string; hiragana: string };
+  };
+  radical: {
+    character: string;
+    strokes: number;
+    image: string;
+    position: {
+      hiragana: string;
+      romaji: string;
+      icon: string;
+    };
+    name: {
+      hiragana: string;
+      romaji: string;
+    };
+    meaning: {
+      english: string;
+    };
+    animation: string[];
+  };
 }
 
 @Component({
@@ -17,9 +44,19 @@ export class SearchComponent {
   searchType: 'basic' | 'advanced' | 'rem' | 'kem' | 'kun' | 'on' | 'kanji' =
     'basic';
   searchResults: Result[] = [];
+
   dataLoaded$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
-  constructor(private http: HttpClient) {}
+  kanjiDataValues = Object.values(kanjiData) as Result[];
+
+  menuOpen$!: Observable<boolean>;
+
+  constructor(
+    private http: HttpClient,
+    sharedServiceService: SharedServiceService
+  ) {
+    this.menuOpen$ = sharedServiceService.getMenuOpen$();
+  }
 
   emptySearch() {
     this.searchValue = '';
@@ -56,6 +93,62 @@ export class SearchComponent {
   }
 
   triggerSearch() {
+    // TODO can be improved a lot, way more stuff in JSON, also it probably makes sense to look into everything and show all findings based on result
+    if (this.searchValue !== '') {
+      this.searchResults = [];
+
+      this.dataLoaded$.next(false);
+      // kanji
+      this.kanjiDataValues.filter((obj: Result) => {
+        if (obj?.kanji?.character === this.searchValue) {
+          this.searchResults.push(obj);
+        } else if (
+          obj?.kanji?.meaning.english
+            .split(',')
+            .map((meaning: string) => meaning.trim())
+            .some((meaning: string) => meaning === this.searchValue)
+        ) {
+          this.searchResults.push(obj);
+        }
+        // onyomi
+        else if (
+          obj?.kanji?.onyomi?.romaji
+            .split(',')
+            .map((romaji: string) => romaji.trim())
+            .some((romaji: string) => romaji === this.searchValue)
+        ) {
+          this.searchResults.push(obj);
+        } else if (
+          obj?.kanji?.onyomi?.katakana
+            .split('、')
+            .map((katakana: string) => katakana.trim())
+            .some((katakana: string) => katakana === this.searchValue)
+        ) {
+          this.searchResults.push(obj);
+        }
+        // kunyomi
+        else if (
+          obj?.kanji?.kunyomi?.romaji
+            .split(',')
+            .map((romaji: string) => romaji.trim())
+            .some((romaji: string) => romaji === this.searchValue)
+        ) {
+          this.searchResults.push(obj);
+        } else if (
+          obj?.kanji?.kunyomi?.hiragana
+            .split('、')
+            .map((hiragana: string) => hiragana.trim())
+            .some((hiragana: string) => hiragana === this.searchValue)
+        ) {
+          this.searchResults.push(obj);
+        }
+      });
+      this.dataLoaded$.next(true);
+    }
+  }
+
+  // this used to call the api every search
+  triggerSearchOld() {
     if (this.searchValue !== '') {
       this.dataLoaded$.next(false);
       let headers = new HttpHeaders({
@@ -74,7 +167,6 @@ export class SearchComponent {
               }
             )
             .subscribe((data: any[]) => {
-              console.log('search result', data);
               this.searchResults = data;
               this.dataLoaded$.next(true);
             });
@@ -93,7 +185,6 @@ export class SearchComponent {
               }
             )
             .subscribe((data: Result[]) => {
-              console.log('search result', data);
               this.searchResults = data;
               this.dataLoaded$.next(true);
             });

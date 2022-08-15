@@ -31,46 +31,107 @@
     <button mat-menu-item (click)="setSearchType('basic')">
       <span>basic</span>
     </button>
-    <button mat-menu-item (click)="setSearchType('rem')">
+    <!-- <button mat-menu-item (click)="setSearchType('rem')">
       <span>Radical english meaning</span>
     </button>
     <button mat-menu-item (click)="setSearchType('kem')">
       <span>Kanji english meaning</span>
-    </button>
+    </button> -->
     <button mat-menu-item (click)="setSearchType('kun')">
       <span>kunyomi reading</span>
     </button>
     <button mat-menu-item (click)="setSearchType('on')">
       <span>on reading</span>
     </button>
-    <button mat-menu-item (click)="setSearchType('kanji')">
+    <!-- <button mat-menu-item (click)="setSearchType('kanji')">
       <span>Kanji character</span>
-    </button>
+    </button> -->
   </mat-menu>
 </div>
 <mat-card
   class="search-result-container"
-  *ngIf="(dataLoaded$ | async) === true"
+  [ngClass]="(menuOpen$ | async) === false ? 'big-screen' : 'small-screen'"
+  *ngIf="(dataLoaded$ | async) === true || true"
 >
   <mat-card-header>Results</mat-card-header>
   <mat-list role="list">
-    <mat-list-item *ngFor="let result of searchResults" role="listitem">
-      <div class="flex-space-between">
+    <mat-list-item
+      class="result-list-item"
+      *ngFor="let result of searchResults"
+      role="listitem"
+    >
+      <div class="result-item-container">
         <div>
-          Kanji <span class="bigger">{{ result.kanji.character }}</span>
-          <button
-            type="button"
-            mat-icon-button
-            (click)="playTTS(result.kanji.character)"
-          >
-            <mat-icon aria-label="play icon">hearing</mat-icon></button
-          >, Strokes: {{ result.kanji.stroke }}
+          <div>
+            Kanji <span class="bigger">{{ result.kanji.character }}</span>
+            <button
+              type="button"
+              mat-icon-button
+              (click)="playTTS(result.kanji.character)"
+              class="button-line-height"
+            >
+              <mat-icon aria-label="play icon">hearing</mat-icon>
+            </button>
+          </div>
+          <div class="result-item-definition">
+            <app-key-value-pair
+              [key]="' Meaning'"
+              [value]="result.kanji.meaning.english"
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Strokes'"
+              [value]="result.kanji.strokes.count"
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Kanji'"
+              [value]="result.kanji.character"
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Onyomi
+          '"
+              [value]="
+                result.kanji.onyomi.romaji + ', ' + result.kanji.onyomi.katakana
+              "
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Kunyomi
+          '"
+              [value]="
+                result.kanji.kunyomi.romaji +
+                ', ' +
+                result.kanji.kunyomi.hiragana
+              "
+            ></app-key-value-pair>
+          </div>
         </div>
         <div>
-          Radical <span class="bigger"> {{ result.radical.character }}</span
-          >, Strokes:
-          {{ result.radical.stroke }}
-          <mat-divider></mat-divider>
+          <div>
+            Radical
+            <span class="bigger">{{ result.radical.character }}</span>
+          </div>
+          <div class="result-item-definition">
+            <app-key-value-pair
+              [key]="'Meaning'"
+              [value]="result.radical.meaning.english"
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Strokes'"
+              [value]="result.radical.strokes"
+            ></app-key-value-pair>
+
+            <app-key-value-pair
+              [key]="'Name'"
+              [value]="
+                result.radical.name.romaji + ', ' + result.radical.name.hiragana
+              "
+            ></app-key-value-pair>
+            <mat-divider></mat-divider>
+          </div>
         </div>
       </div>
     </mat-list-item>
