@@ -51,7 +51,7 @@
 <mat-card
   class="search-result-container"
   [ngClass]="(menuOpen$ | async) === false ? 'big-screen' : 'small-screen'"
-  *ngIf="(dataLoaded$ | async) === true || true"
+  *ngIf="(dataLoaded$ | async) === true"
 >
   <mat-card-header>Results</mat-card-header>
   <mat-list role="list">
