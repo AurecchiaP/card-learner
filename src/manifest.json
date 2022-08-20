@@ -1,0 +1,9 @@
+{
+  "name": "Card Learner",
+  "version": "2.0",
+  "description": "Learn cards",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  }
+}

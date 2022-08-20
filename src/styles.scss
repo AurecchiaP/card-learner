@@ -13,17 +13,22 @@
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
   // Create theme specfic styles
   .active-chip {
     border: 2px solid mat-color($primary);
-    // @debug $background;
+    @debug $theme;
     // @debug map-get($background, background)
   }
 
   .app-container {
     background-color: map-get($background, background);
     min-height: 100vh;
-    margin-top: 3.5em;
+  }
+
+  .primary-text {
+    color: map-get($foreground, text);
   }
 }
 
@@ -89,8 +94,9 @@ $custom-typography: mat-typography-config(
 
 html,
 body {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .width-50-pct {
@@ -102,7 +108,7 @@ body {
 }
 
 .mat-toolbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
   justify-content: space-between;
