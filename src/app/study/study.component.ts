@@ -133,12 +133,13 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
         .pipe(
           filter(([scores, words]) => scores?.length > 0 && words?.length > 0),
           map(([scores, words]) => {
-            if(this.loaded$.value === true) {
+            if (this.loaded$.value === true) {
               // ugly, we are merging the new scores with the already loaded data, should not be needed if we update mergedData ourselves
               return this.mergedWords$.value.map((word) => {
                 return {
                   ...word,
-                  score: scores.find((score) => score.id == word.id)?.value || 0,
+                  score:
+                    scores.find((score) => score.id == word.id)?.value || 0,
                 } as EntryRecord;
               });
             }
@@ -150,18 +151,18 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
               } as EntryRecord;
             });
             if (this.currentWord === undefined) {
-            let sortByLeastKnown = this.settings$.value.find(
-              (setting) => setting.setting === 'order by least known'
-            )?.value;
-            if (sortByLeastKnown) {
-              mergedWords.sort((a, b) => a.score - b.score);
-            }
-            let randomize = this.settings$.value.find(
-              (setting) => setting.setting === 'randomize'
-            )?.value;
-            if (randomize) {
-              this.shuffle(mergedWords);
-            }
+              let sortByLeastKnown = this.settings$.value.find(
+                (setting) => setting.setting === 'order by least known'
+              )?.value;
+              if (sortByLeastKnown) {
+                mergedWords.sort((a, b) => a.score - b.score);
+              }
+              let randomize = this.settings$.value.find(
+                (setting) => setting.setting === 'randomize'
+              )?.value;
+              if (randomize) {
+                this.shuffle(mergedWords);
+              }
               let firstWord = mergedWords[0];
               this.wordId = firstWord.id as number;
               this.currentWord = firstWord.word;
@@ -199,7 +200,7 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
         this.chipListWords$.next(res.slice(from, to));
         this.paginator.length = res.length;
       });
-  } 
+  }
 
   async updateScore(value: number) {
     await db.scores.put({
@@ -250,7 +251,6 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
     if (nextWord) {
       this.currentWord = nextWord.word;
 
-      this.currentTranslation = nextWord.definition;
       this.currentScore = nextWord.score;
       setTimeout(() => {
         this.currentTranslation = nextWord?.definition;
@@ -260,11 +260,19 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
 
   // todo some confusion between wordId and wordCounter, it's sometimes used as the index in the mergedWords array, sometimes used to store the wordId
   nextCard() {
-    this.goToCard(this.mergedWords$.value[this.mergedWords$.value.findIndex(word => word.id === this.wordId) + 1].id as number);
+    this.goToCard(
+      this.mergedWords$.value[
+        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) + 1
+      ].id as number
+    );
   }
 
   previousCard() {
-    this.goToCard(this.mergedWords$.value[this.mergedWords$.value.findIndex(word => word.id === this.wordId) - 1].id as number);
+    this.goToCard(
+      this.mergedWords$.value[
+        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) - 1
+      ].id as number
+    );
   }
 
   private shuffle(a: any[]) {

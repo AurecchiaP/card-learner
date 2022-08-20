@@ -56,13 +56,15 @@
   <mat-card-header>Results</mat-card-header>
   <mat-list role="list">
     <mat-list-item
-      class="result-list-item"
+      class="search-result-list-item"
       *ngFor="let result of searchResults"
       role="listitem"
     >
-      <div class="result-item-container">
-        <div>
-          <div>
+      <div class="search-result-list-item-container">
+        <div
+          class="search-result-list-item-definition-container background-darken"
+        >
+          <div class="background-darken definition-title">
             Kanji <span class="bigger">{{ result.kanji.character }}</span>
             <button
               type="button"
@@ -73,7 +75,7 @@
               <mat-icon aria-label="play icon">hearing</mat-icon>
             </button>
           </div>
-          <div class="result-item-definition">
+          <div class="search-result-item-definition">
             <app-key-value-pair
               [key]="' Meaning'"
               [value]="result.kanji.meaning.english"
@@ -108,12 +110,15 @@
             ></app-key-value-pair>
           </div>
         </div>
-        <div>
-          <div>
+        <div></div>
+        <div
+          class="search-result-list-item-definition-container background-darken"
+        >
+          <div class="background-darken definition-title">
             Radical
             <span class="bigger">{{ result.radical.character }}</span>
           </div>
-          <div class="result-item-definition">
+          <div class="search-result-item-definition">
             <app-key-value-pair
               [key]="'Meaning'"
               [value]="result.radical.meaning.english"

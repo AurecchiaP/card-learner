@@ -1,64 +1,29 @@
-<div
-  *ngIf="settings$ | async as settings"
-  [ngClass]="darkMode ? 'dark-theme' : ''"
->
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav
-      #drawer
-      class="sidenav"
-      fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false"
-    >
-      <mat-nav-list>
-        <button
-          id="menu-button"
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          (click)="toggleDrawer(drawer)"
-          *ngIf="drawer.opened"
-        >
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
-        <a
-          mat-list-item
-          href="#"
-          routerLink="/learn"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
-          Learn
-        </a>
-        <a
-          mat-list-item
-          href="#"
-          routerLink="/settings-component"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
-          Settings
-        </a>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <mat-toolbar color="primary">
-        <button
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          (click)="toggleDrawer(drawer)"
-          *ngIf="!drawer.opened"
-        >
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
-        <app-search></app-search>
-      </mat-toolbar>
-      <div class="content-container">
-        <router-outlet> </router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  <footer>stuff</footer>
+<div [ngClass]="darkMode ? 'dark-theme' : 'light-theme'">
+  <div *ngIf="settings$ | async as settings" class="app-container">
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Navigate to home"
+        mat-icon-button
+        [routerLink]="['/learn']"
+        routerLinkActive="active"
+      >
+        <mat-icon aria-label="Side nav toggle icon">home</mat-icon>
+      </button>
+      <app-search></app-search>
+      <button
+        type="button"
+        aria-label="Navigate to settings"
+        mat-icon-button
+        [routerLink]="['/settings-component']"
+        routerLinkActive="active"
+      >
+        <mat-icon aria-label="Side nav toggle icon">settings</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="content-container">
+      <router-outlet> </router-outlet>
+    </div>
+    <!-- <footer>stuff</footer> -->
+  </div>
 </div>

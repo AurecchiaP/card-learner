@@ -1,7 +1,6 @@
-mat-chip {
-    margin: .4em !important;
-}
+@use "../../styles.scss" as *;
 
 mat-chip {
-    cursor: pointer;
+  margin: 0.6em !important;
+  cursor: pointer;
 }

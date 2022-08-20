@@ -1,34 +1,167 @@
-
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
+@use "sass:map";
 
 @include mat.core();
+
+@import "~@angular/material/theming";
+
+// APPROACH TWO, LOOKS LESS NICE BUT WORKS WIHTOUT DEFINING DARK THEME ON EVERY COMPONENT
+// Define a custom mixin that takes in the current theme
+@mixin theme-color-grabber($theme) {
+  // Parse the theme and create variables for each color in the pallete
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  // Create theme specfic styles
+  .active-chip {
+    border: 2px solid mat-color($primary);
+    // @debug $background;
+    // @debug map-get($background, background)
+  }
+
+  .app-container {
+    background-color: map-get($background, background);
+    min-height: 100vh;
+    margin-top: 3.5em;
+  }
+}
 
 // Define a light theme
 $light-primary: mat.define-palette(mat.$indigo-palette);
 $light-accent: mat.define-palette(mat.$pink-palette);
-$light-theme: mat.define-light-theme((
- color: (
-   primary: $light-primary,
-   accent: $light-accent,
- )
-));
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+    ),
+  )
+);
 
 // Define a dark theme
 $dark-primary: mat.define-palette(mat.$pink-palette);
 $dark-accent: mat.define-palette(mat.$blue-grey-palette);
-$dark-theme: mat.define-dark-theme((
- color: (
-   primary: $dark-primary,
-   accent: $dark-accent,
- )
-));
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+    ),
+  )
+);
+
+.light-theme {
+  @include mat.core-theme($light-theme);
+  @include mat.all-component-themes($light-theme);
+  @include theme-color-grabber($light-theme);
+}
 
 .dark-theme {
   @include mat.core-theme($dark-theme);
   @include mat.all-component-themes($dark-theme);
+  @include theme-color-grabber($dark-theme);
 }
+
+@function map-get-strict($map, $key) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @error "ERROR: Specified index does not exist in the mapping";
+  }
+}
+
+@font-face {
+  font-family: "Murecho";
+  src: local("Murecho"),
+    url(./assets/fonts/webfonts/Murecho-Medium.woff2) format("truetype");
+}
+
+$custom-typography: mat-typography-config(
+  $font-family: "Murecho",
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500),
+);
+
+@include angular-material-typography($custom-typography);
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.width-50-pct {
+  width: 50%;
+}
+
+.background-darken {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  .mat-icon-button {
+    margin-right: 1em;
+  }
+}
+
+mat-sidenav-content {
+  padding-top: 4em;
+}
+
+// APPROACH ONE, LOOKS NICER BUT NEEDS DARK THEME NGIF IN EVERY COMPONENT
+// /// Gets the CSS property and it's computed value for both light and dark themes.
+// /// @param {String} $property The css property to set. ex: background, color, background-color, border-color etc.
+// /// @param {String} $color Theme color. Accepted values are: primary, accent, or warn.
+// /// @param {String | Number} $hue The hue from the palette to use. If this is a value between 0 and 1, it will be treated as opacity. Ex values: 500, 500-contrast, darker, darker-contrast
+// /// @returns {CssProperty} CSS property with it's computed value for the both light and dark themes.
+// @mixin get-theme-color-property($property: null, $color: null, $hue: null) {
+//   // Get the color config from the theme.
+//   $light-color-config: mat.get-color-config($light-theme);
+//   // Get the required color palette from the color-config.
+//   $light-color-palette: map.get($light-color-config, $color);
+
+//   // Get the color config from the theme.
+//   $dark-color-config: mat.get-color-config($dark-theme);
+//   // Get the required color palette from the color-config.
+//   $dark-color-palette: map.get($dark-color-config, $color);
+//   @if $hue != null {
+//     // Finally get the desired color with the specified hue.
+//     $light-color: mat.get-color-from-palette($light-color-palette, $hue);
+
+//     // Finally get the desired color with the specified hue.
+//     $dark-color: mat.get-color-from-palette($dark-color-palette, $hue);
+//     & {
+//       #{$property}: $light-color;
+//     }
+
+//     .dark-theme & {
+//       #{$property}: $dark-color;
+//     }
+//   } @else {
+//     // Finally get the desired color with the specified hue.
+//     $light-color: mat.get-color-from-palette($light-color-palette);
+
+//     // Finally get the desired color with the specified hue.
+//     $dark-color: mat.get-color-from-palette($dark-color-palette);
+//     & {
+//       #{$property}: $light-color;
+//     }
+
+//     .dark-theme & {
+//       #{$property}: $dark-color;
+//     }
+//   }
+// }
+
+// .active-chip {
+//   border-width: 2px;
+//   border-style: solid;
+//   @include get-theme-color-property(border-color, primary);
+// }

@@ -1,10 +1,10 @@
-<mat-chip-list aria-label="Fish selection" (click)=onChipClicked()>
+<mat-chip-list aria-label="Fish selection" (click)="onChipClicked()">
   <div *ngIf="active == true; else elseBlock">
     <mat-chip
       [ngStyle]="{
-        'background-color': rgb,
-        'box-shadow': '0px 0px 0px 2px black inset'
+        'background-color': rgb
       }"
+      class="active-chip"
       >{{ label }}
     </mat-chip>
   </div>

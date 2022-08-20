@@ -11,25 +11,24 @@ export class ChipComponent implements OnInit {
   @Input() label?: string;
   @Input() active?: boolean;
 
-  @Output() clicked : EventEmitter<number> = new EventEmitter<number>();
+  @Output() clicked: EventEmitter<number> = new EventEmitter<number>();
 
-  rgb = 'rgb(120,120,120)';
+  rgb = 'rgba(15,15,15, 0.6)';
 
   colorMap = [
-    'rgb(120,120,120)',
-    'rgb(255, 0, 0)',
-    'rgb(255, 63, 0)',
-    'rgb(255, 128, 0)',
-    'rgb(255, 192, 0)',
-    'rgb(255, 255, 0)',
-    'rgb(192, 255, 0)',
-    'rgb(128, 255, 0)',
-    'rgb(63, 255, 0)',
-    'rgb(0, 255, 0)',
-  ]
+    'rgba(15,15,15, 0.6)',
+    'rgba(255, 0, 0, 0.6)',
+    'rgb(255, 63, 0, 0.6)',
+    'rgb(255, 128, 0, 0.6)',
+    'rgb(255, 192, 0, 0.6)',
+    'rgb(255, 255, 0, 0.6)',
+    'rgb(192, 255, 0, 0.6)',
+    'rgb(128, 255, 0, 0.6)',
+    'rgb(63, 255, 0, 0.6)',
+    'rgb(0, 255, 0, 0.6)',
+  ];
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
     if (this.value) {

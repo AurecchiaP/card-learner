@@ -48,7 +48,7 @@
   text-align: center;
   margin: 1em;
   .definition {
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1em;
   }
 }
@@ -64,11 +64,12 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  border: 1px solid #f1f1f1;
+  // border: 1px solid #f1f1f1;
   height: 70vh;
   width: 70vw;
   margin: auto;
