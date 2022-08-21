@@ -12,7 +12,25 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Deploy
+
+### Local
+
+Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Android
+
+Run `ng build-android`, which will generate the apk in `releases/apk`. You can then copy and install this on your Android device.
+
+### Chrome extension
+
+Add `dist/card-learner` as an unpacked extension to chrome.
+
+### Github pages
+
+run `npm run deploy-ghpages` to commit `dist/card-learner` to branch `gh-pages`, then go to your repository on github, settings, pages, and choose this branch as the page config.
 
 ## Running unit tests
 

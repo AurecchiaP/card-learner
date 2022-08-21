@@ -17,4 +17,4 @@ RUN npm install
 EXPOSE 4200
 
 # start run with this command
-CMD ["npm", "start"]
+CMD ["npm", "start-public"]
