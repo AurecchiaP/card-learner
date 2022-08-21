@@ -7,7 +7,7 @@
     "start-public": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "build-android": "npm run build && npm run sync && npm run assemble && npm run copy-apk",
-    "build-deploy-ghpages": "ng deploy --base-href=card-learner",
+    "deploy-ghpages": "bash deploy.sh",
     "sync": "npx cap sync",
     "assemble": "cd android && gradlew assembleDebug",
     "watch": "ng build --watch --configuration development",
