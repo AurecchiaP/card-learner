@@ -1,10 +1,11 @@
 <div class="card-container" *ngFor="let language of languages">
   <div class="primary-text">{{ language.name }}</div>
-  <div class="sheet-card" *ngFor="let sheet of language.sheets">
-    <app-card-button
-      [routerLink]="['/learn/study', language.name, sheet.name]"
+  <div class="sheet-card" *ngFor="let sheet of language.sheets[type]">
+    <app-card-choice-button
+      [routerLink1]="['/learn/study', language.name, sheet.name]"
+      [routerLink2]="['/learn/quiz', language.name, sheet.name]"
       label="{{ sheet.name }}"
-    ></app-card-button>
+    ></app-card-choice-button>
   </div>
 </div>
 

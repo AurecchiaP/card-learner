@@ -8,8 +8,12 @@
   display: flex;
 }
 
+.definition {
+  color: transparent;
+}
+
 .quick-link-container {
-  width: 70vw;
+  width: 100%;
   margin: auto;
   .mat-paginator {
     background-color: transparent !important;
@@ -66,49 +70,6 @@
   justify-content: center;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  // border: 1px solid #f1f1f1;
-  height: 50vh;
-  width: 70vw;
-  margin: auto;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  display: inline-block;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card .flip-card-inner:not(.flipped) {
-  transform: rotateY(180deg);
-}
-
-.disabled-button {
-  pointer-events: none;
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
 mat-card {
-  padding: 0;
+  margin: 1em;
 }

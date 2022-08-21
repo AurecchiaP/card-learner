@@ -23,28 +23,32 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CardChoiceButtonComponent } from './card-choice-button/card-choice-button.component';
 import { CardButtonComponent } from './card-button/card-button.component';
 import { CheckCardsComponent } from './check-cards/check-cards.component';
 import { ChipComponent } from './chip/chip.component';
 import { LearnComponent } from './learn/learn.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SheetsComponent } from './sheets/sheets.component';
-import { StudyComponent } from './study/study.component';
+import { QuizComponent } from './quiz/quiz.component';
 import { SearchComponent } from './search/search.component';
 import { KeyValuePairComponent } from './key-value-pair/key-value-pair.component';
+import { StudyComponent } from './study/study.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CardChoiceButtonComponent,
     CardButtonComponent,
     CheckCardsComponent,
     ChipComponent,
     LearnComponent,
     SettingsComponent,
     SheetsComponent,
-    StudyComponent,
+    QuizComponent,
     SearchComponent,
     KeyValuePairComponent,
+    StudyComponent,
   ],
   imports: [
     AppRoutingModule,

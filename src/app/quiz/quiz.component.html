@@ -5,19 +5,13 @@
 <div class="quick-link-container">
   <div *ngIf="chipListWords$ | async as chipListWords" class="chips">
     <div *ngFor="let word of chipListWords">
-      <!-- <app-chip
+      <app-chip
         [value]="word.score"
         [label]="word.word"
         [number]="word.id"
         [active]="word.id == wordId"
         (clicked)="goToCard($event)"
-      ></app-chip> -->
-      <mat-card>
-        {{ word.word }} {{ word.score }}/9
-        <div class="definition background-contrast" (click)="show($event)">
-          {{ word.definition }}
-        </div>
-      </mat-card>
+      ></app-chip>
     </div>
   </div>
 
@@ -29,7 +23,7 @@
   >
   </mat-paginator>
 </div>
-<!-- 
+
 <div *ngIf="mergedWords$ | async as mergedWords" class="card-container">
   <div class="flip-card">
     <div class="flip-card-inner" [ngClass]="{ flipped: !flipped }">
@@ -99,4 +93,4 @@
       </mat-card>
     </div>
   </div>
-</div> -->
+</div>

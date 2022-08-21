@@ -1,31 +1,18 @@
-<span class="primary-text">Vocabulary</span>
 <div class="card-container">
-  <app-card-button routerLink="/learn/sheets" label="Study"></app-card-button>
+  <app-card-button
+    [routerLink]="['/learn/sheets', 'words']"
+    label="Vocabulary"
+  ></app-card-button>
 
   <app-card-button
-    routerLink="/check-cards"
-    label="Manage cards"
+    [routerLink]="['/learn/sheets', 'kanji']"
+    label="Kanji"
     disabled="true"
   ></app-card-button>
-</div>
-<mat-divider></mat-divider>
 
-<span class="primary-text">Kanji</span>
-<div class="card-container">
   <app-card-button
-    routerLink="/study"
-    label="Study"
-    disabled="true"
-  ></app-card-button>
-</div>
-
-<mat-divider></mat-divider>
-
-<span class="primary-text"> Hiragana & Katakana</span>
-<div class="card-container">
-  <app-card-button
-    routerLink="/study"
-    label="Study"
-    disabled="true"
+    [routerLink]="['/learn/sheets', 'kana']"
+    routerLink="/quiz"
+    label="Hiragana & Katakana"
   ></app-card-button>
 </div>

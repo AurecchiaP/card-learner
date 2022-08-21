@@ -1,4 +1,4 @@
-.sheet-card {
+.card {
   margin: 1em;
   white-space: nowrap;
 }
@@ -12,6 +12,7 @@
   margin-left: 1em;
 }
 
-.section-title {
-  width: 100%;
+.disabled {
+  color: grey !important;
+  pointer-events: none;
 }

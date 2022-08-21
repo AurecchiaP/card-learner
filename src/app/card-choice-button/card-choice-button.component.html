@@ -1,0 +1,15 @@
+<mat-card class="card" [ngClass]="disabled ? 'disabled' : ''">
+  <mat-card-content>
+    <span> {{ label }} </span>
+    <div>
+      <span> Study </span>
+      <button mat-icon-button [routerLink]="routerLink1">
+        <mat-icon aria-label="card button icon">chevron_right</mat-icon>
+      </button>
+      <span> Quiz </span>
+      <button mat-icon-button [routerLink]="routerLink2">
+        <mat-icon aria-label="card button icon">chevron_right</mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

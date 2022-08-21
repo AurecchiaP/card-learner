@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LearnComponent } from './learn/learn.component';
-import { StudyComponent } from './study/study.component';
+import { QuizComponent } from './quiz/quiz.component';
 import { SheetsComponent } from './sheets/sheets.component';
 import { CheckCardsComponent } from './check-cards/check-cards.component';
 
 import { SettingsComponent } from './settings/settings.component';
+import { StudyComponent } from './study/study.component';
 
 const routes: Routes = [
   {
@@ -17,19 +18,19 @@ const routes: Routes = [
         data: { breadcrumb: { alias: 'LearnComponent' } },
       },
       {
-        path: 'study/:language/:sheet',
-        component: StudyComponent,
-        data: { breadcrumb: { alias: 'StudyComponent' } },
+        path: 'quiz/:language/:sheet',
+        component: QuizComponent,
+        data: { breadcrumb: { alias: 'QuizComponent' } },
       },
       {
-        path: 'sheets',
+        path: 'sheets/:type',
         component: SheetsComponent,
         data: { breadcrumb: { alias: 'SheetsComponent' } },
       },
       {
-        path: 'check-cards',
-        component: CheckCardsComponent,
-        data: { breadcrumb: { alias: 'checkCardsComponent' } },
+        path: 'study/:language/:sheet',
+        component: StudyComponent,
+        data: { breadcrumb: { alias: 'StudyComponent' } },
       },
     ],
   },

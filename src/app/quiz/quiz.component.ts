@@ -40,11 +40,11 @@ interface EntryRecord {
 }
 
 @Component({
-  selector: 'app-study',
-  templateUrl: './study.component.html',
-  styleUrls: ['./study.component.scss'],
+  selector: 'app-quiz',
+  templateUrl: './quiz.component.html',
+  styleUrls: ['./quiz.component.scss'],
 })
-export class StudyComponent implements AfterContentInit, OnDestroy {
+export class QuizComponent implements AfterContentInit, OnDestroy {
   sheet: string;
 
   words: EntryRecord[] = [];
@@ -202,8 +202,77 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
       });
   }
 
-  public show(e: any) {
-    e.target.classList.add('primary-text-important');
+  async updateScore(value: number) {
+    await db.scores.put({
+      sheet: this.sheet,
+      id: this.wordId,
+      value,
+    });
+  }
+
+  correct() {
+    if (!this.currentScore) {
+      this.updateScore(1);
+    } else if (this.currentScore < 9) {
+      this.updateScore(this.currentScore + 1);
+    }
+    this.flip();
+  }
+
+  learned() {
+    this.updateScore(9);
+    this.flip();
+  }
+
+  wrong() {
+    if (!this.currentScore) {
+      this.updateScore(1);
+    } else if (this.currentScore > 1) {
+      this.updateScore(this.currentScore - 1);
+    }
+    this.flip();
+  }
+
+  private flip() {
+    this.flipped = !this.flipped;
+  }
+
+  goToCard(cardNumber: number) {
+    this.flipped = false;
+    this.updateCurrentWord(cardNumber);
+  }
+
+  private updateCurrentWord(cardNumber: number) {
+    this.wordId = cardNumber;
+
+    let nextWord = this.mergedWords$.value.find(
+      (word) => word.id === this.wordId
+    );
+    if (nextWord) {
+      this.currentWord = nextWord.word;
+
+      this.currentScore = nextWord.score;
+      setTimeout(() => {
+        this.currentTranslation = nextWord?.definition;
+      }, 800);
+    }
+  }
+
+  // todo some confusion between wordId and wordCounter, it's sometimes used as the index in the mergedWords array, sometimes used to store the wordId
+  nextCard() {
+    this.goToCard(
+      this.mergedWords$.value[
+        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) + 1
+      ].id as number
+    );
+  }
+
+  previousCard() {
+    this.goToCard(
+      this.mergedWords$.value[
+        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) - 1
+      ].id as number
+    );
   }
 
   private shuffle(a: any[]) {

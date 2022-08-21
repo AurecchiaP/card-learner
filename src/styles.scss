@@ -18,7 +18,7 @@
   // Create theme specfic styles
   .active-chip {
     border: 2px solid mat-color($primary);
-    @debug $theme;
+    @debug $foreground;
     // @debug map-get($background, background)
   }
 
@@ -29,6 +29,14 @@
 
   .primary-text {
     color: map-get($foreground, text);
+  }
+
+  .primary-text-important {
+    color: map-get($foreground, text) !important;
+  }
+
+  .background-contrast {
+    background-color: rgba(map-get($foreground, base), 0.1);
   }
 }
 
