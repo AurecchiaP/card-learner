@@ -10,11 +10,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Build & Deploy
 
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Deploy
 
 ### Local
 
@@ -22,15 +20,18 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 ### Android
 
-Run `ng build-android`, which will generate the apk in `releases/apk`. You can then copy and install this on your Android device.
+Run `ng build-android`, which will build the angular app, setup the Android app in `Android/`, generate the apk and copy it into `releases/apk`. You can then copy it and install it on your Android device.
 
 ### Chrome extension
 
-Add `dist/card-learner` as an unpacked extension to chrome.
+    "build-ghpages": "ng build --base-href \"https://AurecchiaP.github.io/\"",
+
+Run `npm run build` to build the project. Add `dist/card-learner` as an unpacked extension to chrome.
 
 ### Github pages
 
-run `npm run deploy-ghpages` to commit `dist/card-learner` to branch `gh-pages`, then go to your repository on github, settings, pages, and choose this branch as the page config.
+Run `npm run build-ghpages`, which is a normal build with the href pointing to your GitHub Pages path (you may have to update this command with your GitHub username).
+Run `npm run deploy-ghpages` to commit `dist/card-learner` to branch `gh-pages`, then go to your repository on github, settings, pages, and choose this branch as the page config.
 
 ## Running unit tests
 
