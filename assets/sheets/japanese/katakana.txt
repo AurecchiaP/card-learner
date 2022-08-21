@@ -1,0 +1,94 @@
+ァ:Small A
+ア:A
+ィ:Small I
+イ:I
+ゥ:Small U
+ウ:U
+ェ:Small E
+エ:E
+ォ:Small O
+オ:O
+カ:Ka
+ガ:Ga
+キ:Ki
+ギ:Gi
+ク:Ku
+グ:Gu
+ケ:Ke
+ゲ:Ge
+コ:Ko
+ゴ:Go
+サ:Sa
+ザ:Za
+シ:Si
+ジ:Zi
+ス:Su
+ズ:Zu
+セ:Se
+ゼ:Ze
+ソ:So
+ゾ:Zo
+タ:Ta
+ダ:Da
+チ:Ti
+ヂ:Di
+ッ:Small Tu
+ツ:Tu
+ヅ:Du
+テ:Te
+デ:De
+ト:To
+ド:Do
+ナ:Na
+ニ:Ni
+ヌ:Nu
+ネ:Ne
+ノ:No
+ハ:Ha
+バ:Ba
+パ:Pa
+ヒ:Hi
+ビ:Bi
+ピ:Pi
+フ:Hu
+ブ:Bu
+プ:Pu
+ヘ:He
+ベ:Be
+ペ:Pe
+ホ:Ho
+ボ:Bo
+ポ:Po
+マ:Ma
+ミ:Mi
+ム:Mu
+メ:Me
+モ:Mo
+ャ:Small Ya
+ヤ:Ya
+ュ:Small Yu
+ユ:Yu
+ョ:Small Yo
+ヨ:Yo
+ラ:Ra
+リ:Ri
+ル:Ru
+レ:Re
+ロ:Ro
+ヮ:Small Wa
+ワ:Wa
+ヰ:Wi
+ヱ:We
+ヲ:Wo
+ン:N
+ヴ:Vu
+ヵ:Small Ka
+ヶ:Small Ke
+ヷ:Va
+ヸ:Vi
+ヹ:Ve
+ヺ:Vo
+・:Middle Dot
+ー:Hiragana Prolonged Sound Mark
+ヽ:Iteration Mark
+ヾ:Voiced Iteration Mark
