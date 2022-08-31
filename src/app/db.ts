@@ -63,6 +63,14 @@ export class AppDB extends Dexie {
         value: false,
       },
       {
+        setting: 'skip not encountered',
+        value: false,
+      },
+      {
+        setting: 'skip learned cards',
+        value: false,
+      },
+      {
         setting: 'darkMode',
         value: false,
       },

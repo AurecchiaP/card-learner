@@ -163,6 +163,17 @@ export class StudyComponent implements AfterContentInit, OnDestroy {
               if (randomize) {
                 this.shuffle(mergedWords);
               }
+              let skipNotEncountered = this.settings$.value.find(
+                (setting) => setting.setting === 'skip not encountered'
+              )?.value;
+              if (skipNotEncountered) {
+                mergedWords.forEach(function (word, index, newMergedWords) {
+                  if (word.score === 0) {
+                    console.log('test');
+                    newMergedWords.push(mergedWords.splice(index, 1)[0]);
+                  }
+                });
+              }
               let firstWord = mergedWords[0];
               this.wordId = firstWord.id as number;
               this.currentWord = firstWord.word;

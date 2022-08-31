@@ -33,7 +33,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 
 interface EntryRecord {
-  id?: number;
+  id: number;
   word: string;
   definition: string;
   score: number;
@@ -151,17 +151,42 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
               } as EntryRecord;
             });
             if (this.currentWord === undefined) {
-              let sortByLeastKnown = this.settings$.value.find(
-                (setting) => setting.setting === 'order by least known'
-              )?.value;
-              if (sortByLeastKnown) {
-                mergedWords.sort((a, b) => a.score - b.score);
+              let settings: Map<string, number | boolean> = new Map();
+              this.settings$.value.forEach((setting) => {
+                settings.set(setting.setting, setting.value);
+              });
+
+              console.log(settings);
+              if (settings.get('order by least known')) {
+                if (settings.get('skip not encountered')) {
+                  // order by least known and skip not encountered
+                  mergedWords.sort((a, b) => {
+                    return (
+                      (a.score === 0 ? 10 : a.score) -
+                      (b.score === 0 ? 10 : b.score)
+                    );
+                  });
+                } else {
+                  // order by least known
+                  mergedWords.sort((a, b) => a.score - b.score);
+                }
+              } else if (settings.get('skip not encountered')) {
+                // skip not encountered
+                mergedWords.sort((a, b) => {
+                  return a.score === 0 || b.score === 0
+                    ? b.score - a.score
+                    : a.id - b.id;
+                });
               }
-              let randomize = this.settings$.value.find(
-                (setting) => setting.setting === 'randomize'
-              )?.value;
-              if (randomize) {
+              if (settings.get('randomize')) {
                 this.shuffle(mergedWords);
+              }
+              if (settings.get('skip learned cards')) {
+                mergedWords.sort((a, b) => {
+                  return a.score === 9 || b.score === 9
+                    ? a.score - b.score
+                    : a.id - b.id;
+                });
               }
               let firstWord = mergedWords[0];
               this.wordId = firstWord.id as number;
@@ -216,12 +241,12 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
     } else if (this.currentScore < 9) {
       this.updateScore(this.currentScore + 1);
     }
-    this.flip();
+    this.nextCard();
   }
 
   learned() {
     this.updateScore(9);
-    this.flip();
+    this.nextCard();
   }
 
   wrong() {
@@ -230,15 +255,30 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
     } else if (this.currentScore > 1) {
       this.updateScore(this.currentScore - 1);
     }
-    this.flip();
+    this.nextCard();
   }
 
   private flip() {
     this.flipped = !this.flipped;
   }
 
-  goToCard(cardNumber: number) {
+  goToCard(cardNumber: number, cardIdInSortedList: number) {
     this.flipped = false;
+    console.log(
+      this.paginator.pageIndex,
+      this.paginator.pageSize,
+      cardIdInSortedList
+    );
+
+    this.paginator.pageIndex = Math.floor(
+      cardIdInSortedList / this.paginator.pageSize
+    );
+
+    let pageSize = this.paginator.pageSize;
+    const from = this.paginator.pageIndex * pageSize;
+    const to = from + pageSize;
+    this.chipListWords$.next(this.mergedWords$.value.slice(from, to));
+
     this.updateCurrentWord(cardNumber);
   }
 
@@ -254,24 +294,30 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
       this.currentScore = nextWord.score;
       setTimeout(() => {
         this.currentTranslation = nextWord?.definition;
-      }, 800);
+      }, 500);
     }
+  }
+
+  flipCard() {
+    this.flip();
   }
 
   // todo some confusion between wordId and wordCounter, it's sometimes used as the index in the mergedWords array, sometimes used to store the wordId
   nextCard() {
+    const wordIdInCurrentSort =
+      this.mergedWords$.value.findIndex((word) => word.id === this.wordId) + 1;
     this.goToCard(
-      this.mergedWords$.value[
-        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) + 1
-      ].id as number
+      this.mergedWords$.value[wordIdInCurrentSort].id as number,
+      wordIdInCurrentSort
     );
   }
 
   previousCard() {
+    const wordIdInCurrentSort =
+      this.mergedWords$.value.findIndex((word) => word.id === this.wordId) - 1;
     this.goToCard(
-      this.mergedWords$.value[
-        this.mergedWords$.value.findIndex((word) => word.id === this.wordId) - 1
-      ].id as number
+      this.mergedWords$.value[wordIdInCurrentSort].id as number,
+      wordIdInCurrentSort
     );
   }
 
