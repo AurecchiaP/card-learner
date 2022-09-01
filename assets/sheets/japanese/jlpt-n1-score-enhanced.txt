@@ -1,0 +1,436 @@
+赤字:あかじ:akaji:deficit:0
+悪事:あくじ:akuji:evil deed, crime:1
+圧倒:あっとう:attou:overwhelm, overpower:0
+扱い:あつかい:atsukai:treatment, service​:0
+圧力:あつりょく:atsuryoku:pressure, stress​:2
+過ち:あやまち:ayamachi:fault, error, indiscretion:3,0
+買収:ばいしゅう:baishuu:acquisition, buy-out, takeover:0
+爆弾:ばくだん:bakudan:bomb:0
+弁護:べんご:bengo:defence, pleading, advocacy​:1
+弁解:べんかい:benkai:justification, explanation:0
+弁明:べんめい:benmei:explanation, excuse:0
+貧乏:びんぼう:binbou:poverty, destitute, poor​:1
+敏感:びんかん:binkan:sensibility, susceptibility:0
+微笑:びしょう:bishou:smile:0
+膨張:ぼうちょう:bouchou:expansion, swelling, increase:0
+防衛:ぼうえい:bouei:defense, protection:0
+暴力:ぼうりょく:bouryoku:violence, mayhem:1
+侮辱:ぶじょく:bujoku:insult, affront, slight:0
+部下:ぶか:buka:subordinate person:1
+分配:ぶんぱい:bunpai:division, splitting, sharing:0
+分散:ぶんさん:bunsan:dispersion, breakup:0
+文書:ぶんしょ:bunsho:document, writing, paperwork:1
+無礼:ぶれい:burei:impolite, rude​:1,2
+武装:ぶそう:busou:arms, armament​:0
+着手:ちゃくしゅ:chakushu:to start work (on), to undertake​:1
+近づく:ちかづく:chikazuku:to approach, to draw near:3,0
+蓄積:ちくせき:chikuseki:accumulation, accumulate:0
+賃金:ちんきん:chingin:wages:1
+沈黙:ちんもく:chinmoku:silence, being silent:0
+知性:ちせい:chisei:intelligence:1,2
+秩序:ちつじょ:chitsujo:order, regularity:2,1
+直感:ちょっかん:chokkan:intuition, instinct, hunch:0
+直面:ちょくめん:chokumen:confrontation, to face:0
+挑戦:ちょうせん:chousen:challenge, defiance, dare:0
+調達:ちょうたつ:choutatsu:supply, provision:0
+中断:ちゅうだん:chuudan:interruption, suspension, break​:0
+忠実:ちゅうじつ:chuujitsu:faithfulness, devotion, loyalty:0
+忠告:ちゅうこく:chuukoku:advice, warning​:0
+打撃:だげき:dageki:blow, shock, strike:0
+大胆:だいたん:daitan:bold, daring, audacious​:3
+妥協:だきょう:dakyou:compromise, giving in​:0
+団結:だんけつ:danketsu:unity, union, combination:0
+脱出:だっしゅつ:dasshutsu:escape, break-out​:0
+土台:どだい:dodai:foundation, base, basis​:0
+独裁:どくさい:dokusai:dictatorship, despotism​:0
+独占:どくせん:dokusen:monopoly, monopolization​:0
+度胸:どきょう:dokyou:courage, bravery, nerve:1
+動員:どういん:douin:mobilization:0
+同情:どうじょう:doujou:sympathy, compassion:0
+動機:どうき:douki:motive, incentive​:0
+同盟:どうめい:doumei:alliance, union, league:0
+同類:どうるい:dourui:the same kind:0
+同士:どうし:doushi:fellow, companion, comrade:1
+同等:どうとう:doutou:equality, equal, same rights:0
+動揺:どうよう:douyou:shaking, trembling, disturbance:0
+映像:えいぞう:eizou:reflection, image, video:0
+演じる:えんじる:enjiru:to perform (a play), to play (a part):0,3
+不動産:ふどうさん:fudousan:real estate​:2,0
+腐敗:ふはい:fuhai:decomposition, corruption, decay:0
+不可欠:ふかけつ:fukaketsu:indispensable, essential​:2
+復讐:ふくしゅう:fukushuu:revenge:0
+紛争:ふんそう:funsou:dispute, trouble, strife​:0
+相応しい:ふさわしい:fusawashii:appropriate, adequate:4
+負傷:ふしょう:fushou:injury, wound​:0
+負担:ふたん:futan:burden, charge, responsibility​:0
+不当:ふとう:futou:injustice, impropriety, unfair:0
+封鎖:ふうさ:fuusa:blockade:0
+概念:がいねん:gainen:general idea, concept:1
+現地:げんち:genchi:actual place, local:1
+厳密:げんみつ:genmitsu:strict, close, precise:0
+減少:げんしょう:genshou:decrease, reduction, decline:0
+原則:げんそく:gensoku:principle, general rule​:0
+幻想:げんそう:gensou:illusions:0
+犠牲:ぎせい:gisei:victim, sacrifice, scapegoat:0
+合成:ごうせい:gousei:composition, synthesis:0
+軍事:ぐんじ:gunji:military affairs​:1
+業務:ぎょうむ:gyoumu:business, affairs, duties:1
+業績:ぎょうせき:gyouseki:achievement, performance, results:0
+把握:はあく:haaku:grasp, catch, understanding​:0
+阻む:はばむ:habamu:to keep someone from doing, to prevent:2
+肺:はい:hai:lung:0
+配置:はいち:haichi:arrangement, deployment:0
+背後:はいご:haigo:back, rear, ​background:1
+排除:はいじょ:haijo:exclusion, removal, elimination:1
+配慮:はいりょ:hairyo:consideration, concern, attention:1
+廃止:はいし:haishi:abolition, repeal​:0
+破壊:はかい:hakai:destruction, disruption​:0
+派遣:はけん:haken:dispatch, despatch, deployment​:0
+白状:はくじょう:hakujou:confession:1
+繁栄:はんえい:han’ei:prosperity, thriving:0
+反応:はんおう:hannou:reaction, response​:3
+反乱:はんらん:hanran:insurrection, rebellion:0
+発生:はっせい:hassei:outbreak, spring forth, occurrence:0
+果たす:はたす:hatasu:to accomplish, to achieve:2
+発言:はつげん:hatsugen:statement, remark:0
+兵器:へいき:heiki:arms, weapons, ordnance​:1
+閉鎖:へいさ:heisa:closing, shutdown, lockout:0
+兵士:へいし:heishi:soldier:1
+変動:へんどう:hendou:change, fluctuation​:0
+変革:へんかく:henkaku:change, transformation:0
+偏見:へんけん:henken:prejudice, narrow view​:0
+率いる:ひきいる:hikiiru:to lead, to command:3
+悲鳴:ひめい:himei:shriek, scream​:0
+非難:ひなん:hinan:criticism, blame, reproach:1
+避難:ひなん:hinan:taking refuge, finding shelter:1
+貧困:ひんこん:hinkon:poor, needy​:0
+頻繁:ひんぱん:hinpan:frequent, incessant:0
+疲労:ひろう:hirou:fatigue, weariness​:0
+悲惨:ひさん:hisan:disastrous, tragic:0
+匹敵:ひってき:hitteki:to be a match for, to rival:0
+必然:ひつぜん:hitsuzen:inevitable, necessary:0
+施す:ほどこす:hodokosu:to give, to do, to conduct:3,0
+保護:ほうご:hogo:care, protection, shelter:0
+保険:ほけん:hoken:insurance, guarantee​:0
+本能:ほんのう:honnou:instinct:1,0
+本心:ほんしん:honshin:true feelings​:1,0
+本質:ほんしつ:honshitsu:essence, true nature:0
+崩壊:ほうかい:houkai:collapse, crumbling:0
+放棄:ほうき:houki:abandonment, renunciation:1
+方策:ほうさく:housaku:plan, policy​:0
+報酬:ほうしゅう:houshuu:remuneration, recompense, reward:0
+法廷:ほうてい:houtei:courtroom:0
+票:ひょう:hyou:vote, ballot:0
+一部:いちぶ:ichibu:one part, one portion:2
+著しい:いちじるしい:ichijirushii:striking, remarkable, considerable:5
+移住:いじゅう:ijuu:migration, immigration​:0
+怒り:いかり:ikari:anger, rage, fury:3
+一刻:いっこく:ikkoku:minute, moment, an instant​:4,0
+移行:いこう:ikou:migration, transition​:0
+移民:いみん:imin:emigration, immigration:0
+痛める:いためる:itameru:to hurt, to cause pain:3
+痛む:いたむ:itamu:to hurt, to ache, to feel a pain​:2
+意図:いと:ito:intention, aim, design​:1
+営む:いとなむ:itonamu:to run (a business), to operate:3
+意欲:いよく:iyoku:will, desire, ambition:1
+依然:いぜん:izen:still, as yet:0
+依存:いそん:izon:dependence, reliance​:0
+地獄:じごく:jigoku:hell:0,3
+事業:ことわざ:jigyou:enterprise, business, industry:0,4
+自覚:じかく:jikaku:self-consciousness, self-awareness​:0
+地元:じもと:jimoto:home area, local:0,3
+迅速:じんそく:jinsoku:quick, fast, rapid, swift:0
+実践:じっせん:jissen:practice, putting into practice:0
+実質:じっしつ:jisshitsu:substance, essence​:0
+事前:じぜん:jizen:prior, beforehand:0
+持続:じぞく:jizoku:continuation, persisting, lasting:0
+助言:じょげん:jogen:advice, suggestion​:0
+譲歩:じょうほ:jouho:concession, conciliation:1
+情熱:じょうねつ:jounetsu:passion, enthusiasm:0
+上陸:じょうりく:jouriku:landing, disembarkation:0
+情勢:じょうせい:jousei:state of things, state of affairs:0
+従業員:じゅうぎょういん:juugyouin:employee, worker​:3
+柔軟:じゅうなん:juunan:flexible, lithe, soft, pliable​:0
+株式:かぶしき:kabushiki:stock (company)​:2
+課題:かだい:kadai:subject, theme, issue, matter​:0
+開発:かいはつ:kaihatsu:development, exploitation​:0
+回避:かいひ:kaihi:evasion, avoidance​:1
+解除:かいじょ:kaijo:cancellation, release:1
+改革:かいかく:kaikaku:reform, reformation:0
+階級:かいきゅう:kaikyuu:(social) class, rank, grade​:0
+介入:かいにゅう:kainyuu:intervention:0
+賭け:かけ:kake:betting, gambling:2
+賭ける:かける:kakeru:to wager, to bet, to gamble:2
+確保:かくほ:kakuho:guarantee, maintain, ensure:1
+革命:かくめい:kakumei:revolution:0
+確信:かくしん:kakushin:conviction, belief, confidence​:0
+肝心:かんじん:kanjin:essential, fundamental, crucial:0
+完璧:かんぺき:kanpeki:perfect, complete, flawless​:0
+官僚:かんりょう:kanryou:bureaucrat, bureaucracy​:0
+監視:かんし:kanshi:monitoring, watching, observation:0
+干渉:かんしょう:kanshou:interference, intervention, meddling​:0
+関与:かんよ:kanyo:participation, taking part in:1
+寛容:かんよう:kanyou:tolerance, generosity:0
+固める:かためる:katameru:to harden, to solidify:0
+傾ける:かたむける:katamukeru:to incline, to lean, to tilt:4
+交わす:かわす:kawasu:to exchange, to intersect, to cross:0
+軽減:けいげん:keigen:abatement, reduction​:0
+経費:けいひ:keihi:expenses, cost, outlay​:1
+経過:けいか:keika:passage, expiration, progress:0
+警戒:けいかい:keikai:vigilance, caution, alertness:0
+経歴:けいれき:keireki:personal history, career​:0
+経路:けいろ:keiro:course, route, means:1
+形成:けいせい:keisei:formation, molding, taking form​:0
+携帯:けいたい:keitai:something carried (in the hand):0
+権限:けんげん:kengen:power, authority, jurisdiction​:3
+権威:けんい:ken’i:authority, power, influence​:1
+権力:けんりょく:kenryoku:(political) power, authority:1
+決断:けつだん:ketsudan:decision, determination​:0
+決意:けつい:ketsui:decision, determination:1
+規模:きぼ:kibo:scale, scope, plan:1
+危機:きき:kiki:crisis, danger, risk​:1,2
+機構:きこう:kikou:mechanism, organization:0
+勤勉:きんべん:kinben:diligent, industrious​:0
+緊急:きんきゅう:kinkyuu:urgent, pressing, emergency​:0
+規制:きせい:kisei:regulation, control, restriction:0
+奇跡:きせき:kiseki:miracle, wonder, marvel​:0,2
+競う:きそう:kisou:to compete, to contest:2
+規定:きてい:kitei:provision, regulation, rule​:0
+気絶:きぜつ:kizetsu:faint, swoon​:0
+築く:きずく:kizuku:to build, to construct:2
+傷つける:きずつける:kizutsukeru:to wound, to injure​:4
+拒む:こばむ:kobamu:to refuse, to reject, to decline​:2
+​誇張:​誇張:kochou:exaggeration:xxx
+孤独:こどく:kodoku:solitude, loneliness, isolation:0
+試みる:こころみる:kokoromiru:to try, to attempt:4
+根拠:こんきょ:konkyo:basis, foundation​:1
+個性:こせい:kosei:individuality, personality:1
+固定:こてい:kotei:fixation, fixing:0
+興奮:こうふん:koufun:excitement, stimulation, agitation:0
+抗議:こうぎ:kougi:protest, objection​:1
+行為:こうい:koui:act, deed, conduct​:1
+好意:こうい:koui:good will, favor, courtesy:1
+公開:こうかい:koukai:making available to the public:0
+後悔:こうかい:koukai:regret, repentance, remorse​:1
+購入:こうにゅう:kounyuu:purchase, buy​:0
+効率:こうりつ:kouritsu:efficiency:0
+交渉:こうしょう:koushou:negotiations, discussions​:0
+雇用:こよう:koyou:employment, hire​:0
+口調:くちょう:kuchou:tone, (verbal) expression​:0
+苦しみ:くるしみ:kurushimi:pain, anguish, suffering:0,3
+屈辱:くつじょく:kutsujoku:disgrace, humiliation​:0
+拒否:きょひ:kyohi:refusal, rejection, denial:1
+極端:きょくたん:kyokutan:extreme, extremity​:3
+脅迫:きょうはく:kyouhaku:threat, menace, coercion:0
+脅威:きょうい:kyoui:threat, menace​:1
+享受:きょうじゅ:kyouju:reception, acceptance, enjoyment:1
+共感:きょうかん:kyoukan:sympathy, empathy, response​:0
+教訓:きょうくん:kyoukun:lesson, precept:0
+強烈:きょうれつ:kyouretsu:strong, intense, severe​:0
+共産:きょうさん:kyousan:communism:0
+強制:きょうせい:kyousei:obligation, coercion, compulsion:0
+究極:きゅうきょく:kyuukyoku:ultimate, extreme, final:0
+救済:きゅうさい:kyuusai:relief, aid, rescue:0
+恵む:めぐむ:megumu:to bless, to show mercy to​:0
+明白:あからさま:meihaku:obvious, clear, plain:0,3
+明瞭:めいりょう:meiryou:clarity, clearness​:0
+名誉:めいよ:meiyo:honor, credit, prestige​:1
+未知:みち:michi:not yet known, unknown:1
+身近:みぢか:midjika:near oneself, close to one, familiar:0
+見方:みかた:mikata:viewpoint, point of view:3,2
+源:みなもと:minamoto:source, origin, root​:0
+満たす:みたす:mitasu:to satisfy, to fulfill, to gratify:2
+漏らす:もらす:morasu:to let leak, to reveal​:2
+摸索:もさく:mosaku:groping (for), exploring for a solution:0
+齎す:もたらす:motarasu:to bring, to take, to bring about​:3
+無実:むじつ:mujitsu:innocence, guiltlessness:1
+無効:むこう:mukou:invalid, no effect:0
+無力:むりょく:muryoku:powerlessness, incompetent:1
+悩み:なやみ:nayami:trouble, worry, distress:3
+燃料:ねんりょう:nenryou:fuel:3
+熱意:ねつい:netsui:zeal, enthusiasm​:1
+憎しみ:にくしみ:nikushimi:hatred:0
+肉体:にくたい:nikutai:the body, the flesh​:0
+担う:になう:ninau:to carry on shoulder, to bear:2
+認識:にんしき:ninshiki:recognition, awareness, perception:0
+妊娠:にんしん:ninshin:conception, pregnancy​:0
+農場:のうじょう:noujou:farm (agriculture)​:0,3
+覚え:おぼえ:oboe:memory, sense, experience​:3,2
+犯す:おかす:okasu:to commit (e.g. crime):2,0
+重荷:おもに:omoni:load, heavy burden:0
+大幅:おおはば:oohaba:big, large, substantial:0
+愚か:おろか:oroka:foolish, stupid​:1
+恐れ:おそれ:osore:fear, horror, anxiety:3
+襲う:おそう:osou:to attack, to assail:0,2
+訪れる:おとずれる:otozureru:to visit, to call on​:4
+負う:おう:ou:to bear, to take responsibility for:0
+楽観:らっかん:rakkan:optimism:0
+連中:れんじゅう:renchuu:company, lot, bunch:0
+理屈:りくつ:rikutsu:theory, reason​:0
+理性:りせい:risei:reason, reasoning power:1
+利息:りそく:risoku:interest (bank)​:0
+理論:りろん:riron:theory:1
+論理:ろんり:ronri:logic, logical:1
+浪費:ろうひ:rouhi:waste, extravagance​:0,1
+領域:りょういき:ryouiki:area, domain, territory:0
+良心:りょうしん:ryoushin:conscience:1
+察知:さっち:sacchi:sense, infer​:1,0
+定める:さだめる:sadameru:to decide, to establish, to determine:3
+最悪:さいあく:saiaku:the worst​:0
+細部:さいぶ:saibu:details:1
+再生:さいせい:saisei:resuscitation, regeneration:0
+採用:さいよう:saiyou:use, adoption, acceptance​:0
+最善:さいぜん:saizen:the very best, utmost​:0
+栄える:さかえる:sakaeru:to prosper, to flourish​:3
+作戦:さくせん:sakusen:tactics, strategy​:0
+悟る:さとる:satoru:to perceive, to sense, to understand:0,2
+世代:せだい:sedai:generation, the world, the age​:1,0
+征服:せいふく:seifuku:conquest, subjugation:0
+制服:せいふく:seifuku:uniform:0
+正義:せいぎ:seigi:justice, right, righteousness:1
+誠実:せいじつ:seijitsu:sincere, honest, faithful​:0
+成熟:せいじゅく:seijuku:maturity, ripeness​:0
+成果:せいか:seika:fruits (of one’s labors), accomplishment:1
+政権:せいけん:seiken:(political) administration, political power​:0
+政策:せいさく:seisaku:political measures, policy​:0
+正当:せいとう:seitou:just, justifiable, right:0
+選挙:せんきょ:senkyo:election:1
+戦略:せんりゃく:senryaku:strategy, tactics​:0
+占領:せんりょう:senryou:occupying, possession, capture:0
+戦闘:せんとう:sentou:battle, fight, combat​:0
+専用:せんよう:senyou:exclusive use, personal use:0
+接触:せっしょく:sesshoku:touch, contact​:0
+設定:せってい:settei:establishment, creation, setting:0
+説得:せっとく:settoku:persuasion:0
+設立:せつりつ:setsuritsu:establishment, founding:0
+死:し:shi:death, decease​:1
+強いる:しいる:shiiru:to force, to compel, to coerce​:2
+支持:しじ:shiji:support, holding up, backing:1
+指示:しじ:shiji:instructions, directions, ​indication:1
+資格:しかく:shikaku:qualifications, requirements:0
+指揮:しき:shiki:command, direction​:2,1
+資金:しきん:shikin:funds, capital​:2,1
+仕組み:しくみ:shikumi:structure, construction:0
+使命:しめい:shimei:mission, errand​, task:1
+辛抱:しんぼう:shinbou:patience, endurance​:1
+進化:しんか:shinka:evolution, progress​:1
+侵略:しんりゃく:shinryaku:aggression, invasion:0
+思考:しこう:shikou:thought, consideration, thinking​:0
+真実:しんじつ:shinjitsu:truth, reality​:1
+真理:しんり:shinri:truth:1
+真相:しんそう:shinsou:truth, real situation​:0
+進展:しんてん:shinten:progress, development​:0
+資産:しさん:shisan:property, fortune, assets:1,0
+視線:しせん:shisen:one’s line of sight, one’s gaze:0
+指摘:してき:shiteki:pointing out, identification​:0
+嫉妬:しっと:shitto:jealousy, envy​:0,1
+視野:しや:shiya:field of vision, outlook​:1
+処分:しょぶん:shobun:disposal, dealing (with a problem):1
+職務:しょくむ:shokumu:professional duties​:1
+所得:しょとく:shotoku:income, earnings​:0
+象徴:しょうちょう:shouchou:symbol:0
+衝動:しょうどう:shoudou:impulse, impetus, urge​:0
+生涯:しょうがい:shougai:one’s lifetime:1
+証言:しょうげん:shougen:testimony, (verbal) evidence​:0,3
+証拠:しょうこ:shouko:evidence, proof​:0
+照明:しょうめい:shoumei:illumination, lighting​:0
+消滅:しょうめつ:shoumetsu:extinction, extinguishment:0
+奨励:しょうれい:shourei:encouragement, promotion:0
+詳細:しょうさい:shousai:detail, particulars​:0
+昇進:しょうしん:shoushin:promotion, advancement:0
+少数:しょうすう:shousuu:minority, few​:3
+正体:しょうたい:shoutai:true character, true form:1
+勝利:しょうり:shouri:victory, triumph, win:1
+所有:しょゆう:shoyuu:one’s possessions, ownership​:0
+主導:しゅどう:shudou:leadership, initiative, spearhead​:0
+守衛:しゅえい:shuei:security guard, doorkeeper​:0
+手法:しゅほう:shuhou:technique, method​:0
+収集:しゅうしゅう:shuushuu:gathering up, collection:0
+収益:しゅうえき:shuueki:earnings, proceeds, returns:0,1
+措置:そち:sochi:measure, measures, step​:1
+損なう:そこなう:sokonau:to harm, to hurt, to injure:3
+促進:そくしん:sokushin:promotion, acceleration:0
+染まる:そまる:somaru:to be dyed​, to be tainted, to be infected:0
+即座に:即座に:sokuza:immediately, right away:xxx
+阻止:そし:soshi:obstruction, check, hindrance:1
+備わる:そなわる:sonawaru:to be furnished with, to be equipped with​:3
+損失:そんしつ:sonshitsu:loss (e.g. assets or profits)​:0
+訴訟:そしょう:soshou:liftigation, lawsuit​:0
+装備:そうび:soubi:equipment:1
+捜査:そうさ:sousa:search, investigation:1
+創造:そうぞう:souzou:creation:0
+遂行:すいこう:suikou:accomplishment, execution​:0
+衰退:すいたい:suitai:decline, degeneration, decay:0
+推進:すいしん:suishin:propulsion, drive​, promotion:0
+好く:すく:suku:to like, to love:1,2
+体験:たいけん:taiken:personal experience, physical experience:0
+対応:たいおう:taiou:correspondence, coping with:0
+態勢:たいせい:taisei:attitude, posture, preparedness:0
+対処:たいしょ:taisho:dealing with, coping with:1
+退職:たいしょく:taishoku:retirement, resignation​:0
+大衆:たいしゅう:taishuu:general public, the masses​:0
+高まる:たかまる:takamaru:to rise, to swell:3
+企む:たくらむ:takuramu:to scheme, to plan, to conspire:3
+保つ:たもつ:tamotsu:to keep, to preserve, to maintain:2
+達成:たっせい:tassei:achievement:0
+提供:ていきょう:teikyou:offer, provisioning, supply​:0
+停滞:ていたい:teitai:stagnation, tie-up, congestion:0
+手順:てじゅん:tejun:process, procedure, sequence:0,1
+適応:てきおう:tekiou:adaptation, accommodation:0
+展示:てんじ:tenji:exhibition, display​:0
+天井:てんじょう:tenjou:ceiling, ceiling price​:0
+転換:てんかん:tenkan:conversion, changeover:0
+点検:てんけん:tenken:inspection, examination, checking​:0
+天才:てんさい:tensai:genius, prodigy:0
+手遅れ:ておくれ:teokure:being (too) late​:2
+扉:とびら:tobira:door, gate, opening​:0
+乏しい:とぼしい:toboshii:meagre, scarce, lacking:3
+特権:とっけん:tokken:privilege, special right​:0
+富:とみ:tomi:riches, wealth, fortune​:1
+富む:とむ:tomu:to be rich in, to abound in:1
+突破:とっぱ:toppa:breaking through, penetration​:0,1
+取引:とりひき:torihiki:transactions, dealings:2
+整える:ととのえる:totonoeru:to put in order, to adjust​:4,3
+統合:とうごう:tougou:integration, unification, synthesis​:0
+投入:とうにゅう:tounyuu:throwing into, inserting:0
+討論:とうろん:touron:debate, discussion​:1
+統制:とうせい:tousei:regulation, control​:0
+投資:とうし:toushi:investment:0,1
+到達:とうたつ:toutatsu:reaching, attaining, arrival​:0
+告げる:つげる:tsugeru:to tell, to inform:0
+追求:ついきゅう:tsuikyuu:pursuit (of a goal, ideal, etc.):0
+追跡:ついせき:tsuiseki:chase, pursuit, tracing:0
+費やす:ついやす:tsuiyasu:to spend, to consume:3
+募る:つのる:tsunoru:to grow violent, to become stronger:2
+通常:つうじょう:tsuujou:common, general, normal, usual​:0
+強まる:つよまる:tsuyomaru:to get strong, to gain strength​:3
+打ち明ける:うちあける:uchiakeru:to confide, to reveal:0,4
+動き:うごき:ugoki:movement, move, motion​:3
+促す:うながす:unagasu:to urge, to press, to prompt:0,3
+運営:うんえい:un’ei:management, administration:0
+運命:うんめい:unmei:fate, destiny:1
+運用:うんよう:unyou:making use of, application:0
+薄れる:うすれる:usureru:to fade, to become dim​:3,0
+罠:わな:wana:snare, trap:1
+闇:やみ:yami:darkness, the dark:2
+野心:やしん:yashin:ambition, aspiration​:1,0
+養う:やしなう:yashinau:to support, to provide for:3,0
+余地:よち:yochi:place, room, margin:1
+予感:よかん:yokan:presentiment, premonition, hunch​:0
+欲望:よくぼう:yokubou:desire, appetite, lust​:0
+抑制:よくせい:yokusei:control, restraint, suppression:0
+要因:よういん:youin:main cause, primary factor​:0
+用件:ようけん:youken:business, thing to be done:3
+要請:ようせい:yousei:appeal, request, demand:0
+要する:ようする:you:to need, to demand, to require:3
+弱める:よわめる:yowameru:to weaken​:3
+勇敢:ゆうかん:yuukan:brave, heroic, gallant​:0
+優先:ゆうせん:yuusen:preference, priority:0
+融資:ゆうし:yuushi:financing, loan​:1,0
+有する:ゆうする:yuusuru:to own, to be endowed with​:3
+誘惑:ゆうわく:yuuwaku:temptation, allurement:0
+財政:ざいせい:zaisei:public finance, financial affairs:0
+残酷:ざんこく:zankoku:cruelty, harshness​:0
+前提:ぜんてい:zentei:preamble, premise, reason:0
+絶望:ぜつぼう:zetsubou:despair, hopelessness​:0
+増強:ぞうきょう:zoukyou:augment, reinforce, increase​:0

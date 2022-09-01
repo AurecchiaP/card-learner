@@ -1,0 +1,553 @@
+浴びる:あびる:abiru:to take a shower:0
+危ない:あぶない:abunai:dangerous, risky:0,3
+あげる:あげる:ageru:to give:0
+赤/赤い:赤/赤い:aka/akai:red:xxx
+明るい:あかるい:akarui:bright, colorful:0,3
+開ける:あける:akeru:to open:0
+秋:あき:aki:autumn:1
+開く:あく:aku:to open:0
+甘い:あまい:amai:sweet:0
+雨:あめ:ame:rain:1
+あなた:あなた:anata:you:2,1
+姉:あね:ane:older sister:0
+兄:あに:ani:older brother:1
+青い:あおい:aoi:blue:2
+アパート::apaato:apartment:2
+洗う:あらう:arau:to wash:0
+有る:ある:aru:to be, to exist:1
+歩く:あるく:aruku:to walk:2
+朝:あさ:asa:morning:1
+朝ご飯:あさごはん:asagohan:breakfast:3
+明後日:あさって:asatte:day after tomorrow:2
+足:あし:ashi:foot, leg:2
+明日:あした:ashita:tomorrow:3
+遊ぶ:あすぶ:asobu:to play:0
+あそこ:あそこ:asoko:there, over there:0
+頭:あたま:atama:head:3,2
+新しい:あたらしい:atarashii:new, fresh:4
+暖かい:あたたかい:atatakai:warm, mild:4
+後:あと:ato:behind after, later:1
+暑い:あつい:atsui:hot (weather):2
+熱い:あつい:atsui:hot (thing):2
+厚い:あつい:atsui:thick:0
+会う:あう:au:to meet:1
+晩ご飯:ばんごはん:bangohan:dinner:3
+番号:ばんごう:bangou:number:3
+バス::basu:bus:1
+ベッド::beddo:bed:1
+勉強:べんきょう:benkyou:study, diligence:0
+便利:べんり:benri:convenient, handy:1
+帽子:ぼうし:boushi:hat, cap:0
+豚肉:とんにく:butaniku:pork:0
+病院:びょういん:byouin:hospital:0
+病気:びょうき:byouki:illness, disease:0
+茶色:ちゃいろ:chairo:light brown:0
+茶碗:ちゃわん:chawan:rice bowl, tea cup:0
+父:かそ:chichi:father:1
+違う:たがう:chigau:to differ (from):2
+小さい:ちいさい:chiisai:small, little, tiny:3
+近い:ちかい:chikai:near, close:2
+近く:ちかく:chikaku:near, neighborhood:2,1
+地下鉄:ちかてつ:chikatetsu:subway, metro:0
+地図:ちず:chizu:map:1
+ちょっと:ちょっと:chotto:a little:1,0
+ちょうど:ちょうど:choudo:exactly, precisely, just:1
+台所:だいどこ:daidokoro:kitchen:0
+大学:だいがく:daigaku:university:0
+大丈夫:だいじょうぶ:daijoubu:safe, all right, okay:3
+段々:だんだん:dandan:gradually, little by little:0,1
+誰:た:dare:who:1
+誰か:だれか:dareka:someone, somebody:1
+出す:だす:dasu:to take out:1
+出口:でぐち:deguchi:exit, gateway:1
+出かける:でかける:dekakeru:to go out:0
+電気:でんき:denki:electricity, light:1
+電車:でんしゃ:densha:train, electric train:0,1
+電話:でんわ:denwa:telephone call, phone:0
+デパート::depaato:department store:2
+出る:でる:deru:to leave, to exit:1
+ドア::doa:door (Western style):1
+どちら:どちら:dochira:which one:1
+どこ:どこ:doko:where:1
+どう::dou:how, in what way, how about:1
+動物:どうぶつ:doubutsu:animal:0
+どうも::doumo:thanks:1
+どうして:どうして:doushite:why, for what reason:1
+どうぞ::douzo:please, feel free:1
+土曜日:どようび:doyoubi:Saturday:2
+絵:え:e:picture, drawing, painting:1
+映画:えいが:eiga:movie, film:1,0
+映画館:えいがかん:eigakan:movie theater, cinema:3
+英語:えいご:eigo:English (language):0
+駅:えき:eki:station:1
+鉛筆:えんぴつ:enpitsu:pencil:0
+エレベータ:エレベータ:erebeeta:elevator:xxx
+フォーク::fooku:fork:1
+吹く:ふく:fuku:to blow (wind):1,2
+服:ふく:fuku:clothes:2
+降る:くだる:furu:to fall (rain):0
+古い:ふるい:furui:old (not person):2
+二人:ににん:futari:two people, pair:2
+二日:ふつか:futsuka:second day of the month, two days:0
+封筒:ふうとう:fuutou:envelope:0
+冬:ふゆ:fuyu:winter:2
+外国:がいこく:gaikoku:foreign country:0
+外国人:がいこくじん:gaikokujin:foreigner:4
+学校:がっこう:gakkou:school:0
+学生:がくしょう:gakusei:student:0
+玄関:げんかん:genkan:entranceway, entrance hall:1
+元気:げんき:genki:lively, full of spirit:1
+月曜日:げつようび:getsuyoubi:Monday:3
+銀行:ぎんこう:ginkou:bank:0
+ギター::gitaa:guitar:1
+五:いつ:go:five:1
+午後:ごご:gogo:afternoon, p.m.:1
+ご飯:ごはん:gohan:cooked rice, meal:1
+午前:ごぜん:gozen:morning, a.m.:1
+グラム:グラム:guramu:gram:xxx
+牛肉:ぎゅうにく:gyuuniku:beef:0
+牛乳:ぎゅうにゅう:gyuunyuu:milk:0
+歯:は:ha:tooth:1
+八:はち:hachi:eight:2
+葉書:はがき:hagaki:postcard:0
+母:いろは:haha:mother:2
+入る:いる:hairu:to enter, to go into:0
+灰皿:はいざら:haizara:ashtray:0
+始まる:はじまる:hajimaru:to begin, to start:0
+始め:はじめ:hajime:beginning, start:0
+初めて:はじめて:hajimete:for the first time:2
+箱:はこ:hako:box, chest:0
+花:はな:hana:flower, blossom:2
+鼻:はな:hana:nose:0
+話:はなし:hanashi:talk, speech, chat:3
+話す:はなす:hanasu:to talk, to speak:2
+半分:はんぶん:hanbun:half:3
+晴れる:はれる:hareru:to clear up:2
+貼る:はる:haru:to stick, to paste:0
+春:はる:haru:spring, springtime:1
+箸:はし:hashi:chopsticks:1
+橋:きょう:hashi:bridge:1
+走る:はしる:hashiru:to run:2
+二十歳:はたち:hatachi:twenty years old:1
+働く:はたらく:hataraku:to work:0
+二十日:はつか:hatsuka:twentieth day of the month, twenty days:0
+早い:はやい:hayai:early:2
+速い:はやい:hayai:fast, quick:2
+早く:はやく:hayaku:early, soon, quickly:1
+辺:へ:hen:area, vicinity:1
+下手:したて:heta:unskillful:0
+部屋:へや:heya:room, chamber:2
+日:にち:hi:day, sun:1
+火:か:hi:fire, flame:1
+左:さ:hidari:left, left hand side:1
+東:あずま:higashi:east:1
+飛行機:ひこうき:hikouki:aeroplane, airplane:2
+引く:ひく:hiku:to pull, to draw:0
+弾く:はじく:hiku:to play (piano, guitar):2
+低い:ひくい:hikui:low (rank), short (height):2
+暇:いとま:hima:spare time, free time:0,3
+広い:ひろい:hiroi:spacious, vast, wide:2
+昼:ひる:hiru:noon, midday:2
+昼ご飯:ひるごはん:hirugohan:lunch, midday meal:3
+人:じん:hito:person:1
+一人:いちにん:hitori:one person, alone:2
+一つ:ひとつ:hitotsu:one:2
+他:た:hoka:other, the rest:1
+本:ほん:hon:book:1
+本棚:ほんだな:hondana:bookshelf, bookcase:1
+本当:ほんと:hontou:truth, reality:0
+ホテル::hoteru:hotel:1
+百:ひゃく:hyaku:hundred:2
+一:いち:ichi:one:2
+一番:いちばん:ichiban:number one, first, first place:2,0
+一日:いちじつ:ichinichi:one day:4
+家:いえ:ie:house, residence:2
+いい:いい:ii:good:1
+否:いえ:iie:no, nay:2
+池:いけ:ike:pond:2
+行く:いく:iku:to go:0
+幾ら:いくら:ikura:how much, how many:(名)1,(副)1,0
+幾つ:いくつ:ikutsu:how many, how old:1
+今:いま:ima:now, the present time:1
+意味:いみ:imi:meaning, significance:1
+妹:いも:imouto:younger sister:1
+犬:いぬ:inu:dog:2
+入れる:いれる:ireru:to put in, to let in:0
+入口:いりぐち:iriguchi:entrance, gate:0
+色:いろ:iro:color, complexion:2
+色々:いろいろ:iroiro:various:0
+要る:いる:iru:to need, to want:0
+医者:いしゃ:isha:(medical) doctor, physician:0
+忙しい:いそがしい:isogashii:busy, occupied:4
+一緒:いっしょ:issho:together:0
+椅子:いす:isu:chair, stool:0
+痛い:いたい:itai:painful, sore:2
+五日:いつか:itsuka:fifth day of the month, five days:3,0
+いつも:いつも:itsumo:always, usually:1
+五つ:いつつ:itsutsu:five:2
+言う:いう:iu:to say, to utter:0
+嫌:いや:iya:disagreeable, detestable:2
+字引:じびき:jibiki:dictionary:3
+自分:じぶん:jibun:myself, yourself, oneself:0
+自動車:じどうしゃ:jidousha:automobile:2,0
+時間:じかん:jikan:time, hours:0
+辞書:じしょ:jisho:dictionary:1
+自転車:じてんしゃ:jitensha:bicycle:2,0
+上手:うわて:jouzu:skill, skillful:0
+授業:じゅぎょう:jugyou:lesson, class work:1
+鞄:かばん:kaban:bag:0
+花瓶:かびん:kabin:(flower) vase:0
+角:かく:kado:corner, edge:2,1,0
+帰る:かえる:kaeru:to return, to come home:1
+返す:かえす:kaesu:to return (something):1
+鍵:かぎ:kagi:key, lock:2
+階段:かいだん:kaidan:stairs, stairway:0
+買物:かいもの:kaimono:shopping:0
+会社:かいしゃ:kaisha:company, corporation:0
+書く:かく:kaku:to write, to compose:1
+カメラ::kamera:camera:1
+紙:かみ:kami:paper:2
+漢字:かんじ:kanji:Chinese characters:0
+体:からだ:karada:body, torso:0
+辛い:からい:karai:spicy, hot:2
+借りる:かりる:kariru:to borrow:0
+軽い:かるい:karui:light (not heavy):0
+傘:かさ:kasa:umbrella:1
+貸す:かす:kasu:to lend, to loan:0
+方:かた:kata:person:2
+家庭:かてい:katei:home, family, household:0
+買う:かう:kau:to buy, to purchase:0
+川:かわ:kawa:river, stream:2
+可愛い:かわいい:kawaii:cute, adorable:3
+風邪:かぜ:kaze:cold, influenza:0
+風:かぜ:kaze:wind, breeze:0
+家族:かぞく:kazoku:family, members of a family:1
+警官:けいかん:keikan:police officer, policeman:0
+結婚:けっこん:kekkon:marriage:0
+結構:けっこう:kekkou:spenlid, nice, okay:(名)0,3,(形動
+今朝:けさ:kesa:this morning:1
+消す:けす:kesu:to erase, to delete:0
+木:き:ki:tree:1
+消える:きえる:kieru:to go out, to vanish:0
+黄色い:きいろい:kiiroi:yellow:0
+聞く:きく:kiku:to hear, to listen:0
+昨日:きのう:kinou:yesterday:2
+金曜日:きんようび:kin’youbi:Friday:3
+切符:きっぷ:kippu:ticket:0
+嫌い:きらい:kirai:dislike, hate:0
+奇麗:きれい:kirei:pretty, lovely, beautiful:1
+キロ::kiro:kilogram:1
+着る:きる:kiru:to wear, to put on:0
+切る:きる:kiru:to cut:1
+喫茶店:きっさてん:kissaten:coffee shop:3,0
+北:きた:kita:north:0,2
+汚い:きたない:kitanai:dirty, filthy:3
+切手:きって:kitte:stamp (postage):0
+子供:こども:kodomo:child, children:0
+声:こえ:koe:voice:1
+ここ:ここ:koko:here:1
+九日:ここぬか:kokonoka:ninth day of the month, nine days:4
+困る:こまる:komaru:to be troubled, to be worried:2
+今晩:こんばん:konban:tonight, this evening:1
+今週:こんしゅう:konshuu:this week:0
+コーヒー::koohii:coffee:3
+コート::kooto:coat:1
+コップ::koppu:glass:0
+答える:こたえる:kotaeru:to answer, to reply:3,2
+言葉:ことば:kotoba:language, dialect:3
+今年:ことし:kotoshi:this year:0
+交番:こうばん:kouban:police box:0
+紅茶:こうちゃ:koucha:black tea:0
+公園:こうえん:kouen:(public) park:0
+交差点:こうさてん:kousaten:crossing, intersection:0,3
+口:く:kuchi:mouth, opening, hole:1
+果物:かぶつ:kudamono:fruit:1
+曇り:くもり:kumori:cloudiness, cloudy weather:3
+国:くに:kuni:country, state, region:0
+暗い:くらい:kurai:dark, gloomy:0
+クラス::kurasu:class:1
+黒い:くろい:kuroi:black, dark:2
+来る:きたる:kuru:to come:2
+車:くるま:kuruma:car, automobile:0
+薬:くすり:kusuri:medicine:0
+靴:くつ:kutsu:shoes, boots:2
+靴下:くつした:kutsushita:socks:2,4
+去年:きょねん:kyonen:last year:1
+今日:きょう:kyou:today, this day:1
+兄弟:きょうだい:kyoudai:siblings, brothers and sisters:1
+教室:きょうしつ:kyoushitsu:classroom, department:0
+九:きゅう:kyuu:nine:1
+町:ちょう:machi:town, block:1
+まだ:まだ:mada:still, not yet:1
+窓:まど:mado:window:1
+前:さき:mae:front, ahead, previous:0
+曲がる:まがる:magaru:to bend, to curve:0
+毎朝:まいあさ:maiasa:every morning:1,0
+毎晩:まいばん:maiban:every night:1,0
+毎日:まいにち:mainichi:every day:1
+毎週:まいしゅう:maishuu:every week:0
+毎年:まいとし:maitoshi:every year, yearly:0
+毎月:まいげつ:maitsuki/maigetsu:every month:0
+万:ばん:man:ten thousand:1
+丸い:まるい:marui:round, circular:0,2
+また:また:mata:again, also:2
+待つ:まつ:matsu:to wait, to look forward to:1
+不味い:まずい:mazui:unappetizing, unsavory:2
+目:め:me:eye, eyeball:1
+眼鏡:がんきょう:megane:spectacles, glasses:0
+道:どう:michi:road, street, way:1
+緑:みどり:midori:green:1
+磨く:みがく:migaku:to polish, to shine:0
+右:みぎ:migi:right, right hand side:0
+短い:みじかい:mijikai:short:3
+耳:みみ:mimi:ear:2
+南:みなみ:minami:south:0
+皆:みな:minna:all, everyone:2
+見る:みる:miru:to see, to look, to watch:1
+店:たな:mise:store, shop:0
+見せる:みせる:miseru:to show, to display:2
+水:すい:mizu:water:1
+木曜日:もくようび:mokuyoubi:Thursday:3
+門:かど:mon:gate:1
+問題:もんだい:mondai:question, problem:0
+持つ:もつ:motsu:to hold (in one’s hands):1
+六日:むいか:muika:sixth day of the month, six days:0
+向こう:むこう:mukou:opposite side, other side:2,0
+村:むら:mura:village:2
+難しい:むずかしい:muzukashii:difficult, hard:4,0
+長い:ながい:nagai:long, lengthy:2
+中:じゅう:naka:inside, in, among:1
+鳴く:なく:naku:to sing (bird):0
+無くす:なくす:nakusu:to lose something:0
+名前:なまえ:namae:name, full name:0
+何:なに:nani:what:1
+七日:なぬか:nanoka:seventh day of the month, seven days:0
+並べる:ならべる:naraberu:to line up:0
+並ぶ:ならぶ:narabu:to stand in a line:0
+習う:ならう:narau:to be taught, to learn (from a teacher):2
+なる:なる:naru:to become:1
+夏:げ:natsu:summer:1
+猫:ねこ:neko:cat:1
+寝る:ねる:neru:to go to bed:0
+二:に:ni:two:1
+日曜日:にちようび:nichiyoubi:Sunday:3
+賑やか:にぎやか:nigiyaka:bustling, busy, lively:2
+肉:しし:niku:flesh, meat:1
+荷物:にもつ:nimotsu:luggage, baggage:1
+西:にし:nishi:west:0
+庭:にわ:niwa:garden, yard:0
+登る:のぼる:noboru:to ascend, to go up:0
+飲物:のみもの:nomimono:drink, beverage:3,2
+飲む:のむ:nomu:to drink, to gulp:1
+乗る:のる:noru:to get on (train, plane, bus, ship):0
+脱ぐ:ぬぐ:nugu:to take off (clothes, shoes):1
+お祖母さん:おばあさん:obaasan:grandmother:2
+伯母さん:おばさん:obasan:aunt:0
+お弁当:おべんとう:obentou:Japanese lunch box:0
+覚える:おぼえる:oboeru:to memorize, to remember:3
+お茶:おちゃ:ocha:tea:0
+お風呂:おふろ:ofuro:bath:2
+美味しい:おいしい:oishii:delicious, tasty:0,3
+お母さん:おかあさん:okaasan:mother:2
+お金:おかね:okane:money:0
+お菓子:おかし:okashi:sweets, candy:2
+起きる:おきる:okiru:to get up, to rise:2
+置く:おく:oku:to put, to place:0
+奥さん:おくさん:okusan:wife, your wife, his wife:1
+お巡りさん:おまわりさん:omawarisan:police officer:2
+重い:おもい:omoi:heavy, weighty:0
+面白い:おもしろい:omoshiroi:interesting, fascinating:4
+同じ:おなじ:onaji:same, identical:0
+お腹:おなか:onaka:stomach:0
+お姉さん:おねえさん:oneesan:elder sister:2
+音楽:おんがく:ongaku:music:1
+お兄さん:おにいさん:oniisan:elder brother:2
+女の子:おんなのこ:onna:girl:3
+女:おうな:onna:female, woman:1
+多い:おおい:ooi:many, numerous, a lot:1,2
+大きい:おおきい:ookii:big, large, great:3
+大勢:おおぜい:oozei:many, crowd, great number of people:3
+降りる:おりる:oriru:to descend, to get off:2
+お皿:お皿:osara:plate, dish:xxx
+教える:おしえる:oshieru:to teach, to instruct:0
+遅い:おそい:osoi:slow, late:0,2
+押す:おす:osu:to push, to press:0
+お手洗い:おてあらい:otearai:toilet, restroom:3
+男の子:おとこのこ:otoko:boy:3
+男:お:otoko:man, male:1
+大人:おとな:otona:adult:0
+一昨日:いっさくじつ:ototoi:day before yesterday:4
+一昨年:いっさくねん:ototoshi:year before last:0,4
+お父さん:おとうさん:otousan:father, dad:2
+弟:おと:otouto:younger brother:2
+終わる:おわる:owaru:to finish, to end:0
+泳ぐ:およぐ:oyogu:to swim:2
+パーティー::paatii:party:1
+ペン::pen:pen:1
+ペット:ペット:petto:pet:1
+ポケット::poketto:pocket:2,1
+プール::puuru:swimming pool:1
+来月:らいげつ:raigetsu:next month:1
+来年:らいねん:rainen:next year:0
+来週:らいしゅう:raishuu:next week:0
+冷蔵庫:れいぞうこ:reizouko:refrigerator:3
+練習:れんしゅう:renshuu:practice:0
+六:む:roku:six:1
+廊下:ろうか:rouka:corridor, hallway:0
+旅行:りょこう:ryokou:travel, trip:0
+料理:りょうり:ryouri:cooking, cuisine:1
+両親:ふたおや:ryoushin:parents, both parents:0
+留学生:りゅうがくせい:ryuugakusei:overseas student:3,4
+歳:とし:sai:years old:2
+財布:さいふ:saifu:purse, wallet:0
+魚:うお:sakana:fish:0
+酒:さけ:sake:alcohol, sake:0
+先:さき:saki:previous, prior, former:0
+咲く:さく:saku:to bloom:0
+作文:さくぶん:sakubun:writing (an essay), composition:0
+寒い:さぶい:samui:cold:2
+三:サン:san:three:1
+散歩:さんぽ:sanpo:walk, stroll:0
+再来年:さらいねん:sarainen:year after next:0
+砂糖:さとう:satou:sugar:2
+背:せ:se:height, stature:0,1
+背広:セビロ:sebiro:business suit:0
+セーター::seetaa:sweater, jumper:1
+生徒:せいと:seito:pupil:1
+石鹸:せっけん:sekken:soap:0
+狭い:せまい:semai:narrow, confined:2
+千:せん:sen:thousand:1
+先月:せんげつ:sengetsu:last month:1
+先生:せんせい:sensei:teacher, master, doctor:3
+先週:せんしゅう:senshuu:last week:0
+洗濯:せんたく:sentaku:washing, laundry:0
+写真:しゃしん:shashin:photograph, photo, picture:0
+シャツ::shatsu:shirt:1
+シャワー::shawaa:shower:1
+四:し:shi,:four:1
+七:しち:shichi,:seven:2
+仕事:しごと:shigoto:work, job:0
+閉まる:しまる:shimaru:to be shut, to close:2
+閉める:しめる:shimeru:to close, to shut:2
+締める:しめる:shimeru:to tie, to fasten:2
+新聞:しんぶん:shinbun:newspaper:0
+死ぬ:しぬ:shinu:to die, to pass away:0
+塩:えん:shio:salt:1
+白い:しろい:shiroi:white:2
+知る:しる:shiru:to be aware of, to know:0
+下:げ:shita:below, down, under:1,0
+質問:しつもん:shitsumon:question, inquiry:0
+静か:しずか:shizuka:quiet, silent:1
+食堂:しょくどう:shokudou:dining room, dining hall:0
+醤油:しょうゆ:shouyu:soy sauce:0
+宿題:しゅくだい:shukudai:homework:0
+側:かたわら:soba:near, close, beside:0
+空:うつせ:sora:sky:0
+外:そと:soto:outside, exterior:1
+掃除:そうじ:souji:cleaning, sweeping:0
+すぐ:すぐ:sugu:immediately:1
+水曜日:すいようび:suiyoubi:Wednesday:3
+スカート::sukaato:skirt:2
+好き:すき:suki:liking, fondness, love:2
+少し:すこし:sukoshi:small quantity, little:2
+少ない:すくない:sukunai:few, a little:3
+住む:すむ:sumu:to live, to reside:1
+スポーツ::supootsu:sport:2
+スプーン::supuun:spoon:2
+スリッパ::surippa:slippers:1,2
+する:する:suru:to do:0
+ストーブ::sutoobu:heater, stove:2
+吸う:すう:suu:to smoke, to breathe in:0
+座る:すわる:suwaru:to sit:0
+涼しい:すずしい:suzushii:cool, refreshing:3
+煙草:えんそう:tabako:tabacco, cigarette:0
+食べ物:たべもの:tabemono:food:3,2
+食べる:たべる:taberu:to eat:2
+多分:たぶん:tabun:perhaps, probably:(名
+大変:たいへん:taihen:very, greatly, immense:0
+大切:おおぎり:taisetsu:important, necessary:0
+大使館:たいしかん:taishikan:embassy:3
+高い:たかい:takai:high, tall, expensive:2
+沢山:たくさん:takusan:a lot, plenty, many:3
+タクシー::takushii:taxi:1
+卵:たまご:tamago:egg, spawn:2,0
+誕生日:たんじょうび:tanjoubi:birthday:3
+頼む:たのむ:tanomu:to request, to beg, to ask:2
+楽しい:たのしい:tanoshii:enjoyable, fun:3
+建物:たてもの:tatemono:building:2,3
+立つ:たつ:tatsu:to stand, to rise:1
+手:て:te:hand:1
+テーブル::teeburu:table:0
+テープレコーダー::teepu:tape recorder:5
+テープ::teepu:tape:1
+手紙:てがみ:tegami:letter:0
+天気:てんき:tenki:weather:1
+テレビ::terebi:television, TV:1
+テスト::tesuto:test:1
+戸:こ:to:door:1
+飛ぶ:とぶ:tobu:to fly:0
+トイレ::toire:toilet, restroom:1
+時計:とけい:tokei:watch, clock:0
+時々:ときどき:tokidoki:sometimes, at times:0,2
+所:とこ:tokoro:place, spot, scene:2,0
+止まる:とどまる:tomaru:to stop (moving):3
+友達:ともだち:tomodachi:friend, companion:0
+隣:となり:tonari:neighbor, next to:0
+遠い:とおい:tooi:far, distant:0
+十日:とおか:tooka:tenth day of the month, ten days:0
+鳥:とり:tori:bird:0
+取る:とる:toru:to take, to pick up:1
+撮る:とる:toru:to take (a photo), to record (a video):1
+年:とし:toshi:year, age:2
+図書館:としょかん:toshokan:library:2
+とても:とても:totemo:very, exceedingly:0
+次:つぎ:tsugi:next, following:2
+一日:いちじつ:tsuitachi:first day of the month:4
+疲れる:つかれる:tsukareru:to get tired:3
+使う:つかう:tsukau:to use, to make use of:0
+着く:つく:tsuku:to arrive at, to reach:1,2
+机:つくえ:tsukue:desk:0
+作る:つくる:tsukuru:to make, to produce:2
+詰まらない:つまらない:tsumaranai:dull, uninteresting:3
+冷たい:つべたい:tsumetai:cold (to the touch):0
+勤める:つとめる:tsutomeru:to work (for), to be employed (at):3
+強い:こわい:tsuyoi:strong, powerful:2
+上:うえ:ue:above, up, over:0,2
+生まれる:うまれる:umareru:to be born:0
+海:うみ:umi:sea, ocean:1
+売る:うる:uru:to sell:0
+煩い:うるさい:urusai:noisy, loud:3
+後ろ:うしろ:ushiro:back, behind, rear:0
+薄い:うすい:usui:thin, pale, light:0,2
+歌:うた:uta:song:2
+歌う:うたう:utau:to sing:0
+上着:うわぎ:uwagi:coat, jacket:0
+若い:わかい:wakai:young, youthful:2
+分かる:わかる:wakaru:to understand, to comprehend:2
+悪い:にくい:warui:bad, poor, inferior:2
+忘れる:わすれる:wasureru:to forget:0
+渡る:わたる:wataru:to cross over:0
+私:あたい:watashi:I, me:0
+渡す:わたす:watasu:to hand over, to hand in:0
+山:むれ:yama:mountain:2
+やる:やる:yaru:to do:0
+野菜:やさい:yasai:vegetable:0
+安い:やすい:yasui:cheap, inexpensive:2
+休み:やすみ:yasumi:rest, recess:3
+休む:やすむ:yasumu:to be absent, to take a day off:2
+呼ぶ:よぶ:yobu:to call out, to call:0
+四日:よっか:yokka:fourth day of the month, four days:0
+横:よこ:yoko:horizontal:0
+読む:よむ:yomu:to read:1
+夜:よ:yoru:evening, night:1
+洋服:ようふく:youfuku:Western-style clothes:0
+八日:ようか:youka:eight day of the month, eight days:0
+弱い:よわい:yowai:weak, frail, delicate:2
+雪:ゆき:yuki:snow:2
+ゆっくり::yukkuri:slowly, at ease:3
+郵便局:ゆうびんきょく:yuubinkyoku:post office:3
+有名:ゆうめい:yuumei:famous:0
+雑誌:ざっし:zasshi:journal, magazine:0
+全部:ぜんぶ:zenbu:all, entire, whole:1
+ゼロ::zero:zero, naught:1
+ズボン::zubon:trousers, pants:2,1
