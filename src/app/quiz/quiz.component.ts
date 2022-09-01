@@ -35,7 +35,10 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 interface EntryRecord {
   id: number;
   word: string;
+  kana: string;
+  romaji: string;
   definition: string;
+  pitch: string;
   score: number;
 }
 
@@ -51,11 +54,17 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
   wordId = 0;
 
   currentWord: string | undefined;
-
+  currentKana: string | undefined;
+  currentRomaji: string | undefined;
+  currentPitch: string | undefined;
   currentScore: number | undefined;
 
   currentTranslation: string | undefined;
   flipped = false;
+
+  showKana = false;
+
+  showRomaji = false;
 
   scores$ = new BehaviorSubject<ScoreRecord[]>([]);
 
@@ -116,7 +125,10 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
                   return {
                     id,
                     word: splitRow[0],
-                    definition: splitRow[1],
+                    kana: splitRow[1],
+                    romaji: splitRow[2],
+                    definition: splitRow[3],
+                    pitch: splitRow[4],
                     score: 0,
                   };
                 });
@@ -155,7 +167,10 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
               let firstWord = mergedWords[0];
               this.wordId = firstWord.id as number;
               this.currentWord = firstWord.word;
+              this.currentKana = firstWord.kana;
+              this.currentRomaji = firstWord.romaji;
               this.currentTranslation = firstWord.definition;
+              this.currentPitch = firstWord.pitch;
               this.currentScore = firstWord.score;
             }
             return mergedWords;
@@ -164,7 +179,19 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
         .subscribe(this.mergedWords$)
     );
 
-    this.mergedWords$.subscribe(this.chipListWords$);
+    this.subscription.add(this.mergedWords$.subscribe(this.chipListWords$));
+    this.subscription.add(
+      this.settings$
+        .pipe(filter((settings) => settings.length != 0))
+        .subscribe((settings) => {
+          this.showKana = settings.find(
+            (setting) => setting.setting === 'show kana'
+          )?.value as boolean;
+          this.showRomaji = settings.find(
+            (setting) => setting.setting === 'show romaji'
+          )?.value as boolean;
+        })
+    );
   }
 
   ngAfterContentInit() {
@@ -285,7 +312,9 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
     );
     if (nextWord) {
       this.currentWord = nextWord.word;
-
+      this.currentKana = nextWord.kana;
+      this.currentRomaji = nextWord.romaji;
+      this.currentPitch = nextWord.pitch;
       this.currentScore = nextWord.score;
       setTimeout(() => {
         this.currentTranslation = nextWord?.definition;

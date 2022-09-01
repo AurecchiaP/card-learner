@@ -5,13 +5,6 @@
 <div class="quick-link-container">
   <div *ngIf="chipListWords$ | async as chipListWords" class="chips">
     <div *ngFor="let word of chipListWords">
-      <!-- <app-chip
-        [value]="word.score"
-        [label]="word.word"
-        [number]="word.id"
-        [active]="word.id == wordId"
-        (clicked)="goToCard($event)"
-      ></app-chip> -->
       <mat-card>
         {{ word.word }} {{ word.score }}/9
         <div class="definition background-contrast" (click)="show($event)">
@@ -29,74 +22,3 @@
   >
   </mat-paginator>
 </div>
-<!-- 
-<div *ngIf="mergedWords$ | async as mergedWords" class="card-container">
-  <div class="flip-card">
-    <div class="flip-card-inner" [ngClass]="{ flipped: !flipped }">
-      <mat-card class="flip-card-front">
-        <div class="card-header">
-          <h3 class="vertical-center">{{ currentScore }} / 9</h3>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div>
-            <button
-              mat-icon-button
-              [disabled]="wordId === 0"
-              (click)="previousCard()"
-            >
-              <mat-icon aria-label="fully_known">arrow_back</mat-icon>
-            </button>
-            <button
-              mat-icon-button
-              [disabled]="wordId === mergedWords.length"
-              (click)="nextCard()"
-            >
-              <mat-icon aria-label="fully_known">arrow_forward</mat-icon>
-            </button>
-          </div>
-        </div>
-        <mat-card-content>
-          <div class="definition">{{ currentWord }}</div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button
-            mat-icon-button
-            [disabled]="flipped"
-            [ngClass]="flipped ? 'disabled-button' : ''"
-            (click)="correct()"
-          >
-            <mat-icon aria-label="known">done</mat-icon>
-          </button>
-          <button
-            mat-icon-button
-            [disabled]="flipped"
-            [ngClass]="flipped ? 'disabled-button' : ''"
-            (click)="learned()"
-          >
-            <mat-icon aria-label="fully_known">done_all</mat-icon>
-          </button>
-          <button
-            mat-icon-button
-            [disabled]="flipped"
-            [ngClass]="flipped ? 'disabled-button' : ''"
-            (click)="wrong()"
-          >
-            <mat-icon aria-label="close">close</mat-icon>
-          </button>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-card class="flip-card-back">
-        <mat-card-content>
-          <div class="definition">{{ currentTranslation }}</div>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-icon-button [disabled]="!flipped" (click)="nextCard()">
-            <mat-icon aria-label="next">arrow_forward</mat-icon>
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-</div> -->

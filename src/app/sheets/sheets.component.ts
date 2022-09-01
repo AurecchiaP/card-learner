@@ -23,7 +23,7 @@ export class SheetsComponent implements OnInit {
       name: 'japanese',
       sheets: {
         words: [
-          { name: 'jlpt-n5-score' },
+          { name: 'jlpt-n5-score-enhanced' },
           { name: 'jlpt-n4-score' },
           { name: 'jlpt-n3-score' },
           { name: 'jlpt-n2-score' },

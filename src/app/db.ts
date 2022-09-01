@@ -28,7 +28,7 @@ export class AppDB extends Dexie {
   async populate() {
     await db.scores.bulkAdd([
       {
-        sheet: 'japanese/jlpt-n5-score.txt',
+        sheet: 'japanese/jlpt-n5-score-enhanced.txt',
         id: 0,
         value: 0,
       },
@@ -82,6 +82,14 @@ export class AppDB extends Dexie {
       },
       {
         setting: 'darkMode',
+        value: false,
+      },
+      {
+        setting: 'show kana',
+        value: false,
+      },
+      {
+        setting: 'show romaji',
         value: false,
       },
     ]);
