@@ -10,7 +10,9 @@
         [label]="word.word"
         [number]="word.id"
         [active]="word.id == wordId"
-        (clicked)="goToCard($event, i)"
+        (clicked)="
+          goToCard($event, paginator.pageIndex * this.paginator.pageSize + i)
+        "
       ></app-chip>
     </div>
   </div>

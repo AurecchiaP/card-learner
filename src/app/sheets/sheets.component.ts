@@ -26,6 +26,8 @@ export class SheetsComponent implements OnInit {
           { name: 'jlpt-n5-score' },
           { name: 'jlpt-n4-score' },
           { name: 'jlpt-n3-score' },
+          { name: 'jlpt-n2-score' },
+          { name: 'jlpt-n1-score' },
         ],
         kana: [{ name: 'hiragana' }, { name: 'katakana' }],
       },

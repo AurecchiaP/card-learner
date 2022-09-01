@@ -43,6 +43,16 @@ export class AppDB extends Dexie {
         value: 0,
       },
       {
+        sheet: 'japanese/jlpt-n2-score.txt',
+        id: 0,
+        value: 0,
+      },
+      {
+        sheet: 'japanese/jlpt-n1-score.txt',
+        id: 0,
+        value: 0,
+      },
+      {
         sheet: 'japanese/katakana.txt',
         id: 0,
         value: 0,

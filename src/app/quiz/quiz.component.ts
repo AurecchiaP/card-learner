@@ -151,43 +151,7 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
               } as EntryRecord;
             });
             if (this.currentWord === undefined) {
-              let settings: Map<string, number | boolean> = new Map();
-              this.settings$.value.forEach((setting) => {
-                settings.set(setting.setting, setting.value);
-              });
-
-              console.log(settings);
-              if (settings.get('order by least known')) {
-                if (settings.get('skip not encountered')) {
-                  // order by least known and skip not encountered
-                  mergedWords.sort((a, b) => {
-                    return (
-                      (a.score === 0 ? 10 : a.score) -
-                      (b.score === 0 ? 10 : b.score)
-                    );
-                  });
-                } else {
-                  // order by least known
-                  mergedWords.sort((a, b) => a.score - b.score);
-                }
-              } else if (settings.get('skip not encountered')) {
-                // skip not encountered
-                mergedWords.sort((a, b) => {
-                  return a.score === 0 || b.score === 0
-                    ? b.score - a.score
-                    : a.id - b.id;
-                });
-              }
-              if (settings.get('randomize')) {
-                this.shuffle(mergedWords);
-              }
-              if (settings.get('skip learned cards')) {
-                mergedWords.sort((a, b) => {
-                  return a.score === 9 || b.score === 9
-                    ? a.score - b.score
-                    : a.id - b.id;
-                });
-              }
+              this.sort(mergedWords);
               let firstWord = mergedWords[0];
               this.wordId = firstWord.id as number;
               this.currentWord = firstWord.word;
@@ -212,19 +176,55 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
   }
 
   linkListToPaginator() {
-    merge(this.paginator.page)
-      .pipe(
-        startWith({}),
-        switchMap(() => this.mergedWords$.asObservable()),
-        filter((data) => data?.length > 0)
-      )
-      .subscribe((res) => {
-        let pageSize = this.paginator.pageSize;
-        const from = this.paginator.pageIndex * pageSize;
-        const to = from + pageSize;
-        this.chipListWords$.next(res.slice(from, to));
-        this.paginator.length = res.length;
+    this.subscription.add(
+      merge(this.paginator.page)
+        .pipe(
+          startWith({}),
+          switchMap(() => this.mergedWords$.asObservable()),
+          filter((data) => data?.length > 0)
+        )
+        .subscribe((res) => {
+          let pageSize = this.paginator.pageSize;
+          const from = this.paginator.pageIndex * pageSize;
+          const to = from + pageSize;
+          this.chipListWords$.next(res.slice(from, to));
+          this.paginator.length = res.length;
+        })
+    );
+  }
+
+  private sort(mergedWords: EntryRecord[]) {
+    let settings: Map<string, number | boolean> = new Map();
+    this.settings$.value.forEach((setting) => {
+      settings.set(setting.setting, setting.value);
+    });
+
+    if (settings.get('order by least known')) {
+      if (settings.get('skip not encountered')) {
+        // order by least known and skip not encountered
+        mergedWords.sort((a, b) => {
+          return (
+            (a.score === 0 ? 10 : a.score) - (b.score === 0 ? 10 : b.score)
+          );
+        });
+      } else {
+        // order by least known
+        mergedWords.sort((a, b) => a.score - b.score);
+      }
+    } else if (settings.get('skip not encountered')) {
+      // skip not encountered
+      mergedWords.sort((a, b) => {
+        return a.score === 0 || b.score === 0 ? b.score - a.score : a.id - b.id;
       });
+    }
+    if (settings.get('randomize')) {
+      this.shuffle(mergedWords);
+    }
+    if (settings.get('skip learned cards')) {
+      mergedWords.sort((a, b) => {
+        return a.score === 9 || b.score === 9 ? a.score - b.score : a.id - b.id;
+      });
+    }
   }
 
   async updateScore(value: number) {
@@ -264,11 +264,6 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
 
   goToCard(cardNumber: number, cardIdInSortedList: number) {
     this.flipped = false;
-    console.log(
-      this.paginator.pageIndex,
-      this.paginator.pageSize,
-      cardIdInSortedList
-    );
 
     this.paginator.pageIndex = Math.floor(
       cardIdInSortedList / this.paginator.pageSize

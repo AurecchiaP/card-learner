@@ -1,0 +1,536 @@
+上がる:あがる:agaru:to rise, to ascend:0
+挨拶:あいさつ:aisatsu:greeting, salutation:1
+味:あじ:aji:flavor, taste:0
+赤ちゃん:あかちゃん:akachan:baby, infant​:1
+赤ん坊:あかんぼ:akanbou:baby, infant​:0
+案内:あんない:annai:guidance, leading (the way):3
+安心:あんしん:anshin:relief, peace of mind​:0
+安全:あんぜん:anzen:safety:0
+浅い:あさい:asai:shallow, superficial​:0,2
+足音:あしおと:ashioto:sound of footsteps:3,4
+遊び:あそび:asobi:playing:0
+集る:あつまる:atsumaru:to gather, to collect, to assemble​:3
+集める:あつめる:atsumeru:to collect, to assemble, to gather​:3
+合う:あう:au:to fit, to match, to suit:1
+謝る:あやまる:ayamaru:to apologize:3
+倍:ばい:bai:twice, double​, times:0
+番組:ばんぐみ:bangumi:program (e.g. TV):0
+場所:ばしょ:basho:place, location:0
+別:べつ:betsu:different, another:0
+美術館:びじゅつかん:bijutsukan:art gallery, art museum​:3
+びっくり:びっくり:bikkuri:to be surprised:xxx
+僕:しもべ:boku:I, me:0,3
+貿易:ぼうえき:boueki:trade (foreign)​:0
+部長:ぶちょう:buchou:head of a section or department:0
+ぶどう:ぶどう:budou:grape:1
+文学:ぶんがく:bungaku:literature:1
+文化:ぶんか:bunka:culture, civilization:1
+文法:ぶんぽう:bunpou:grammar:0
+血:ち:chi:blood:0
+力:ちから:chikara:force, strength, vigor:3
+地理:ちり:chiri:geography:1
+中学校:ちゅうがっこう:chuugakkou:junior high school:3
+注意:ちゅうい:chuui:caution, being careful:1
+注射:ちゅうしゃ:chuusha:injection:0
+駐車場:ちゅうしゃじょう:chuushajou:parking lot:0
+大分:だいぶ:daibu:considerably, greatly:0
+大学生:だいがくせい:daigakusei:university student:3,4
+大事:おおごと:daiji:important, serious, crucial​:0
+大体:だいたい:daitai:general, substantially:(副)0,(名)0,3
+だから::dakara:so, therefore:1
+駄目:だめ:dame:no good, useless:2
+暖房:だんぼう:danbou:(indoor) heating​:0
+男性:だんせい:dansei:man, male:0
+電報:でんぽう:denpou:telegram:0
+電灯:でんとう:dentou:electric light​:0
+どんどん::dondon:rapidly, continuously:1
+泥棒:どろぼう:dorobou:thief, burglar, robber, theft​:0
+動物園:どうぶつえん:doubutsuen:zoo:4
+-道具:-道具:dougu:tool, implement:xxx
+-枝:-枝:eda:branch, bough:xxx
+-遠慮:-遠慮:enryo:constraint, restraint, modesty:xxx
+選ぶ:えらぶ:erabu:to choose, to select:2
+-不便:-不便:fuben:inconvenience:xxx
+-増える:-増える:fueru:to increase, to multiply:xxx
+深い:ふかい:fukai:deep, profound:2
+復習:ふくしゅう:fukushuu:review, revision:0
+複雑:ふくざつ:fukuzatsu:complex, complicated:0
+踏む:ふむ:fumu:to step on, to tread on​:0
+船:ふね:fune:ship, boat:1
+布団:ふとん:futon:futon:0
+太る:ふとる:futoru:to grow fat:2
+普通:ふつう:futsuu:general, ordinary, usual​:0
+頑張る:がんばる:ganbaru:to hang on, to do one’s best:3
+原因:げんいん:gen’in:cause, origin, source​:0
+-下宿:-下宿:geshuku:boarding, lodging:xxx
+技術:ぎじゅつ:gijutsu:technology, engineering​:1
+ご馳走:ごちそう:gochisou:feast, treating (someone)​:0
+塵:ごみ:gomi:rubbish, trash, garbage:2
+ご覧になる:ご覧になる:goran:to see, to look, to watch​:xxx
+ご主人:ご主人:goshujin:your husband:xxx
+ご存じ:ごぞんじ:gozonji:knowing:2
+具合:ぐあい:guai:condition, state, health:0
+軍人:ぐんじん:gunjin:military personnel, soldier:0
+葉:は:ha:leaf:0
+拝見:はいけん:haiken:seeing, look at:0
+歯医者:はいしゃ:haisha:dentist:1
+始める:はじめる:hajimeru:to start, to begin:0
+はっきり::hakkiri:clearly, plainly:3
+運ぶ:はこぶ:hakobu:to carry, to transport:0
+花見:はなみ:hanami:cherry blossom viewing:3
+反対:はんたい:hantai:opposition, resistance:0
+払う:はらう:harau:to pay:2
+発音:はつおん:hatsuon:pronunciation:0
+林:はやし:hayashi:woods, forest:3,0
+恥ずかしい:はずかしい:hazukashii:shy, embarrassed:4
+変:へん:hen:strange, odd, peculiar:1
+返事:へんじ:henji:reply, answer, response​:3
+酷い:ひどい:hidoi:cruel, heartless:2
+冷える:ひえる:hieru:to grow cold:2
+ひげ:ひげ:hige:mustache, beard:1
+非常に:ひじょうに:hijou:very, extremely:0
+光:ひかり:hikari:light, beam:3
+光る:ひかる:hikaru:to shine, to glitter:2
+引き出し:ひきだし:hikidashi:drawer:0
+引き出す:ひきだす:hikidasu:to pull out, to take out:3
+引っ越す:ひっこす:hikkosu:to move (house):3
+飛行場:ひこうじょう:hikoujou:airfield, airport:0
+開く:あく:hiraku:to open, to undo​:0
+拾う:ひろう:hirou:to pick up:0
+昼間:ちゅうかん:hiruma:daytime, during the day:0
+昼休み:ひるやすみ:hiruyasumi:lunch break:3
+久しぶり:ひさしぶり:hisashiburi:it’s been a while:0,5
+褒める:ほめる:homeru:to praise, to admire:2
+翻訳:ほんやく:honyaku:translation:0
+星:せい:hoshi:star:1
+ほとんど:ほとんど:hotondo:mostly, nearly:2
+法律:ほうりつ:houritsu:law:0
+一度:いちど:ichido:once, one time:3
+医学:いがく:igaku:medical science, medicine:1
+苛める:いじめる:ijimeru:to bully, to torment:0
+以上:いじょう:ijou:not less than, beyond:1
+以下:いか:ika:not exceeding, below:1
+意見:いけん:iken:opinion, view, comment​:1
+生きる:いきる:ikiru:to live, to exist​:2
+以内:いない:inai:within, inside of:1
+田舎:いなか:inaka:rural area, countryside:0
+祈る:いのる:inoru:to pray, to wish​:2
+一杯:いっぱい:ippai:full, a lot:(名)1,(副)0
+石:いし:ishi:stone, gem, jewel:2
+急ぐ:いそぐ:isogu:to hurry, to rush:2
+一生懸命:いっしょうけんめい:isshoukenmei:very hard, with utmost effort:5
+糸:いと:ito:thread, yarn, string:1
+邪魔:じゃま:jama:hindrance, obstacle:0
+字:あざ:ji:character (i.e. kanji)​:1
+時代:じだい:jidai:period, epoch, era, age​:0
+事故:じこ:jiko:accident, incident, trouble​:1
+事務所:じむしょ:jimusho:office:2
+神社:じんじゃ:jinja:Shinto shrine​:1
+人口:じんこう:jinkou:population:0
+地震:じしん:jishin:earthquake:0
+辞典:ことばてん:jiten:dictionary:0
+自由:じゆう:jiyuu:freedom, liberty:2
+女性:じょせい:josei:woman, female:0
+準備:じゅんび:junbi:preparation, set up:1
+十分:じゅうぶん:juubun:plenty, enough, sufficient:3
+住所:じゅうしょ:juusho:address:1
+壁:かべ:kabe:wall, partition​:0
+課長:かちょう:kachou:section manager, section chief​:0
+帰り:かえり:kaeri:return, coming back​:3
+変える:かえる:kaeru:to change, to alter:0
+科学:かがく:kagaku:science:1
+鏡:かがみ:kagami:mirror, looking-glass​:3
+海岸:かいがん:kaigan:coast, beach​:0
+会議:かいぎ:kaigi:meeting, conference:1,3
+会議室:会議室:kaigishitsu:conference room:xxx
+会場:かいじょう:kaijou:assembly hall, meeting place:0
+会話:かいわ:kaiwa:conversation:0
+火事:かじ:kaji:fire, conflagration​:1
+掛ける:かける:kakeru:to hang, to hoist, to raise:2
+格好:かっこう:kakkou:shape, form, figure:0
+構う:かまう:kamau:to mind, to care about:2
+髪:かみ:kami:hair (on the head)​:2
+噛む:かむ:kamu:to bite, to chew, to gnaw​:1
+家内:かない:kanai:(my) wife:1
+必ず:かならず:kanarazu:always, without exception:0
+悲しい:かなしい:kanashii:sad, sorrowful​:0,3
+金持ち:かねもち:kanemochi:rich person​:3
+考える:かんがえる:kangaeru:to think about:4,3
+関係:かんけい:kankei:relation, relationship, connection:0
+彼女:かのじょ:kanojo:she, her:1
+簡単:かんたん:kantan:simple, easy, uncomplicated​:0
+顔:かお:kao:face, look:0
+彼:あれ:kare:he, him:0
+彼ら:かれら:karera:they, them:1
+形:かた:katachi:form, shape, figure:2
+硬い:かたい:katai:hard, solid, tough​:0,2
+片付ける:かたづける:katazukeru:to tidy up, to put in order:4
+勝つ:かつ:katsu:to win, to gain victory​:1
+乾く:かわく:kawaku:to get dry:2
+代わり:かわり:kawari:substitute, replacement:0
+変わる:かわる:kawaru:to change, to be transformed:0
+通う:かよう:kayou:to go back and forth between:0
+飾る:かざる:kazaru:to decorate, to ornament:0
+毛:け:ke:hair, fur, wool​:0
+怪我:けが:kega:injury, hurt:2
+計画:けいかく:keikaku:plan, project:0
+経験:けいけん:keiken:experience:0
+警察:けいさつ:keisatsu:police:0
+経済:けいざい:keizai:economics, economy:1
+見物:けんぶつ:kenbutsu:sightseeing, watching:0
+喧嘩:けんか:kenka:quarrel, brawl, fight:0
+研究:けんきゅう:kenkyuu:study, research, investigation​:0
+研究室:けんきゅうしつ:kenkyuushitsu:laboratory:3
+消しゴム:けしゴム:keshigomu:eraser:0
+景色:けいしょく:keshiki:scenery, landscape​:0,1
+気:き:ki:spirit, mind, heart​:0
+厳しい:いかめしい:kibishii:severe, strict, rigid:4
+気分:きぶん:kibun:feeling, mood:1
+機会:きかい:kikai:chance, opportunity​:2,0
+危険:きけん:kiken:danger, peril, hazard​:0
+聞こえる:きこえる:kikoeru:to be heard, to be audible​:0
+決る:きまる:kimaru:to be decided, to be settled​:3,0
+決める:きめる:kimeru:to decide, to choose:0
+君:きみ:kimi:you, buddy, pal:0
+気持ち:きもち:kimochi:feeling, sensation, mood​:0
+近所:きんじょ:kinjo:neighborhood:1
+季節:きせつ:kisetsu:season:2,1
+汽車:きしゃ:kisha:train:2
+規則:きそく:kisoku:rule, regulation​:2,1
+きっと(kitto):きっと(kitto)::surely, undoubtedly:xxx
+心:こころ:kokoro:mind, heart, spirit​:3,2
+国内:こくだい:kokunai:internal, domestic​:2
+国際:こくさい:kokusai:international:0
+細かい:こまかい:komakai:small, fine, minute:3
+米:こめ:kome:rice:2
+込む:こむ:komu:to be crowded, to be packed​:1
+今度:こんど:kondo:this time, next time:1
+この間:このあいだ:kono:the other day, lately:0
+この頃:このごろ:kono:recently, nowadays:0
+今夜:こんや:kon’ya:this evening, tonight​:1
+これから:これから:kore:after this:4,0
+故障:こしょう:koshou:breakdown, out of order:0
+答え:こたえ:kotae:answer, reply, response:2
+事:こと:koto:thing, matter:2
+小鳥:ことり:kotori:small bird, songbird​:0
+校長:こうちょう:kouchou:principal, headmaster​:0
+講堂:こうどう:koudou:auditorium, lecture hall​:0
+郊外:こうがい:kougai:suburb, outskirts​:1
+講義:こうぎ:kougi:lecture:3
+工業:こうぎょう:kougyou:(manufacturing) industry​:1
+工場:こうじょう:koujou:factory, plant, mill:3
+高校:こうこう:koukou:senior high school, high school​:0
+高校生:こうこうせい:koukousei:senior high school student​:3
+公務員:こうむいん:koumuin:government worker, public servant:3
+交通:こうつう:koutsuu:traffic, transportation:0
+怖い:こわい:kowai:scary, frightening:2
+壊れる:こわれる:kowareru:to be broken:3
+壊す:こわす:kowasu:to break, to destroy:2
+首:かしら:kubi:neck:3
+雲:くも:kumo:cloud:1
+比べる:くらべる:kuraberu:to compare:0
+暮れる:くれる:kureru:to get dark, to grow dark​:0
+草:くさ:kusa:grass, weed, herb:2
+空気:くうき:kuuki:air, atmosphere​:1
+空港:くうこう:kuukou:airport:0
+客:かく:kyaku:guest, visitor​:0
+教育:きょういく:kyouiku:education, schooling:0
+教会:きょうかい:kyoukai:church:0
+興味:きょうみ:kyoumi:interest, curiosity:1
+競争:きょうそう:kyousou:competition, contest:0
+急:きゅう:kyuu:sudden, abrupt, unexpected​:0
+急行:きゅうこう:kyuukou:moving at high speed​:0
+間違える:まちがえる:machigaeru:to make a mistake:4,3
+参る:まいる:mairu:to go, to come (humble):1
+真面目:しんめんぼく:majime:seriousness, earnestness:3
+負ける:まける:makeru:to lose, to be defeated:0
+漫画:まんが:manga:cartoon, comic:0
+間に合う:まにあう:maniau:to be in time for:3
+真中:まなか:mannaka:middle, center:0,1
+または:または:matawa:or, otherwise:2
+周り:まわり:mawari:surroundings, neighbourhood:0
+回る:まわる:mawaru:to turn, to revolve:0
+まず:まず:mazu:first of all:1
+召し上がる:めしあがる:meshiagaru:to eat, to drink:0,4
+珍しい:めずらしい:mezurashii:unusual, rare, curious​:4
+見える:まみえる:mieru:to be seen, to be in sight:3
+港:みなと:minato:harbor, port:0
+見つかる:みつかる:mitsukaru:to be found:0
+見つける:みつける:mitsukeru:to discover, to find:0
+湖:みずうみ:mizuumi:lake:3
+もちろん:もちろん:mochiron:of course, certainly:2
+戻る:もどる:modoru:to return, to go back:2
+森:もり:mori:forest:0
+もし::moshi:if, in case:1
+申し上げる:もうしあげる:moushiageru:to say, to tell (humble):5,0
+申す:もうす:mousu:to say, to be called (humble):1
+もうすぐ:もうすぐ:mousugu:soon, shortly:xxx
+迎える:むかえる:mukaeru:to go out to meet:0
+昔:むかし:mukashi:olden days, former:0
+向かう:むかう:mukau:to face, to go towards:0
+無理:むり:muri:unreasonable, impossible:1
+虫:むし:mushi:insect, bug:0
+息子:むすこ:musuko:son:0
+娘:じょう:musume:(my) daughter, girl:1
+投げる:なげる:nageru:to throw, to cast away:2
+中々:なかなか:nakanaka:very, considerably:0
+泣く:なく:naku:to cry, to weep:0
+無くなる:なくなる:nakunaru:to be lost, to be missing:0
+亡くなる:なくなる:nakunaru:to die:0
+治る:なおる:naoru:to be cured:2
+直る:なおる:naoru:to get mended:2
+直す:なおす:naosu:to fix, to repair:2
+慣れる:なれる:nareru:to get used to:2
+なるほど:なるほど:naru:I see!, That’s right!:0
+鳴る:なる:naru:to sound, to ring:0
+寝坊:ねぼう:nebou:sleeping in late:0
+値段:ねだん:nedan:price, cost:0
+眠い:ねむい:nemui:sleepy, drowsy:0,2
+眠る:ねむる:nemuru:to sleep:0
+熱心:ねっしん:nesshin:zeal, enthusiasm:1,3
+熱:ねつ:netsu:heat:2
+苦い:にがい:nigai:bitter:2
+逃げる:にげる:nigeru:to escape, to run away:2
+二階建て:にかいだて:nikaidate:two-storied building​:0
+日記:にっき:nikki:diary, journal:0
+人形:にんぎょう:ningyou:doll:0
+匂い:におい:nioi:scent, smell:2
+似る:にる:niru:to resemble, to look like:0
+喉:のど:nodo:throat:1
+残る:のこる:nokoru:to remain, to be left:2
+乗り換える:のりかえる:norikaeru:to transfer (trains), to change (bus, train)​:4,3
+乗り物:のりもの:norimono:vehicle, conveyance:0
+濡れる:ぬれる:nureru:to get wet:0
+塗る:ぬる:nuru:to paint, to plaster:0
+盗む:ぬすむ:nusumu:to steal​:2
+入学:にゅうがく:nyuugaku:entry to school or university:0
+入院:にゅういん:nyuuin:hospitalization:0
+落ちる:おちる:ochiru:to fall down, to drop:2
+踊り:おどり:odori:dance:0
+驚く:おどろく:odoroku:to be surprised, to be astonished​:3
+踊る:おどる:odoru:to dance:0
+お祝い:おいわい:oiwai:congratulations, celebration:0
+お嬢さん:おじょうさん:ojousan:(your) daughter, young lady:2
+可笑しい:おかしい:okashii:funny, strange, odd:3
+行う:おこなう:okonau:to perform, to do:0
+怒る:いかる:okoru:to get angry, to get mad​:2
+起こす:おこす:okosu:to raise, to wake, to cause:2
+億:おく:oku:hundred million:1
+屋上:おくじょう:okujou:rooftop:0
+遅れる:おくれる:okureru:to be late, to be delayed:0
+贈り物:おくりもの:okurimono:present, gift:0
+送る:おくる:okuru:to send, to dispatch:0
+お祭り:お祭り:omatsuri:festival, feast, carnival​:xxx
+お見舞い:お見舞い:omimai:calling on someone who is ill:xxx
+お土産:おみやげ:omiyage:present, souvenir​:0
+玩具:おもちゃ:omocha:toy, plaything:2
+思い出す:おもいだす:omoidasu:to recall, to remember:4,0
+表:おもて:omote:surface, face, front, outside:3
+思う:おもう:omou:to think, to consider:2
+お礼:おれい:orei:thanks, gratitude:0
+折れる:おれる:oreru:to break, to be broken:2
+折る:おる:oru:to break, to fracture:1
+押し入れ:おしいれ:oshiire:closet:0
+仰る:おっしゃる:ossharu:to say, to speak:3
+お宅:おたく:otaku:your house, your home, your family:0
+音:おと:oto:sound, noise:2
+落とす:おとす:otosu:to drop, to let fall:2
+お釣り:おつり:otsuri:change (for a purchase):0
+夫:お:otto:husband:1
+終わり:おわり:owari:the end:0
+親:おや:oya:parent, parents:2
+歴史:れきし:rekishi:history:0
+連絡:れんらく:renraku:to contact, to get in touch​:0
+利用:りよう:riyou:use, utilization:0
+理由:りゆう:riyuu:reason, motive:0
+留守:るす:rusu:absence, being away from home​:1
+旅館:りょかん:ryokan:Japanese-style lodging:0
+両方:りょうほう:ryouhou:both, both sides:3,0
+寂しい:さびしい:sabishii:lonely, lonesome, solitary:3
+下がる:さがる:sagaru:to come down, to get lower:2
+探す:さがす:sagasu:to search, to look for:0
+下げる:さげる:sageru:to hang, to lower:2
+最後:さいご:saigo:last, final, latest:1
+最近:さいきん:saikin:most recent, these days:0
+最初:さいしょ:saisho:beginning, first:0
+坂:さか:saka:slope, hill:2,1
+盛ん:さかん:sakan:popular, prosperous:0
+さっき:さっき:sakki:some time ago, just now:0
+昨夜:さくや:sakuya:last night:2
+産業:さんぎょう:sangyou:industry:0
+さ来月:さらいげつ:saraigetsu:month after next​:0,2
+さ来週:さらいしゅう:saraishuu:week after next​:0
+差し上げる:さしあげる:sashiageru:to give, to offer:0,4
+騒ぐ:さわぐ:sawagu:to make noise, to rustle:2
+触る:さわる:sawaru:to touch, to feel​:0
+政治:せいじ:seiji:politics, government​:0
+生活:せいかつ:seikatsu:living, life:0
+生産:せいさん:seisan:production, manufacture:0
+西洋:せいよう:seiyou:the west, Western countries​:1
+世界:せかい:sekai:the world, society:1
+席:せき:seki:seat:1
+線:せん:sen:line, stripe, stria​:1
+背中:せなか:senaka:back (of body)​:0
+先輩:せんぱい:senpai:senior (at work or school):0
+戦争:せんそう:sensou:war:0
+説明:せつめい:setsumei:explanation, exposition​:0
+世話:せわ:sewa:looking after, help:2
+社長:しゃちょう:shachou:company president:0
+社会:しゃかい:shakai:society, public, community:1
+市:いち:shi:city:1
+試合:しあい:shiai:match, game:0
+しばらく(shibaraku):しばらく(shibaraku)::little while, short while:xxx
+叱る:しかる:shikaru:to scold:0,2
+仕方:しかた:shikata:way, method, means:0
+試験:しけん:shiken:examination, exam, test​:2
+しっかり:しっかり:shikkari:tightly, firmly, securely:3
+島:しま:shima:island:2
+市民:しみん:shimin:citizen, citizenry, public​:1
+品物:しなもの:shinamono:goods, article, thing​:0
+新聞社:しんぶんしゃ:shinbunsha:newspaper company:3
+心配:しんぱい:shinpai:worry, concern, anxiety:0
+親切:しんせつ:shinsetsu:kindness, gentleness​:1,0
+失敗:しっぱい:shippai:failure, mistake, blunder​:0
+調べる:しらべる:shiraberu:to examine, to investigate:3
+知らせる:しらせる:shiraseru:to notify, to advise, to inform​:0
+下着:したぎ:shitagi:underwear:0
+支度:したく:shitaku:preparation, arrangements​:0
+失礼:しつれい:shitsurei:discourtesy, impoliteness​:2
+食事:しょくじ:shokuji:meal:0
+食料品:しょくりょうひん:shokuryouhin:foodstuff, groceries​:0
+小学校:しょうがっこう:shougakkou:primary school:3
+紹介:しょうかい:shoukai:introduction, presentation:0
+将来:しょうらい:shourai:future, prospects:1,0
+小説:しょうせつ:shousetsu:novel, (short) story​:0
+招待:しょうたい:shoutai:invitation:1
+趣味:しゅみ:shumi:hobby, pastime:1
+出発:しゅっぱつ:shuppatsu:departure:0
+出席:しゅっせき:shusseki:attendance, presence:0
+習慣:しゅうかん:shuukan:habit, custom:0
+祖母:そぼ:sobo:grandmother:1
+育てる:そだてる:sodateru:to raise, to rear, to bring up:3
+祖父:おおじ:sofu:grandfather:1
+そんな::sonna:such:0
+それで:それで:sore:and, thereupon:xxx
+それほど:それほど:sore:to that degree:0
+それに:それに:sore:besides, in addition:xxx
+そろそろ::sorosoro:soon, momentarily:1
+卒業:そつぎょう:sotsugyou:graduation:0
+相談:そうだん:soudan:consultation, discussion:0
+素晴らしい:すばらしい:subarashii:wonderful, splendid:4
+滑る:すべる:suberu:to glide, to slide:2
+過ぎる:すぎる:sugiru:to pass through, to pass by:2
+凄い:すごい:sugoi:terrible, dreadful​, amazing:2
+水道:すいどう:suidou:water supply, water service:0
+水泳:すいえい:suiei:swimming:0
+すっかり::sukkari:all, completely, totally:3
+空く:あく:suku:to become empty:0
+隅:すみ:sumi:corner, nook, recess​:1
+済む:すむ:sumu:to finish, to end:1
+砂:いさご:suna:sand, grit​:0
+進む:すさむ:susumu:to advance, to go forward​:0
+捨てる:すてる:suteru:to throw away, to cast away:0
+数学:すうがく:suugaku:mathematics:0
+正しい:ただしい:tadashii:right, correct:3
+退院:たいいん:taiin:discharge from hospital​:0
+大抵:たいてい:taitei:mostly, ordinarily:0
+たまに:たまに:tama:occasionally, once in a while​:0
+棚:たな:tana:shelf, shelves:0
+楽しみ:たのしみ:tanoshimi:enjoyment, pleasure:3,4
+楽む:たのしむ:tanoshimu:to enjoy (oneself)​:3
+倒れる:たおれる:taoreru:to fall, to collapse:3
+足りる:たりる:tariru:to be sufficient, to be enough​:0
+確か:たしか:tashika:sure, certain, positive:1
+足す:たす:tasu:to add, to top up:0
+多数:たすう:tasuu:large number, many​:2
+畳:たたみ:tatami:tatami mat:0
+立てる:たてる:tateru:to stand up:2
+建てる:たてる:tateru:to build, to construct​:2
+訪ねる:たずねる:tazuneru:to visit, to call on:3
+尋ねる:たずねる:tazuneru:to ask, to enquire:3
+手袋:てぶくろ:tebukuro:glove, mitten, mitt​:2
+丁寧:ていねい:teinei:polite, courteous, careful​:1
+適当:てきとう:tekitou:suitable, proper, fit:0
+点:ちょぼ:ten:point, dot, spot:1
+天:あめ:ten:sky:1
+天気予報:てんきよほう:tenkiyohou:weather forecast:4
+展覧会:てんらんかい:tenrankai:exhibition:3
+店員:てんいん:ten’in:shop assistant, clerk:0
+寺:てら:tera:temple (Buddhist)​:2,0
+手伝う:てつだう:tetsudau:to help, to assist, to aid​:3
+届ける:とどける:todokeru:to deliver, to send:3
+特急:とっきゅう:tokkyuu:limited express:0
+床屋:とこや:tokoya:barbershop, barber​:0
+特に:とくに:toku:particularly, especially​:1
+特別:とくべつ:tokubetsu:special:0
+泊まる:とまる:tomaru:to stay at (e.g. hotel)​:0
+遠く:とおく:tooku:far away, distant:(名)3,(副)0
+通る:とおる:tooru:to go by, to go past:1
+取り替える:とりかえる:torikaeru:to exchange, to replace​:0,4,3
+とうとう:とうとう:toutou:finally, at:1
+都合:つごう:tsugou:circumstances, convenience​:(名)0,(副)1
+捕まえる:つかまえる:tsukamaeru:to catch, to arrest:0
+月:げつ:tsuki:moon:1
+付く:つく:tsuku:to be attached, to adhere:1,2
+妻:さい:tsuma:wife:1
+連れる:つれる:tsureru:to lead, to take (a person)​:0
+釣る:つる:tsuru:to fish, to lure in:0
+伝える:つたえる:tsutaeru:to convey, to report:0
+包む:くるむ:tsutsumu:to wrap up, to tuck in:2
+続ける:つづける:tsuzukeru:to continue, to keep up:0
+続く:つづく:tsuzuku:to continue, to last, to go on​:0
+腕:うで:ude:arm:2
+植える:うえる:ueru:to plant, to grow, to raise​​:0
+動く:うごく:ugoku:to move, to stir, to shift:2
+受ける:うける:ukeru:to receive, to get​:2
+受付:うけつけ:uketsuke:reception (desk), information desk​:0
+旨い:うまい:umai:delicious, appetizing:2
+運動:うんどう:undou:exercise, motion:0
+運転:うんてん:unten:operation, operating:0
+運転手:うんてんしゅ:untenshu:driver, chauffeur​:3
+裏:うら:ura:reverse side, rear, back:2
+嬉しい:うれしい:ureshii:happy, glad:3
+売り場:うりば:uriba:sales floor, counter (in shop)​:0
+嘘:うそ:uso:lie, falsehood:1
+打つ:うつ:utsu:to hit, to strike, to knock:1
+美しい:うつくしい:utsukushii:beautiful, lovely​:4
+移る:うつる:utsuru:to move (house), to transfer (department)​:2
+写す:うつす:utsusu:to transcribe, to duplicate:2
+別れる:わかれる:wakareru:to part, to separate:3
+沸かす:わかす:wakasu:to boil, to heat​:0
+訳:やく:wake:reason, cause:1,2
+沸く:わく:waku:to grow hot, to boil:0
+笑う:わらう:warau:to laugh:0
+割れる:われる:wareru:to break, to be smashed:0
+割合:わりあい:wariai:rate, ratio:0
+忘れ物:わすれもの:wasuremono:something forgotten:0
+やはり:やはり:yahari:as expected:2
+焼ける:やける:yakeru:to be roasted:0
+役に立つ:役に立つ:yaku:to be helpful, to be useful​:xxx
+焼く:やく:yaku:to burn, to roast, to bake:0
+約束:やくそく:yakusoku:promise, agreement:0
+止める:とどめる:yameru:to stop:3
+止む:やむ:yamu:to cease, to stop:0
+優しい:やさしい:yasashii:tender, kind, gentle:0,3
+痩せる:やせる:yaseru:to become thin, to slim:0
+やっと::yatto:at last:0
+柔らかい:やわらかい:yawarakai:soft, tender:4
+汚れる:けがれる:yogoreru:to get dirty:3,0
+喜ぶ:よろこぶ:yorokobu:to be delighted:3
+寄る:よる:yoru:to approach, to drop by:0
+予習:よしゅう:yoshuu:preparation for a lesson​:0
+予定:よてい:yotei:plans, arrangement:0
+用:よう:you:business, task, errand:1
+用意:ようい:youi:preparation, arrangements:1
+用事:ようじ:youji:tasks, things to do:0
+予約:よやく:yoyaku:reservation, appointment:0
+湯:ゆ:yu:hot water:1
+指:および:yubi:finger, toe:0,1
+指輪:ゆびわ:yubiwa:(finger) ring:0
+夢:ゆめ:yume:dream:2
+輸入:ゆにゅう:yunyuu:import, importation:0
+揺れる:ゆれる:yureru:to shake, to sway:0
+輸出:ゆしゅつ:yushutsu:export:0
+夕食:ゆうしょく:yuushoku:evening meal, dinner​:0
+残念:ざんねん:zannen:deplorable, regret, bad luck:3
+随分:ずいぶん:zuibun:very, extremely, surprisingly:1
