@@ -24,8 +24,6 @@ Run `ng build-android`, which will build the angular app, setup the Android app 
 
 ### Chrome extension
 
-    "build-ghpages": "ng build --base-href \"https://AurecchiaP.github.io/\"",
-
 Run `npm run build` to build the project. Add `dist/card-learner` as an unpacked extension to chrome.
 
 ### Github pages
