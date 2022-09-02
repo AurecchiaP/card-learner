@@ -1,21 +1,22 @@
 .card {
-    margin: 1em;
-    white-space: nowrap;
-    &:hover {
-      cursor: pointer;
-    }
+  margin: 1em;
+  white-space: nowrap;
+  &:hover {
+    cursor: pointer;
   }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .mat-card-content span {
-    margin-left: 1em;
-  }
-  
-  .disabled {
-    color: grey !important;
-    pointer-events: none;
-  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mat-card-content span {
+  margin-left: 1em;
+}
+
+.disabled {
+  color: grey !important;
+  pointer-events: none;
+}

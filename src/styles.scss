@@ -72,7 +72,7 @@ $dark-theme: mat.define-dark-theme(
 
 .dark-theme {
   @include mat.core-theme($dark-theme);
-  @include mat.all-component-themes($dark-theme);
+  @include mat.all-component-colors($dark-theme);
   @include theme-color-grabber($dark-theme);
 }
 
@@ -109,6 +109,10 @@ body {
 
 .width-50-pct {
   width: 50%;
+}
+
+.width-100-pct {
+  width: 100%;
 }
 
 .background-darken {

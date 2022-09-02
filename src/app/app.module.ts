@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatOptionModule } from '@angular/material/core';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
@@ -65,6 +66,7 @@ import { StudyComponent } from './study/study.component';
     MatInputModule,
     MatListModule,
     MatMenuModule,
+    MatOptionModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSelectModule,

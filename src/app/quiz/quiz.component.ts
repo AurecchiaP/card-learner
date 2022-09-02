@@ -312,13 +312,13 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
     );
     if (nextWord) {
       this.currentWord = nextWord.word;
-      this.currentKana = nextWord.kana;
-      this.currentRomaji = nextWord.romaji;
-      this.currentPitch = nextWord.pitch;
       this.currentScore = nextWord.score;
       setTimeout(() => {
         this.currentTranslation = nextWord?.definition;
-      }, 500);
+        this.currentKana = nextWord?.kana;
+        this.currentRomaji = nextWord?.romaji;
+        this.currentPitch = nextWord?.pitch;
+      }, 185);
     }
   }
 

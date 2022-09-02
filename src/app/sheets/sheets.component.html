@@ -1,5 +1,5 @@
 <div class="card-container" *ngFor="let language of languages">
-  <div class="primary-text">{{ language.name }}</div>
+  <div class="primary-text width-100-pct">{{ language.name }}</div>
   <div class="sheet-card" *ngFor="let sheet of language.sheets[type]">
     <app-card-choice-button
       [routerLink1]="['/learn/study', language.name, sheet.name]"

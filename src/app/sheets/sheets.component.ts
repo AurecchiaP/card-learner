@@ -24,10 +24,10 @@ export class SheetsComponent implements OnInit {
       sheets: {
         words: [
           { name: 'jlpt-n5-score-enhanced' },
-          { name: 'jlpt-n4-score' },
-          { name: 'jlpt-n3-score' },
-          { name: 'jlpt-n2-score' },
-          { name: 'jlpt-n1-score' },
+          { name: 'jlpt-n4-score-enhanced' },
+          { name: 'jlpt-n3-score-enhanced' },
+          { name: 'jlpt-n2-score-enhanced' },
+          { name: 'jlpt-n1-score-enhanced' },
         ],
         kana: [{ name: 'hiragana' }, { name: 'katakana' }],
       },

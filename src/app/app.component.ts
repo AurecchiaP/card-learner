@@ -1,8 +1,9 @@
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { map, shareReplay, take } from 'rxjs/operators';
 
-import { Component, OnDestroy, VERSION } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { liveQuery } from 'dexie';
 import { db, SettingRecord } from '../app/db';
 
@@ -30,6 +31,7 @@ export class AppComponent implements OnDestroy {
     );
 
   constructor(
+    private overlayContainer: OverlayContainer,
     private breakpointObserver: BreakpointObserver,
     sharedService: SharedServiceService
   ) {
@@ -39,12 +41,27 @@ export class AppComponent implements OnDestroy {
     });
 
     this.subscription.add(
-      liveQuery(() => db.settings.toArray()).subscribe((settings) => {
+      liveQuery(() => db.settings.toArray()).subscribe(this.settings$)
+    );
+
+    this.subscription.add(
+      this.settings$.subscribe((settings) => {
         this.darkMode =
           settings.find((setting) => setting.setting === 'darkMode')?.value ===
           true;
+        const overlayContainerClasses =
+          this.overlayContainer.getContainerElement().classList;
+        overlayContainerClasses.add(
+          this.darkMode ? 'dark-theme' : 'light-theme'
+        );
       })
     );
+  }
+
+  ngOnInit(): void {
+    const overlayContainerClasses =
+      this.overlayContainer.getContainerElement().classList;
+    overlayContainerClasses.add(this.darkMode ? 'dark-theme' : 'light-theme');
   }
 
   toggleDrawer(drawer: any): void {
