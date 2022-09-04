@@ -24,7 +24,11 @@ Run `ng build-android`, which will build the angular app, setup the Android app 
 
 ### Chrome extension
 
-Run `npm run build` to build the project. Add `dist/card-learner` as an unpacked extension to chrome.
+Run `npm run build-chrome` to build the project. Add `dist/card-learner` as an unpacked extension to chrome.
+
+### Firefox extension
+
+Run `npm run build-firefox` to build the project. Add `dist/card-learner` as a temporary add-on, or the contents of dist/card-learner, change extension to .xpi, and add it as a normal add-on (you need to disable signature requirements for this)
 
 ### Github pages
 
