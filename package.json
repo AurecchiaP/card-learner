@@ -38,6 +38,7 @@
     "adb": "^0.2.0",
     "dexie": "^3.2.2",
     "fs": "^0.0.1-security",
+    "hammerjs": "^2.0.8",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -47,6 +48,7 @@
     "@angular/cli": "~14.1.1",
     "@angular/compiler-cli": "^14.1.0",
     "@capacitor/cli": "4.0.1",
+    "@types/hammerjs": "^2.0.41",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^18.7.3",
     "angular-cli-ghpages": "^1.0.3",

@@ -1,26 +1,19 @@
 import {
   Component,
-  Input,
-  OnInit,
   OnDestroy,
   ViewChild,
-  AfterViewInit,
   AfterContentInit,
 } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import {
   BehaviorSubject,
   combineLatest,
   filter,
-  forkJoin,
   from,
   map,
   merge,
   mergeMap,
   Observable,
-  Observer,
-  of,
-  ReplaySubject,
   startWith,
   Subscription,
   switchMap,
@@ -30,7 +23,7 @@ import {
 import { db, ScoreRecord, SettingRecord } from '../db';
 import { liveQuery } from 'dexie';
 import { ActivatedRoute } from '@angular/router';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { MatPaginator } from '@angular/material/paginator';
 
 interface EntryRecord {
   id: number;
@@ -49,6 +42,7 @@ interface EntryRecord {
 })
 export class QuizComponent implements AfterContentInit, OnDestroy {
   sheet: string;
+  scoreInPercent: string = '0';
 
   words: EntryRecord[] = [];
   wordId = 0;
@@ -179,6 +173,17 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
         .subscribe(this.mergedWords$)
     );
 
+    this.subscription.add(
+      this.mergedWords$.subscribe((mergedWords) => {
+        let sum = 0;
+        mergedWords.forEach((mergedWord) => {
+          sum = sum + mergedWord.score;
+        });
+        this.scoreInPercent =
+          ((sum / (mergedWords.length * 9)) * 100).toFixed(1) + '%';
+      })
+    );
+
     this.subscription.add(this.mergedWords$.subscribe(this.chipListWords$));
     this.subscription.add(
       this.settings$
@@ -200,6 +205,22 @@ export class QuizComponent implements AfterContentInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  onPaginatorSwipeLeft() {
+    this.paginator.nextPage();
+  }
+
+  onPaginatorSwipeRight() {
+    this.paginator.previousPage();
+  }
+
+  onCardSwipeLeft() {
+    this.nextCard();
+  }
+
+  onCardSwipeRight() {
+    this.previousCard();
   }
 
   linkListToPaginator() {

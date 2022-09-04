@@ -1,5 +1,10 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  HAMMER_GESTURE_CONFIG,
+  HammerGestureConfig,
+  HammerModule,
+} from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -36,6 +41,14 @@ import { SearchComponent } from './search/search.component';
 import { KeyValuePairComponent } from './key-value-pair/key-value-pair.component';
 import { StudyComponent } from './study/study.component';
 
+import * as Hammer from 'hammerjs';
+
+export class MyHammerConfig extends HammerGestureConfig {
+  override overrides = <any>{
+    swipe: { direction: Hammer.DIRECTION_ALL },
+  };
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +69,7 @@ import { StudyComponent } from './study/study.component';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    HammerModule,
     HttpClientModule,
     LayoutModule,
     MatButtonModule,
@@ -76,7 +90,7 @@ import { StudyComponent } from './study/study.component';
     PortalModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{ provide: HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

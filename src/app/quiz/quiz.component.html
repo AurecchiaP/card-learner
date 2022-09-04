@@ -2,7 +2,11 @@
   <mat-spinner></mat-spinner>
 </div>
 
-<div class="quick-link-container">
+<div
+  class="quick-link-container"
+  (swipeleft)="onPaginatorSwipeLeft()"
+  (swiperight)="onPaginatorSwipeRight()"
+>
   <div *ngIf="chipListWords$ | async as chipListWords" class="chips">
     <div *ngFor="let word of chipListWords; index as i">
       <app-chip
@@ -17,16 +21,26 @@
     </div>
   </div>
 
-  <mat-paginator
-    #paginator
-    [length]="100"
-    [pageSizeOptions]="[10, 25, 50]"
-    aria-label="Select page"
-  >
-  </mat-paginator>
+  <div class="paginator-container">
+    <div class="score primary-text">
+      {{ scoreInPercent }}
+    </div>
+    <mat-paginator
+      #paginator
+      [length]="100"
+      [pageSizeOptions]="[10, 25, 50]"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
 </div>
 
-<div *ngIf="mergedWords$ | async as mergedWords" class="card-container">
+<div
+  *ngIf="mergedWords$ | async as mergedWords"
+  class="card-container"
+  (swipeleft)="onCardSwipeLeft()"
+  (swiperight)="onCardSwipeRight()"
+>
   <div class="flip-card">
     <div class="flip-card-inner" [ngClass]="{ flipped: !flipped }">
       <mat-card class="flip-card-front">

@@ -43,7 +43,7 @@
 病気:びょうき:byouki:illness, disease:0
 茶色:ちゃいろ:chairo:light brown:0
 茶碗:ちゃわん:chawan:rice bowl, tea cup:0
-父:かそ:chichi:father:1
+父:ちち:chichi:father:2,1
 違う:たがう:chigau:to differ (from):2
 小さい:ちいさい:chiisai:small, little, tiny:3
 近い:ちかい:chikai:near, close:2
@@ -56,7 +56,7 @@
 大学:だいがく:daigaku:university:0
 大丈夫:だいじょうぶ:daijoubu:safe, all right, okay:3
 段々:だんだん:dandan:gradually, little by little:0,1
-誰:た:dare:who:1
+誰:誰:dare:who:1
 誰か:だれか:dareka:someone, somebody:1
 出す:だす:dasu:to take out:1
 出口:でぐち:deguchi:exit, gateway:1
@@ -85,9 +85,9 @@
 フォーク::fooku:fork:1
 吹く:ふく:fuku:to blow (wind):1,2
 服:ふく:fuku:clothes:2
-降る:くだる:furu:to fall (rain):0
+降る:ふる:furu:to fall (rain):1
 古い:ふるい:furui:old (not person):2
-二人:ににん:futari:two people, pair:2
+二人:ふたり:futari:two people, pair:3
 二日:ふつか:futsuka:second day of the month, two days:0
 封筒:ふうとう:fuutou:envelope:0
 冬:ふゆ:fuyu:winter:2
@@ -100,7 +100,7 @@
 月曜日:げつようび:getsuyoubi:Monday:3
 銀行:ぎんこう:ginkou:bank:0
 ギター::gitaa:guitar:1
-五:いつ:go:five:1
+五:ご:go:five:1
 午後:ごご:gogo:afternoon, p.m.:1
 ご飯:ごはん:gohan:cooked rice, meal:1
 午前:ごぜん:gozen:morning, a.m.:1
@@ -110,8 +110,8 @@
 歯:は:ha:tooth:1
 八:はち:hachi:eight:2
 葉書:はがき:hagaki:postcard:0
-母:いろは:haha:mother:2
-入る:いる:hairu:to enter, to go into:0
+母:はは:haha:mother:1
+入る:はいる:hairu:to enter, to go into:1
 灰皿:はいざら:haizara:ashtray:0
 始まる:はじまる:hajimaru:to begin, to start:0
 始め:はじめ:hajime:beginning, start:0
@@ -126,7 +126,7 @@
 貼る:はる:haru:to stick, to paste:0
 春:はる:haru:spring, springtime:1
 箸:はし:hashi:chopsticks:1
-橋:きょう:hashi:bridge:1
+橋:はし:hashi:bridge:2
 走る:はしる:hashiru:to run:2
 二十歳:はたち:hatachi:twenty years old:1
 働く:はたらく:hataraku:to work:0
@@ -135,24 +135,24 @@
 速い:はやい:hayai:fast, quick:2
 早く:はやく:hayaku:early, soon, quickly:1
 辺:へ:hen:area, vicinity:1
-下手:したて:heta:unskillful:0
+下手:へた:heta:unskillful:2
 部屋:へや:heya:room, chamber:2
-日:にち:hi:day, sun:1
-火:か:hi:fire, flame:1
-左:さ:hidari:left, left hand side:1
-東:あずま:higashi:east:1
+日:ひ:hi:day, sun:0
+火:ひ:hi:fire, flame:1
+左:ひだり:hidari:left, left hand side:0
+東:ひがし:higashi:east:0,3
 飛行機:ひこうき:hikouki:aeroplane, airplane:2
 引く:ひく:hiku:to pull, to draw:0
-弾く:はじく:hiku:to play (piano, guitar):2
+弾く:ひく:hiku:to play (piano, guitar):0
 低い:ひくい:hikui:low (rank), short (height):2
-暇:いとま:hima:spare time, free time:0,3
+暇:ひま:hima:spare time, free time:0
 広い:ひろい:hiroi:spacious, vast, wide:2
 昼:ひる:hiru:noon, midday:2
 昼ご飯:ひるごはん:hirugohan:lunch, midday meal:3
-人:じん:hito:person:1
-一人:いちにん:hitori:one person, alone:2
+人:ひと:hito:person:0
+一人:ひと:hitori:one person, alone:2
 一つ:ひとつ:hitotsu:one:2
-他:た:hoka:other, the rest:1
+他:ほか:hoka:other, the rest:0
 本:ほん:hon:book:1
 本棚:ほんだな:hondana:bookshelf, bookcase:1
 本当:ほんと:hontou:truth, reality:0
@@ -160,7 +160,7 @@
 百:ひゃく:hyaku:hundred:2
 一:いち:ichi:one:2
 一番:いちばん:ichiban:number one, first, first place:2,0
-一日:いちじつ:ichinichi:one day:4
+一日:いちにち:ichinichi:one day:4
 家:いえ:ie:house, residence:2
 いい:いい:ii:good:1
 否:いえ:iie:no, nay:2
@@ -170,7 +170,7 @@
 幾つ:いくつ:ikutsu:how many, how old:1
 今:いま:ima:now, the present time:1
 意味:いみ:imi:meaning, significance:1
-妹:いも:imouto:younger sister:1
+妹:いもうと:imouto:younger sister:4
 犬:いぬ:inu:dog:2
 入れる:いれる:ireru:to put in, to let in:0
 入口:いりぐち:iriguchi:entrance, gate:0
@@ -267,7 +267,7 @@
 暗い:くらい:kurai:dark, gloomy:0
 クラス::kurasu:class:1
 黒い:くろい:kuroi:black, dark:2
-来る:きたる:kuru:to come:2
+来る:くる:kuru:to come:1
 車:くるま:kuruma:car, automobile:0
 薬:くすり:kusuri:medicine:0
 靴:くつ:kutsu:shoes, boots:2
@@ -277,10 +277,10 @@
 兄弟:きょうだい:kyoudai:siblings, brothers and sisters:1
 教室:きょうしつ:kyoushitsu:classroom, department:0
 九:きゅう:kyuu:nine:1
-町:ちょう:machi:town, block:1
+町:まち:machi:town, block:2
 まだ:まだ:mada:still, not yet:1
 窓:まど:mado:window:1
-前:さき:mae:front, ahead, previous:0
+前:まえ:mae:front, ahead, previous:1
 曲がる:まがる:magaru:to bend, to curve:0
 毎朝:まいあさ:maiasa:every morning:1,0
 毎晩:まいばん:maiban:every night:1,0
@@ -441,7 +441,7 @@
 食堂:しょくどう:shokudou:dining room, dining hall:0
 醤油:しょうゆ:shouyu:soy sauce:0
 宿題:しゅくだい:shukudai:homework:0
-側:かたわら:soba:near, close, beside:0
+側:そば:soba:near, close, beside:1
 空:うつせ:sora:sky:0
 外:そと:soto:outside, exterior:1
 掃除:そうじ:souji:cleaning, sweeping:0

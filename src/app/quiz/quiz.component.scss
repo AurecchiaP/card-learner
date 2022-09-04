@@ -49,6 +49,7 @@
   .definition {
     font-size: 3em;
     line-height: 1em;
+    margin-bottom: 10px;
   }
 }
 
@@ -111,4 +112,18 @@
 
 mat-card {
   padding: 0;
+}
+
+.paginator-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.score {
+  text-align: justify;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
