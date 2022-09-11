@@ -2,8 +2,14 @@
   "name": "Card Learner",
   "version": "2.0",
   "description": "Learn cards",
-  "manifest_version": 3,
-  "action": {
+  "manifest_version": 2,
+  "browser_action": {
     "default_popup": "index.html"
-  }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "42.0"
+    }
+  }  
 }
